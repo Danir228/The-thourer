@@ -1,0 +1,45 @@
+.header {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header_items {
+    max-width: 1218px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 54px;
+    height: 54px;
+    margin: 30px 0;
+    padding: 0;
+    background: url('logo.png') no-repeat;
+}
+
+.nav_menu {
+    margin: 30px 0 30px 100px;
+}
+
+.language_page {
+    margin: 30px 0;
+    padding: 0;
+    justify-content: flex-end;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.language_page button {
+    max-height: 23px;
+    background: none;
+    border: none;
+}
+
+.language_page a {
+    text-decoration: none;
+    color: #000;
+}
+

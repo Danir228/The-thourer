@@ -1,0 +1,18 @@
+.main {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.main_items {
+    max-width: 1218px;
+}
+
+.parent-selector {
+    position: relative;
+}
+
+.section-1 {
+    margin-top: 20px;
+    padding: 0;
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.section-second {
+    min-height: 760px;
+    margin-bottom: 140px;
+    justify-content: flex-end;
+}
+
+.section-second_left {
+    width: 100%;
+    max-width: 1116px;
+}
+
+.section-second_left {
+    position: absolute;
+    width: 100%;
+    height: 760px;
+    right: 500px;
+    bottom: 260px;
+    background: url('section-2.jpg') no-repeat;
+}
+.section-second_right {
+    width: 100%;
+    max-width: 490px;
+    max-height: 392px;
+    margin-top: 140px;
+}
+
+.section-second_right h1 {
+    margin-bottom: 32px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.section-second_right p {
+    margin-bottom: 64px;
+
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
