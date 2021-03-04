@@ -2,20 +2,20 @@ import React from 'react';
 
 import './section-6-when-item.css';
 
-function WhenItem({month, quarter, percent1, year, percent2 }) {
+export default function WhenItem({month, quarter, percent1, year, percent2 }) {
     return (
         <>
-            <span className="month">{month}</span>
-            <div className="quarter">
-                <span className="quarter_item-1">{quarter}</span>
-                <span className="quarter_item-2">{percent1}</span>
+            <div className="whenitem_month">
+                <div className="whenitem_style">{month}</div>
             </div>
-            <div className="year">
-                <span className="year_item-1">{year}</span>
-                <span className="year_item-2">{percent2}</span>
+            <div className="whenitem_quarter">
+                <div className="whenitem_style">{quarter}</div>
+                <div className="percent">{percent1}</div>
+            </div>
+            <div className="whenitem_year">
+                <div className="whenitem_style">{year}</div>
+                <div className="percent">{percent2}</div>
             </div>
         </>
     )
 }
-
-export default WhenItem;

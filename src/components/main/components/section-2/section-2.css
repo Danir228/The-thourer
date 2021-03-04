@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .section-second {
-    /* min-height: 760px;
-    margin-bottom: 140px; */
     padding: 0;
     justify-content: flex-end;
 }
@@ -16,7 +14,7 @@
     position: absolute;
     width: 100%;
     min-height: 760px;
-    right: 460px;
+    left: 0;
     bottom: 0;
     background: url('section-2.png') no-repeat;
 }

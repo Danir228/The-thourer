@@ -1,0 +1,29 @@
+.section-7_top {
+    width: 100%;
+    max-width: 1920px;
+    height: 228px;
+    margin: 0 auto;
+    padding: 55px 0;
+    text-align: center;
+
+    font-family: Raleway;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.section-7_top .container {
+    margin: 0;
+    padding: 0;
+}
+
+.section-7_top_item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.section-7_top_item span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+}

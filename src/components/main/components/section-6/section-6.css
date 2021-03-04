@@ -1,0 +1,41 @@
+.section-6_title {
+    font-family: Raleway;
+    text-align: center;
+}
+
+.section-6_title_item-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+}
+
+.section-6_title_item-2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 62px;
+}
+
+.section-6_calendar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 44px;
+    margin-top: 32px;
+}
+
+.section-6_price_item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    padding: 37px 49px 33px 40px;
+    width: 100%;
+    max-width: 282px;
+    height: 450px;
+
+    background: rgba(255, 255, 255, 0.3);
+
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 20px;
+}

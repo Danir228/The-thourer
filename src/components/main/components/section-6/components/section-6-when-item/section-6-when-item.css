@@ -1,0 +1,43 @@
+.whenitem_month {
+    margin-right: 30px;
+    padding-top: 33px;
+}
+
+.whenitem_style {
+    width: 178px;
+    height: 64px;
+    padding: 14px 58px;
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+
+    align-items: center;
+    text-align: center;
+}
+
+.whenitem_quarter, .whenitem_year {
+    position: relative;
+    margin-right: 30px;
+    width: 199px;
+    height: 97px;
+    padding-top: 33px;
+}
+
+.percent {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    padding: 11px 11px;
+    right: 0;
+    top: 0;
+    text-align: center;
+
+    background: #F8E3B8;
+    border-radius: 22px;
+}

@@ -1,0 +1,16 @@
+.google-play_btn {
+    position: relative;
+    background: rgba(0, 0, 0, 1);
+    color: #ffffff;
+    height: 48px;
+    border-radius: 40px;
+    padding-right: 38px;
+    padding-left: 38px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}

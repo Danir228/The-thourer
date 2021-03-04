@@ -1,24 +1,25 @@
 import React from 'react';
-import Slider from 'infinite-react-carousel';
+import Carousel from "../../../carousel";
+import SectionFiveItem from './components/section-5-item';
 
-const SectionFive = () => (
-  <Slider dots>
-    <div>
-      <h3>1</h3>
-    </div>
-    <div>
-      <h3>2</h3>
-    </div>
-    <div>
-      <h3>3</h3>
-    </div>
-    <div>
-      <h3>4</h3>
-    </div>
-    <div>
-      <h3>5</h3>
-    </div>
-  </Slider>
-);
+import img1 from './images/1.png';
+import img2 from './images/2.png';
 
-export default SectionFive;
+import './section-5.css';
+
+export default function SectionFive() {
+  return (
+    <>
+      <h1 className="section-5_title">Виртуальные туры, созданные при помощи <span className="textupdate">The Tourer</span></h1>
+      <Carousel
+      items={[
+        <SectionFiveItem
+        image={img1}/>,
+        <SectionFiveItem
+          image={img2}/>
+      ]}/>
+    </>
+  )
+}
+
+
