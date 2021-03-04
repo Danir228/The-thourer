@@ -1,0 +1,29 @@
+.left_item_btn {
+    width: 74px;
+    height: 74px;
+    margin-bottom: 26px;
+
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 20px;
+}
+
+.left_item_title {
+    margin-bottom: 32px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.left_item_text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+

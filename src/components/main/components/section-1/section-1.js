@@ -7,14 +7,14 @@ import './section-1.css';
 function SectionFirst() {
     return (
         <div className="section-first d-flex">
-            <div className="section-first_left">
+            <div className="section-first_left hide">
                 <h1>Предоставьте клиентам возможность прогуляться по помещению онлайн</h1>
                 <p>Создавайте и распространяйте виртуальные туры по помещениям самостоятельно.
                 Все, что вам нужно - мобильный телефон и около часа свободного времени</p>
                 <AppStoreButton
                 textButton={'App Store'}/>
             </div>
-            <div className="section-first_right"></div>
+            <div className="section-first_right hide"></div>
         </div>
     )
 }

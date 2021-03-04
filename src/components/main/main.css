@@ -8,11 +8,20 @@
     max-width: 1218px;
 }
 
-.parent-selector {
-    position: relative;
-}
-
 .section-1 {
     margin-top: 20px;
     padding: 0;
+}
+
+.section-3 {
+    margin-top: 82px;
+}
+
+.section-4 {
+    margin-top: 198px;
+}
+
+.active {
+    background: #000;
+    color: #ffffff;
 }

@@ -1,0 +1,39 @@
+.sectionblock_item {
+    width: 100%;
+    max-width: 386px;
+    height: 360px;
+    padding: 40px 40px;
+
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 20px;
+}
+
+.sectionblock_item img {
+    width: 100%;
+    max-width: 80px;
+    margin-bottom: 40px;
+}
+
+.sectionblock_item h1 {
+    margin-bottom: 20px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.sectionblock_item p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.textupdate {
+    font-weight: bold;
+}
