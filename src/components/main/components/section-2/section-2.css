@@ -14,7 +14,7 @@
     position: absolute;
     width: 100%;
     min-height: 760px;
-    left: 0;
+    right: 460px;
     bottom: 0;
     background: url('section-2.png') no-repeat;
 }

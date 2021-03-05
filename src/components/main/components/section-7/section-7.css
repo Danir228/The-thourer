@@ -1,9 +1,6 @@
 .section-7_top {
-    width: 100%;
-    max-width: 1920px;
     height: 228px;
-    margin: 0 auto;
-    padding: 55px 0;
+    padding-top: 56px;
     text-align: center;
 
     font-family: Raleway;
@@ -11,12 +8,9 @@
     background-color: #000000;
 }
 
-.section-7_top .container {
-    margin: 0;
-    padding: 0;
-}
-
 .section-7_top_item {
+    margin-top: 56px;
+
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -24,6 +18,45 @@
 
 .section-7_top_item span {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 800;
     font-size: 36px;
+}
+
+.section-7_bottom {
+    width: 100%;
+    max-width: 1218px;
+    height: 171px;
+    margin: 55px auto;
+    display: flex;
+    justify-content: center;
+
+    font-family: Raleway;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.section-7_bottom div {
+    margin: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #000;
+}
+
+.section-7_bottom_number {
+    margin-bottom: 16px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 66px;
+}
+
+.section-7_bottom_text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
 }

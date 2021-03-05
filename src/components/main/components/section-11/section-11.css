@@ -1,0 +1,24 @@
+.section-11_item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.intel {
+    width: 100%;
+    max-width: 94px;
+    height: 100%;
+    max-height: 62px;
+    margin-top: 11px;
+}
+
+.canon {
+    width: 100%;
+    max-width: 136px;
+    height: 100%;
+    max-height: 28px;
+    margin-top: 25px;
+}
