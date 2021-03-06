@@ -1,55 +1,36 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-    Container,
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink
-  } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import AppStoreButton from '../buttons/appStore';
-import GooglePlayButton from '../buttons/googlePlay';
+import {Container} from 'reactstrap';
+import HeaderFrame from './components/header-frame';
+
+
+import logo from './logo.png';
 
 import './header.css';
 
 function Header() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => setIsOpen(!isOpen);
 
     return (
         <header className="header">
             <Container>
-                <Navbar className="navbar_menu" light expand="lg">
-                    <NavbarBrand href="/" className="logo"></NavbarBrand>
-                    <NavbarBrand href="/" className="language">EN</NavbarBrand>
-                    <NavbarToggler onClick={toggle} className="navbar_menu_btn" />
-                    <Collapse isOpen={isOpen} navbar>
-                        <Nav className="me-auto" navbar>
-                            <NavItem>
-                            <NavLink className="navbar_menu_link" href="/">Как это работает</NavLink>
-                            </NavItem>
-                            <NavItem>
-                            <NavLink className="navbar_menu_link" href="/">Тарифы</NavLink>
-                            </NavItem>
-                            <NavItem>
-                            <NavLink className="navbar_menu_link" href="/">FAQ</NavLink>
-                            </NavItem>
-                            <NavItem className="header_app_btn">
-                                <AppStoreButton
-                                textButton={'AppStore'}/>
-                            </NavItem>
-                            <NavItem className="header_google_btn">
-                                <GooglePlayButton
-                                textButton={'Google Play'}/>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
+                <div className="navbar_menu">
+                <div className="hamburger">
+                    <span className="hamburger-line"></span>
+                </div>
+                <div className="hamburger-close">
+                    <span className="hamburger-close_line"></span>
+                </div>
+                    <div className="navbar_menu_item">
+                        <a className="logo" href="/"><img src={logo} alt={logo}/></a>
+                        <ul className="navbar_links">
+                            <li className="navbar_link"><a href="/">Как это работает</a></li>
+                            <li className="navbar_link"><a href="/">Тарифы</a></li>
+                            <li className="navbar_link"><a href="/">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <a href="/" className="language">EN</a>
+                </div>
+                <HeaderFrame/>
             </Container>
         </header>
     )

@@ -18,18 +18,23 @@
     bottom: 0;
     background: url('section-2.png') no-repeat;
 }
+
 .section-second_right {
     width: 100%;
     max-width: 490px;
     max-height: 392px;
     margin-top: 140px;
-    margin-bottom: 92px;
+    margin-bottom: 140px;
+}
+
+.section-second_right .app-store_btn {
+    width: 260px;
 }
 
 .section-second_right h1 {
     margin-bottom: 32px;
 
-    font-family: Raleway;
+    font-family: Raleway Bold;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -39,7 +44,7 @@
 .section-second_right p {
     margin-bottom: 64px;
 
-    font-family: Montserrat;
+    font-family: Raleway Bold;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

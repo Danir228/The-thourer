@@ -4,15 +4,17 @@
     color: #ffffff;
     height: 48px;
     border-radius: 40px;
-    padding-right: 38px;
-    padding-left: 38px;
 
-    font-family: Raleway;
+    font-family: Raleway Regular;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+}
+
+.google-play_btn:hover {
+    opacity: 0.6;
 }
 
 .google-play_btn img {

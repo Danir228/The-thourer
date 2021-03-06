@@ -9,3 +9,7 @@
     background: #FFFFFF;
     border-radius: 50px;
 }
+
+.footer-social_link:hover {
+    opacity: 0.6;
+}

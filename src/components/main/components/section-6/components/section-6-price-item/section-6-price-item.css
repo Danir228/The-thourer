@@ -1,5 +1,55 @@
-.price_item_image {
+.price_image {
+    margin: 37px 71px 31px 71px;
     width: 100%;
     max-width: 140px;
     height: 106px;
+}
+
+.price {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.rate {
+    margin-top: 9px;
+    margin-bottom: 39px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    color: #000000;
+    opacity: 0.4;
+}
+
+.price_text {
+    margin: 0 49px 33px 40px;
+}
+
+.price_text li {
+    display: flex;
+    margin-bottom: 12px;
+    font-family: Raleway Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.fa-check {
+    color: #9188DB;
+}
+
+.fa-times {
+    color: #FA484F;
+}
+
+.price_text i {
+    margin-right: 16px;
 }

@@ -1,10 +1,10 @@
 import React from 'react';
-import SectionNineAccordion from './section-9-item';
+import SectionNineAccordion from './components/section-9-item';
 import SocialLink from '../../../buttons/social-link';
 
-import telegram from './telegram.png';
-import whatsap from './whatsap.png';
-import mail from './mail.png';
+import telegram from './components/images/telegram.png';
+import whatsap from './components/images/whatsap.png';
+import mail from './components/images/mail.png';
 
 import './section-9.css';
 

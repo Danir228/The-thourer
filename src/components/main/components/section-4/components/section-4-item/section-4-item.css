@@ -11,7 +11,7 @@
 .left_item_title {
     margin-bottom: 32px;
 
-    font-family: Raleway;
+    font-family: Raleway Bold;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -19,7 +19,7 @@
 }
 
 .left_item_text {
-    font-family: Raleway;
+    font-family: Raleway Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

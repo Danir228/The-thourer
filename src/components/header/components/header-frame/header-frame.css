@@ -1,0 +1,42 @@
+.header-frame {
+    position: absolute;
+    width: 252px;
+    height: 384px;
+    right: 1px;
+    top: 100px;
+    padding: 40px 40px;
+    z-index: 100;
+
+    border: 1px solid;
+    background: rgba(255, 255, 255);
+    border-image-source: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    border-radius: 10px;
+}
+
+.header-frame_link {
+    margin-bottom: 20px;
+}
+
+.header-frame a {
+    font-family: Raleway Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-frame .app-store_btn {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.header-frame .google-play_btn {
+    width: 150px;
+}
+
+.active-frame_link {
+    font-weight: bold;
+}

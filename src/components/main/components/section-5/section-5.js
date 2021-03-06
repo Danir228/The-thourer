@@ -2,8 +2,8 @@ import React from 'react';
 import Carousel from "../../../carousel";
 import SectionFiveItem from './components/section-5-item';
 
-import img1 from './images/1.png';
-import img2 from './images/2.png';
+import img1 from './components/images/1.png';
+import img2 from './components/images/2.png';
 
 import './section-5.css';
 

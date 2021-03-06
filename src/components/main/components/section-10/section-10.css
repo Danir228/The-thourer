@@ -18,7 +18,7 @@
 .section-10_title {
     margin-left: 100px;
 
-    font-family: Raleway;
+    font-family: Raleway Bold;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -34,7 +34,7 @@
     margin-bottom: 64px;
     margin-left: 100px;
 
-    font-family: Raleway;
+    font-family: Raleway Regular;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -47,11 +47,12 @@
 }
 
 .section-10_buttons .app-store_btn {
+    width: 180px;
     margin-right: 20px;
 }
 
 .section-10_buttons .google-play_btn {
-    opacity: 0.2;
+    width: 180px;
 }
 
 .section-10_item-2 {

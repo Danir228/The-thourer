@@ -1,7 +1,11 @@
 .section-first {
     min-height: 550px;
 
-    font-family: Raleway;
+    font-family: Raleway Regular;
+}
+
+.section-first .app-store_btn {
+    width: 180px;
 }
 
 .hide {
@@ -15,11 +19,12 @@
 }
 
 .section-first_left h1 {
+    font-family: Raleway ExtraBold;
     margin-top: 80px;
     margin-bottom: 32px;
 
 
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
     line-height: 130%;
 }
