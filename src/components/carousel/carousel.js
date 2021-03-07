@@ -4,16 +4,16 @@ import Carousel from "react-elastic-carousel";
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 }
+  { width: 768, itemsToShow: 4 },
+  { width: 1200, itemsToShow: 5 }
 ];
 
 export default function Slider({items}) {
   return (
     <>
-      <Carousel breakPoints={breakPoints} showArrows={false}>
+      <Carousel breakPoints={breakPoints} showArrows={false} className="custom_slider">
         {items.map((item, index) => (
-          <div key={index}>{item}</div>
+          <div className="slider_item" key={index}>{item}</div>
         ))}
       </Carousel>
     </>
