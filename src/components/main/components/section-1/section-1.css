@@ -1,46 +1,43 @@
-.section-first {
-    min-height: 550px;
-
-    font-family: Raleway Regular;
-}
-
 .section-first .app-store_btn {
     width: 180px;
 }
 
-.hide {
-    display: none;
-}
-
-@media(max-width: 1440px)  {
-    .hide {
-        display: block;
-    }
+.section-first_left {
+    width: 100%;
+    max-width: 801px;
+    margin-right: 40px;
 }
 
 .section-first_left h1 {
-    font-family: Raleway ExtraBold;
     margin-top: 80px;
     margin-bottom: 32px;
 
-
-    font-weight: 700;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
     font-size: 40px;
-    line-height: 130%;
+    line-height: 52px;
+}
+
+.section-first_left_bold {
+    font-weight: 800;
 }
 
 .section-first_left p {
     margin-bottom: 60px;
 
+    font-family: Raleway;
     font-weight: normal;
     font-size: 20px;
     line-height: 150%;
 }
 
 .section-first_right {
+    position: absolute;
+    right: 0;
     width: 100%;
-    max-width: 354px;
-    height: 510px;
+    max-width: 380px;
+    height: 550px;
     margin-bottom: 20px;
-    background: url('man.png') no-repeat;
+    background: url('man.svg') no-repeat;
 }

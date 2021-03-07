@@ -2,7 +2,7 @@ import React from 'react';
 import AppStoreButton from '../../../buttons/appStore';
 import GooglePlayButton from '../../../buttons/googlePlay';
 
-import telephone from './telephone.png';
+import telephone from './telephone.svg';
 
 import './section-10.css';
 

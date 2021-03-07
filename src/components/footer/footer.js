@@ -5,11 +5,12 @@ import FooterSocialLink from './components/footer-link';
 import AppStoreButton from '../buttons/appStore';
 import GooglePlayButton from '../buttons/googlePlay';
 
-import telegram from './components/images/telegram.png';
-import facebook from './components/images/facebook.png';
-import twitter from './components/images/twitter.png';
-import whatsap from './components/images/whatsap.png';
-import mail from './components/images/mail.png';
+import telegram from './components/images/telegram.svg';
+import facebook from './components/images/facebook.svg';
+import twitter from './components/images/twitter.svg';
+import whatsap from './components/images/whatsap.svg';
+import mail from './components/images/mail.svg';
+import apple from './components/images/apple.svg';
 
 import './footer.css';
 
@@ -47,7 +48,8 @@ export default class Footer extends Component {
                                 <h1>Скачать приложение</h1>
                                 <div className="item-4_btn">
                                     <AppStoreButton
-                                    textButton={'App Store'}/>
+                                    textButton={'App Store'}
+                                    customIcon={apple}/>
                                     <GooglePlayButton
                                     textButton={'Google Play'}/>
                                 </div>

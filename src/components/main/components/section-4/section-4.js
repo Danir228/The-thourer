@@ -3,7 +3,7 @@ import {Col, Row} from 'reactstrap';
 import SectionForItem from './components/section-4-item';
 import AppStoreButton from '../../../buttons/appStore';
 
-import iphone from './Iphone.png';
+import iphone from './Iphone.svg';
 
 import './section-4.css';
 

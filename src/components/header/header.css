@@ -11,7 +11,6 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
-    font-family: Raleway Bold;
 }
 
 .hamburger {
@@ -101,11 +100,17 @@
     margin-right: 100px;
 }
 
-.navbar_menu a {
+.navbar_links a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #000000;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .navbar_links {
@@ -128,10 +133,18 @@
 }
 
 .language {
+    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.language:hover {
+    color: #000000;
+    text-decoration: none;
 }
 
 @media (max-width: 1024px) {

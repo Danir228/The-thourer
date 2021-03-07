@@ -2,9 +2,9 @@ import React from 'react';
 import SectionNineAccordion from './components/section-9-item';
 import SocialLink from '../../../buttons/social-link';
 
-import telegram from './components/images/telegram.png';
-import whatsap from './components/images/whatsap.png';
-import mail from './components/images/mail.png';
+import telegram from './components/images/telegram.svg';
+import whatsap from './components/images/whatsap.svg';
+import mail from './components/images/mail.svg';
 
 import './section-9.css';
 

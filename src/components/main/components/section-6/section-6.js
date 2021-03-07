@@ -2,11 +2,10 @@ import React from 'react';
 import {Col, Row} from 'reactstrap';
 import PriceItem from './components/section-6-price-item';
 import WhenItem from './components/section-6-when-item';
-import Carousel from '../../../carousel';
-import block1 from './components/images/block1.png';
-import block2 from './components/images/block2.png';
-import block3 from './components/images/block3.png';
-import block4 from './components/images/block4.png';
+import block1 from './components/images/block1.svg';
+import block2 from './components/images/block2.svg';
+import block3 from './components/images/block3.svg';
+import block4 from './components/images/block4.svg';
 
 import './section-6.css';
 

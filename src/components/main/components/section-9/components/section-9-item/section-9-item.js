@@ -1,7 +1,7 @@
 import React from 'react';
 
-import up from './arrow-up.png';
-import down from './arrow-down.png';
+import up from './arrow-up.svg';
+import down from './arrow-down.svg';
 
 import './section-9-item.css';
 

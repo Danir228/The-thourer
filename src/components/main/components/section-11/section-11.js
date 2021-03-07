@@ -1,9 +1,9 @@
 import React from 'react';
 
-import intel from './images/intel.png';
-import canonback from './images/canonback.png';
-import canon from './images/canon.png';
-import sumsung from './images/sumsung.png';
+import intel from './images/intel.svg';
+import canonback from './images/canonback.svg';
+import canon from './images/canon.svg';
+import sumsung from './images/sumsung.svg';
 
 import './section-11.css';
 

@@ -15,7 +15,7 @@
 .rewiew_item p {
     margin: 0 40px 50px 40px;
 
-    font-family: Raleway Regular;
+    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -43,14 +43,18 @@
 }
 
 .rewiew_user span {
-    font-family: Raleway Regular;
+    font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
 }
 
-.fa-star {
+.rewiew_star img {
     margin-right: 4px;
     cursor: pointer;
+}
+
+.rewiew_star img:last-child {
+    margin-right: 0;
 }

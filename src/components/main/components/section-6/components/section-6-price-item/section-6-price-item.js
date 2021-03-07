@@ -2,7 +2,9 @@ import React from 'react';
 
 import './section-6-price-item.css';
 
-export default function PriceItem({image, price, rate, text1, text2, text3, text4, text5}) {
+export default function PriceItem({
+        image, price, rate, text1, text2, text3, text4, text5, check1, check2, check3
+    }) {
     return (
         <>
             <img className="price_image" src={image} alt={image}></img>

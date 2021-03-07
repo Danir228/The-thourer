@@ -11,7 +11,7 @@
     background: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
 
-    font-family: Raleway Regular;
+    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -31,9 +31,11 @@
 
 .percent {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 58px;
     height: 58px;
-    padding: 11px 11px;
     right: 0;
     top: 0;
     text-align: center;

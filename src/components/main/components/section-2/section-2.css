@@ -14,16 +14,14 @@
     position: absolute;
     width: 100%;
     min-height: 760px;
-    right: 460px;
-    bottom: 0;
-    background: url('section-2.png') no-repeat;
+    background: url('section-2.svg') no-repeat;
 }
 
 .section-second_right {
     width: 100%;
     max-width: 490px;
     max-height: 392px;
-    margin-top: 140px;
+    margin-top: 266px;
     margin-bottom: 140px;
 }
 
@@ -34,22 +32,20 @@
 .section-second_right h1 {
     margin-bottom: 32px;
 
-    font-family: Raleway Bold;
+    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
-    line-height: 130%;
+    line-height: 52px;
 }
 
 .section-second_right p {
     margin-bottom: 64px;
 
-    font-family: Raleway Bold;
-    font-size: 20px;
+    font-family: Raleway;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
+    font-size: 20px;
     line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
 }
 

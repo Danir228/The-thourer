@@ -4,12 +4,12 @@ import { Row, Col } from 'reactstrap';
 import SectionBlock from './components/sectionBlock';
 
 import './section-3.css';
-import block1 from './components/images/block1.png';
-import block2 from './components/images/block2.png';
-import block3 from './components/images/block3.png';
-import block4 from './components/images/block4.png';
-import block5 from './components/images/block5.png';
-import block6 from './components/images/block6.png';
+import block1 from './components/images/block1.svg';
+import block2 from './components/images/block2.svg';
+import block3 from './components/images/block3.svg';
+import block4 from './components/images/block4.svg';
+import block5 from './components/images/block5.svg';
+import block6 from './components/images/block6.svg';
 
 function SectionThird() {
 

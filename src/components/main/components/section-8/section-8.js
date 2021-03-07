@@ -3,8 +3,8 @@ import Rewiew from './components/section-8-item';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Slider from '../../../carousel';
 
-import man from './components/images/man.png';
-import mark from './components/images/mark.png';
+import man from './components/images/man.svg';
+import mark from './components/images/mark.svg';
 
 import './section-8.css';
 

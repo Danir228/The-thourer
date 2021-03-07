@@ -25,9 +25,7 @@ export default class Main extends Component {
                     </Container>
                 </div>
                 <div className="section-2">
-                    <Container>
-                        <SectionSecond/>
-                    </Container>
+                    <SectionSecond/>
                 </div>
                 <div className="section-3">
                     <Container>
