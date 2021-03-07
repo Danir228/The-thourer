@@ -3,6 +3,8 @@ import {Col, Row} from 'reactstrap';
 import SectionForItem from './components/section-4-item';
 import AppStoreButton from '../../../buttons/appStore';
 
+import iphone from './Iphone.png';
+
 import './section-4.css';
 
 function SectionFor() {
@@ -31,7 +33,9 @@ function SectionFor() {
                         </Col>
                     </Row>
                 </Col>
-                <Col className="section-4_image"></Col>
+                <Col className="section-4_image">
+                    <img src={iphone} alt={iphone}/>
+                </Col>
                 <Col>
                     <Row className="flex-column text-left">
                         <Col className="top_item">

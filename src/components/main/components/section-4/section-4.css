@@ -47,7 +47,8 @@
     height: 540px;
     margin-right: 55px;
     margin-left: 55px;
-    background: url('Iphone.png') no-repeat;
+    padding: 0;
+    text-align: center;
 }
 
 .section-4_bottom_item {

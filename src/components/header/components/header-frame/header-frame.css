@@ -1,4 +1,5 @@
 .header-frame {
+    display: none;
     position: absolute;
     width: 252px;
     height: 384px;
