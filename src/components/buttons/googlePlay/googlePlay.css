@@ -1,4 +1,7 @@
 .google-play_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     background: rgba(0, 0, 0, 1);
     color: #ffffff;

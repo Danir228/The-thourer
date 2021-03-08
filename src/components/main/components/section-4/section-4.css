@@ -38,6 +38,10 @@
     margin-top: 64px;
 }
 
+.section-4_item .col {
+    padding: 0;
+}
+
 .top_item {
     margin-bottom: 116px;
 }

@@ -6,15 +6,17 @@
 }
 
 .section-second_left {
-    width: 100%;
-    max-width: 1116px;
-}
-
-.section-second_left {
     position: absolute;
     width: 100%;
+    max-width: 1116px;
     min-height: 760px;
     background: url('section-2.svg') no-repeat;
+}
+
+@media (max-width: 1440px) {
+    .section-second_left {
+        left: -310px;
+    }
 }
 
 .section-second_right {

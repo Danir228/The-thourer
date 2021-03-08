@@ -38,7 +38,12 @@ function SectionSix() {
                     text2={'2 комнаты'}
                     text3={'4 панорамы'}
                     text4={'Нельзя делиться туром'}
-                    text5={'Аналитика поведения внутри модели'}/>
+                    text5={'Аналитика поведения внутри модели'}
+                    selector1={'fas fa-check'}
+                    selector2={'fas fa-check'}
+                    selector3={'fas fa-check'}
+                    selector4={'fas fa-times'}
+                    selector5={'fas fa-times'}/>
                 </Col>
                 <Col className="section-6_price_item">
                     <PriceItem
@@ -49,7 +54,12 @@ function SectionSix() {
                     text2={'∞ комнат'}
                     text3={'∞ панорам'}
                     text4={'Можно делиться туром'}
-                    text5={'Аналитика поведения внутри модели'}/>
+                    text5={'Аналитика поведения внутри модели'}
+                    selector1={'fas fa-check'}
+                    selector2={'fas fa-check'}
+                    selector3={'fas fa-check'}
+                    selector4={'fas fa-check'}
+                    selector5={'fas fa-times'}/>
                 </Col>
                 <Col className="section-6_price_item">
                     <PriceItem
@@ -60,7 +70,12 @@ function SectionSix() {
                     text2={'∞ комнат'}
                     text3={'∞ панорам'}
                     text4={'Можно делиться туром'}
-                    text5={'Аналитика поведения внутри модели'}/>
+                    text5={'Аналитика поведения внутри модели'}
+                    selector1={'fas fa-check'}
+                    selector2={'fas fa-check'}
+                    selector3={'fas fa-check'}
+                    selector4={'fas fa-check'}
+                    selector5={'fas fa-times'}/>
                 </Col>
                 <Col className="section-6_price_item">
                     <PriceItem
@@ -71,7 +86,12 @@ function SectionSix() {
                     text2={'∞ комнат'}
                     text3={'∞ панорам'}
                     text4={'Можно делиться туром'}
-                    text5={'Аналитика поведения внутри модели'}/>
+                    text5={'Аналитика поведения внутри модели'}
+                    selector1={'fas fa-check'}
+                    selector2={'fas fa-check'}
+                    selector3={'fas fa-check'}
+                    selector4={'fas fa-check'}
+                    selector5={'fas fa-check'}/>
                 </Col>
             </Row>
         </>

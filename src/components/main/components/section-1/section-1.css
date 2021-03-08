@@ -2,6 +2,10 @@
     width: 180px;
 }
 
+@media (max-width: 1440px) {
+
+}
+
 .section-first_left {
     width: 100%;
     max-width: 801px;

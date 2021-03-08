@@ -19,6 +19,8 @@
 }
 
 .left_item_text {
+    margin-bottom: 0;
+
     font-family: Raleway;
     font-style: normal;
     font-weight: normal;

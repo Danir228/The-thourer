@@ -4,7 +4,7 @@ import {Container} from 'reactstrap';
 import HeaderFrame from './components/header-frame';
 
 
-import logo from './logo.png';
+import logo from './logo.svg';
 
 import './header.css';
 
