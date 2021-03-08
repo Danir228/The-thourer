@@ -1,4 +1,6 @@
 .section-4_title h1 {
+    margin-bottom: 32px;
+
     font-family: Raleway;
     font-size: 48px;
     font-style: normal;
@@ -16,10 +18,6 @@
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
-}
-
-.section-4_title_item-1 {
-    margin-bottom: 32px;
 }
 
 .num_update {
@@ -75,3 +73,80 @@
 .bottom_text_item {
     font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+    .bottom_item {
+        max-width: 314px;
+        max-height: 185px;
+    }
+    .section-4_title h1 {
+        margin-bottom: 20px;
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .section-4_title h2 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .section-4_item {
+        margin-top: 44px;
+    }
+    .num_update {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bottom_item {
+        max-width: 314px;
+        max-height: 185px;
+    }
+    .section-4_title h1 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+    .section-4_title h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .num_update {
+        font-size: 28px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bottom_item {
+        max-width: 314px;
+        max-height: 185px;
+    }
+    .section-4_title h1 {
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .section-4_title h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .section-4_item {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 320px) {
+    .bottom_item {
+        max-width: 314px;
+        max-height: 185px;
+    }
+    .section-4_title h1 {
+        font-size: 21px;
+        line-height: 24px;
+    }
+    .section-4_title h2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+

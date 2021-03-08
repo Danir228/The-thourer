@@ -28,4 +28,58 @@
     line-height: 27px;
 }
 
+@media (max-width: 1024px) {
+    .left_item_btn {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 20px;
+    }
+    .left_item_title {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .left_item_text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left_item_btn {
+        width: 129px;
+        height: 65px;
+        margin-bottom: 45px;
+    }
+    .left_item_title {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .left_item_text {
+        margin-bottom: 25;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left_item_btn {
+        width: 100px;
+        height: 65px;
+    }
+}
+
+@media (max-width: 320px) {
+    .left_item_btn {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 20px;
+    }
+    .left_item_title {
+        margin-bottom: 12px;
+    }
+    .left_item_text {
+        margin-bottom: 16px;
+    }
+}
 
