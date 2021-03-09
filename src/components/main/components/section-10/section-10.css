@@ -13,11 +13,10 @@
     width: 100%;
     max-width: 660px;
     margin-top: 120px;
+    margin-left: 100px;
 }
 
 .section-10_title {
-    margin-left: 100px;
-
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
@@ -32,7 +31,6 @@
 .section-10_subtitle {
     margin-top: 32px;
     margin-bottom: 64px;
-    margin-left: 100px;
 
     font-family: Raleway;
     font-style: normal;
@@ -43,7 +41,6 @@
 
 .section-10_buttons {
     display: flex;
-    margin-left: 100px;
 }
 
 .section-10_buttons .app-store_btn {
@@ -60,3 +57,93 @@
     margin-top: 80px;
 }
 
+@media (max-width: 1024px) {
+    .section-10_item {
+        height: 389px;
+    }
+    .section-10_item-1 {
+        max-width: 439px;
+        height: 218px;
+        margin-top: 86px;
+        margin-left: 80px;
+    }
+    .section-10_title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-10_subtitle {
+        margin-top: 20px;
+        margin-bottom: 44px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .section-10_buttons .app-store_btn {
+        margin-right: 40px;
+    }
+    .section-10_item-2 {
+        overflow: hidden;
+    }
+    .section-10_item-2 img {
+        width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-10_item-1 {
+        max-width: 528px;
+        height: 199px;
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+    .section-10_title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .section-10_buttons .app-store_btn {
+        margin-right: 20px;
+    }
+    .section-10_item-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-10_item-1 {
+        max-width: 380px;
+        height: 200px;
+        margin: 40px 30px;
+    }
+
+    .section-10_title {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .section-10_subtitle {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-10_item-1 {
+        max-width: 280px;
+        height: 376px;
+        margin: 30px 30px;
+    }
+
+    .section-10_subtitle {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .section-10_buttons {
+        flex-direction: column;
+    }
+
+    .section-10_buttons .app-store_btn {
+        margin-bottom: 20px;
+    }
+}

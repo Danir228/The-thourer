@@ -11,3 +11,26 @@
 
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .section-5_title {
+        margin-bottom: 44px;
+        font-size: 32px;
+        line-height: 41px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-5_title {
+        margin-bottom: 32px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-5_title {
+        font-size: 21px;
+        line-height: 27px;
+    }
+}

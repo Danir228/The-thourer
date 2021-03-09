@@ -1,6 +1,9 @@
-.whenitem_month {
+.whenitem_month, .whenitem_quarter, .whenitem_year {
+    position: relative;
     margin-right: 30px;
     padding-top: 33px;
+    width: 199px;
+    height: 97px;
 }
 
 .whenitem_style {
@@ -21,14 +24,6 @@
     text-align: center;
 }
 
-.whenitem_quarter, .whenitem_year {
-    position: relative;
-    margin-right: 30px;
-    width: 199px;
-    height: 97px;
-    padding-top: 33px;
-}
-
 .percent {
     position: absolute;
     display: flex;
@@ -42,4 +37,69 @@
 
     background: #F8E3B8;
     border-radius: 22px;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 218px;
+        height: 86px;
+    }
+}
+
+@media (max-width: 768px) {
+    .whenitem {
+        justify-content: center;
+    }
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 211px;
+        height: 86px;
+        margin-right: 20px;
+    }
+    .whenitem_month {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 142px;
+        height: 75px;
+    }
+    .whenitem_style {
+        display: flex;
+        justify-content: center;
+        width: 133px;
+        height: 47px;
+        margin-right: 12px;
+        text-align: center;
+    }
+    .percent {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 320px) {
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 280px;
+        height: 54px;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .whenitem_style {
+        width: 260px;
+        height: 54px;
+    }
+    .whenitem_month .whenitem_style {
+        width: 280px;
+    }
+    .whenitem {
+        flex-direction: column;
+    }
+    .percent {
+        top: 25px;
+    }
 }

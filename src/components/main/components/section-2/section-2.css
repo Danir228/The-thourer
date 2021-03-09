@@ -10,6 +10,7 @@
     width: 100%;
     max-width: 1116px;
     min-height: 760px;
+    left: -70px;
     background: url('section-2.svg') no-repeat;
     background-size: contain;
 }

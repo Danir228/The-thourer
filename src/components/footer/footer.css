@@ -8,6 +8,7 @@
 }
 
 .footer_back-1 {
+    position: relative;
     width: 100%;
     height: 650px;
     background: url('./components/images/vector1.svg') no-repeat center;
@@ -17,7 +18,7 @@
     position: absolute;
     top: 72px;
     width: 100%;
-    height: 581px;
+    height: 580px;
     background: url('./components/images/vector2.svg') no-repeat center;
 
     color: #F1F1F1;
@@ -95,5 +96,114 @@
 
 .item-5_links .footer-social_link {
     border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+    .item-4 h1 {
+        display: none;
+    }
+    .item-4_btn {
+        bottom: 40px;
+        position: absolute;
+        flex-direction: inherit;
+        right: 15px;
+    }
+    .item-4 .google-play_btn {
+        margin-top: 0;
+    }
+    .item-4 .app-store_btn {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_back-2 .container {
+        position: relative;
+        margin-top: 191px;
+        height: 331px;
+        justify-content: left!important;
+    }
+    .item-2{
+        position: absolute;
+        top: 172px;
+    }
+    .item-3{
+        position: absolute;
+        right: 15px;
+        top: 172px;
+        left: 276px;
+    }
+    .item-4_btn {
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        right: 15px;
+    }
+    .item-5{
+        margin-left: 95px;
+    }
+    .item-5 h1 {
+        margin-bottom: 20px;
+    }
+    .item-4 .app-store_btn {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_back-2 .container {
+        margin-top: 170px;
+        height: 404px;
+    }
+    .item-2{
+        top: 153px;
+    }
+    .item-3{
+        top: 153px;
+        left: 243px;
+    }
+    .item-4 {
+        position: absolute;
+        width: 100%;
+        bottom: 60px;
+        left: 0;
+    }
+    .item-5{
+        margin-left: 60px;
+    }
+    .item-4_btn {
+        flex-direction: inherit;
+        left: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer_back-2 .container {
+        flex-direction: column;
+        margin-top: 170px;
+        height: 700px;
+        background: #000;
+    }
+    .item-2{
+        position: inherit;
+        margin-top: 44px;
+        top: 0;
+    }
+    .item-3{
+        position: inherit;
+        margin-top: 44px;
+        top: 0;
+        left: 0;
+    }
+    .item-4 {
+        position: absolute;
+        width: 100%;
+        bottom: 60px;
+        left: 0;
+    }
+    .item-5{
+        margin-left: 0;
+        margin-top: 44px;
+    }
 }
 

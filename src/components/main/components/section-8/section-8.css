@@ -11,4 +11,38 @@
     margin-top: 64px;
 }
 
+@media (max-width: 1024px) {
+    .section-8_item h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .section-8_item_body {
+        margin-top: 44px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-8_item h1 {
+        font-size: 32px;
+        line-height: 37px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-8_item h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .section-8_item_body {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-8_item h1 {
+        font-size: 21px;
+        line-height: 24px;
+    }
+}
+
 

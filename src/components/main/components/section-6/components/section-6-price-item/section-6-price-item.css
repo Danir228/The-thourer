@@ -1,8 +1,8 @@
 .price_image {
-    margin: 37px 71px 31px 71px;
+    /* margin: 20px 71px 14px 71px; */
     width: 100%;
     max-width: 140px;
-    height: 106px;
+    height: 140px;
 }
 
 .price {
@@ -29,7 +29,7 @@
 }
 
 .price_text {
-    margin: 0 49px 33px 40px;
+    margin-left: 20px;
 }
 
 .price_text li {
@@ -52,4 +52,35 @@
 
 .price_text i {
     margin-right: 16px;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+    .price {
+        font-size: 26px;
+        line-height: 31px;
+    }
+    .price_text {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .price {
+        font-size: 26px;
+        line-height: 31px;
+    }
+    .price_text {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 320px) {
+
 }

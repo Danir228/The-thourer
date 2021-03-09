@@ -15,7 +15,6 @@
 }
 
 .accordion_title span {
-    margin-top: 9px;
     margin-left: 30px;
     font-family: Raleway;
     font-style: normal;
@@ -60,4 +59,36 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 29px;
+}
+
+@media (max-width: 480px) {
+    .accordion_title span {
+        margin-left: 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .accordion_body {
+        padding: 14px 20px 14px 14px;
+        font-size: 18px;
+        line-height: 29px;
+    }
+}
+
+@media (max-width: 320px) {
+    .accordion_title span {
+        margin-left: 22px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .accordion_body {
+        padding: 12px 12px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .arrow_up, .arrow_down {
+        max-width: 38px;
+        max-height: 38px;
+        padding: 9px 9px;
+    }
 }
