@@ -44,12 +44,14 @@
 }
 
 .section-10_buttons .app-store_btn {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
     margin-right: 20px;
 }
 
 .section-10_buttons .google-play_btn {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
 }
 
 .section-10_item-2 {
@@ -124,6 +126,9 @@
         margin-bottom: 32px;
         font-size: 16px;
         line-height: 24px;
+    }
+    .section-10_buttons .app-store_btn {
+        margin-right: 10px;
     }
 }
 

@@ -1,7 +1,7 @@
 .sectionblock_item {
     width: 100%;
     max-width: 386px;
-    height: 360px;
+    height: 100%;
     padding: 40px 34px 30px 40px;
 
     background: rgba(255, 255, 255, 0.4);
@@ -47,14 +47,19 @@
 
 @media (max-width: 768px) {
     .sectionblock_item {
-        height: 342px;
+        max-width: 354px;
         padding: 30px 30px;
+    }
+}
+
+@media (max-width: 554px) {
+    .sectionblock_item {
+        padding: 15px 15px;
     }
 }
 
 @media (max-width: 480px) {
     .sectionblock_item {
-        height: 323px;
         padding: 20px 20px;
     }
 
@@ -75,7 +80,7 @@
 
 @media (max-width: 320px) {
     .sectionblock_item {
-        max-height: 193px;
+        max-width: 100%;
         padding: 16px 16px;
     }
 

@@ -6,48 +6,61 @@
 
 .section-1 {
     margin-top: 20px;
+    height: 100%;
+}
+
+.section-3 {
+    height: 100%;
 }
 
 .section-2 {
     position: relative;
-    height: 801px;
+    height: 100%;
+    max-height: 801px;
     margin-bottom: 90px;
 }
 
 .section-4 {
+    height: 100%;
     margin-top: 198px;
 }
 
 .section-5 {
+    height: 100%;
     margin-top: 140px;
     justify-content: center;
 }
 
 .section-6 {
+    height: 100%;
     margin-top: 140px;
 }
 
 .section-7 {
     position: relative;
-    height: 329px;
+    height: 100%;
     margin-top: 134px;
 }
 
 .section-8 {
+    height: 100%;
     margin-top: 140px;
     margin-bottom: 140px;
 }
 
 .section-8 .container {
     padding: 0;
+    height: 100%;
 }
 
 .section-10 {
     margin-top: 145px;
+    height: 100%;
 }
 
 .section-11 {
     margin-top: 145px;
+    height: 100%;
 }
 
 .active {
@@ -70,7 +83,7 @@
 
 @media (max-width: 1024px) {
     .section-2 {
-        height: 507px;
+        height: 503px;
         margin-bottom: 120px;
         margin-top: 189px;
     }
@@ -97,7 +110,6 @@
 
 @media (max-width: 768px) {
     .section-2 {
-        height: 403px;
         margin-bottom: 100px;
         margin-top: 86px;
     }
@@ -112,11 +124,16 @@
     }
     .section-7 {
         margin-top: 100px;
-        height: 292px;
     }
     .section-8 {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 615px) {
+    .section-2 {
+        margin-top: 200px;
     }
 }
 
@@ -126,7 +143,7 @@
         height: 334px;
     }
     .section-2 {
-        height: 251px;
+        height: 275px;
         margin-bottom: 80px;
         margin-top: 80px;
     }
@@ -149,6 +166,24 @@
     }
     .section-11 {
         margin-top: 64px;
+    }
+}
+
+@media (max-width: 370px) {
+    .section-1 {
+        height: 359px;
+    }
+}
+
+@media (max-width: 360px) {
+    .section-1 {
+        height: 390px;
+    }
+}
+
+@media (max-width: 325px) {
+    .section-1 {
+        height: 424px;
     }
 }
 

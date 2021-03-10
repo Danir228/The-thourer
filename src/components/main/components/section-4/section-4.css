@@ -1,3 +1,7 @@
+.top_item, .bottom_item {
+    width: 100%;
+}
+
 .section-4_title h1 {
     margin-bottom: 32px;
 
@@ -36,10 +40,6 @@
     margin-top: 64px;
 }
 
-.section-4_item .col {
-    padding: 0;
-}
-
 .top_item {
     margin-bottom: 116px;
 }
@@ -47,10 +47,14 @@
 .section-4_image {
     width: 100%;
     height: 540px;
-    margin-right: 55px;
-    margin-left: 55px;
+    min-width: 240px;
     padding: 0;
     text-align: center;
+    margin: 0 20px;
+}
+
+.section-4_image img {
+    height: 100%;
 }
 
 .section-4_bottom_item {
@@ -75,10 +79,6 @@
 }
 
 @media (max-width: 1024px) {
-    .bottom_item {
-        max-width: 314px;
-        max-height: 185px;
-    }
     .section-4_title h1 {
         margin-bottom: 20px;
         font-size: 40px;

@@ -79,6 +79,18 @@
     }
 }
 
+@media (max-width: 960px) {
+    .section-first_left {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 860px) {
+    .section-first_left {
+        max-width: 530px;
+    }
+}
+
 @media (max-width: 768px) {
     .section-first_left {
         max-width: 531px;
@@ -99,6 +111,18 @@
     .section-first_left p {
         font-size: 15px;
         line-height: 22px;
+    }
+}
+
+@media (max-width: 715px) {
+    .section-first_left {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 615px) {
+    .section-first_left {
+        max-width: 315px;
     }
 }
 
