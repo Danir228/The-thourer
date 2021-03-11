@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.62e62d45.chunk.css",
-    "main.js": "/static/js/main.f5b549b3.chunk.js",
-    "main.js.map": "/static/js/main.f5b549b3.chunk.js.map",
+    "main.css": "/static/css/main.96d0e968.chunk.css",
+    "main.js": "/static/js/main.19956984.chunk.js",
+    "main.js.map": "/static/js/main.19956984.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b423a666.js",
     "runtime-main.js.map": "/static/js/runtime-main.b423a666.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
-    "static/js/2.81c0ab22.chunk.js": "/static/js/2.81c0ab22.chunk.js",
-    "static/js/2.81c0ab22.chunk.js.map": "/static/js/2.81c0ab22.chunk.js.map",
+    "static/js/2.9390022b.chunk.js": "/static/js/2.9390022b.chunk.js",
+    "static/js/2.9390022b.chunk.js.map": "/static/js/2.9390022b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.62e62d45.chunk.css.map": "/static/css/main.62e62d45.chunk.css.map",
-    "static/js/2.81c0ab22.chunk.js.LICENSE.txt": "/static/js/2.81c0ab22.chunk.js.LICENSE.txt",
+    "static/css/main.96d0e968.chunk.css.map": "/static/css/main.96d0e968.chunk.css.map",
+    "static/js/2.9390022b.chunk.js.LICENSE.txt": "/static/js/2.9390022b.chunk.js.LICENSE.txt",
     "static/media/1.c4216c91.png": "/static/media/1.c4216c91.png",
     "static/media/2.2a235157.png": "/static/media/2.2a235157.png",
     "static/media/Device.22a7efe3.png": "/static/media/Device.22a7efe3.png",
+    "static/media/adress.d24f3f6e.png": "/static/media/adress.d24f3f6e.png",
     "static/media/apple.9ca3c6db.svg": "/static/media/apple.9ca3c6db.svg",
     "static/media/apple.ddc3b029.svg": "/static/media/apple.ddc3b029.svg",
+    "static/media/applestoreqc.9742ba41.png": "/static/media/applestoreqc.9742ba41.png",
     "static/media/arrow-down.bb06f378.svg": "/static/media/arrow-down.bb06f378.svg",
     "static/media/arrow-up.9fe5abac.svg": "/static/media/arrow-up.9fe5abac.svg",
     "static/media/block1.3272d457.svg": "/static/media/block1.3272d457.svg",
@@ -54,8 +56,8 @@
   "entrypoints": [
     "static/js/runtime-main.b423a666.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.81c0ab22.chunk.js",
-    "static/css/main.62e62d45.chunk.css",
-    "static/js/main.f5b549b3.chunk.js"
+    "static/js/2.9390022b.chunk.js",
+    "static/css/main.96d0e968.chunk.css",
+    "static/js/main.19956984.chunk.js"
   ]
 }

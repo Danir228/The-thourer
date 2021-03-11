@@ -12,6 +12,7 @@ import SectionEight from './components/section-8';
 import SectionNine from './components/section-9';
 import SectionTen from './components/section-10';
 import SectionEleven from './components/section-11';
+import ScrollTop from '../scroll-top';
 
 import './main.css';
 
@@ -69,6 +70,7 @@ export default class Main extends Component {
                     <Container>
                         <SectionEleven/>
                     </Container>
+                    <ScrollTop/>
                 </div>
             </main>
         )

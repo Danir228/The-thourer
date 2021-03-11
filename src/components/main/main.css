@@ -53,12 +53,17 @@
     height: 100%;
 }
 
+.section-9 .container {
+    position: relative;
+}
+
 .section-10 {
     margin-top: 145px;
     height: 100%;
 }
 
 .section-11 {
+    position: relative;
     margin-top: 145px;
     height: 100%;
 }
@@ -128,6 +133,9 @@
     .section-8 {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+    .section-10 {
+        height: 319px;
     }
 }
 

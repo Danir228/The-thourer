@@ -1,0 +1,132 @@
+.mob_item_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 32px;
+}
+
+.mob_item_top_item {
+    display: none!important;
+}
+
+.show {
+    display: block!important;
+}
+
+.mob_item_top .section-4_content {
+    display: flex;
+    width: 100%;
+    max-width: 428px;
+    padding: 20px 9px 20px 20px;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+}
+
+.mob_item_top .section-4_content .num_update {
+    font-size: 28px!important;
+    line-height: 42px!important;
+}
+
+.mob_item_top .section-4_content .left_item_btn {
+    width: 80px;
+    height: 80px;
+    padding: 20px 35px;
+    margin-right: 20px;
+
+    color: #FFFFFF;
+    background-color: #000;
+}
+
+.mob_item_body {
+    justify-content: center;
+}
+
+.mob_item_body .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.mob_item_image {
+    max-width: 240px;
+    max-height: 483px;
+}
+
+.mob_item_image img {
+    height: 100%;
+}
+
+.mob_item_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 129px;
+    margin-left: 60px;
+}
+
+.mob_item_btn div {
+    margin-bottom: 45px;
+}
+
+.mob_item_btn div:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+    .mob_item_top {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .mob_item_top .col {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .mob_item_btn {
+        max-width: 100px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    .mob_item_top_item .left_item_body {
+        max-width: 250px;
+    }
+    .mob_item_btn {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .mob_item_top_item .left_item_body {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 340px) {
+    .mob_item_top .section-4_content {
+        padding: 10px 10px 10px 10px;
+    }
+    .mob_item_btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .mob_item_top {
+        margin-top: 100px;
+    }
+    .mob_item_btn {
+        position: absolute;
+        flex-direction: row;
+        top: 32px;
+        max-width: 279px;
+        justify-content: space-between;
+    }
+
+    .mob_item_btn div {
+        margin-bottom: 0;
+    }
+}

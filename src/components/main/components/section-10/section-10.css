@@ -93,7 +93,7 @@
 @media (max-width: 768px) {
     .section-10_item-1 {
         max-width: 528px;
-        height: 199px;
+        height: 260px;
         margin-top: 60px;
         margin-left: 60px;
     }
@@ -109,11 +109,22 @@
     }
 }
 
+@media (max-width: 530px) {
+    .section-10_item-1 {
+        height: 280px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}
+
 @media (max-width: 480px) {
+    .section-10_item {
+        height: 270px;
+    }
     .section-10_item-1 {
         max-width: 380px;
         height: 200px;
-        margin: 40px 30px;
+        margin: 30px 30px;
     }
 
     .section-10_title {
@@ -132,10 +143,29 @@
     }
 }
 
+@media (max-width: 420px) {
+    .section-10_item {
+        height: 290px;
+    }
+    .section-10_item-1 {
+        margin: 30px 30px;
+    }
+}
+
+@media (max-width: 365px) {
+    .section-10_item-1 {
+        height: 240px;
+        margin: 20px 10px;
+    }
+}
+
 @media (max-width: 320px) {
+    .section-10_item {
+        height: 350px;
+    }
     .section-10_item-1 {
         max-width: 280px;
-        height: 376px;
+        height: 315px;
         margin: 30px 30px;
     }
 

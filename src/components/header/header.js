@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HamburgerMenu from 'react-hamburger-menu';
 import {Container} from 'reactstrap';
 import HeaderFrame from './components/header-frame';
-
+import AppStoreButton from '../buttons/appStore';
+import GooglePlayButton from '../buttons/googlePlay';
 
 import logo from './logo.svg';
 
@@ -52,7 +53,13 @@ export default class Header extends Component {
                                 <li className="navbar_link"><a href="/">FAQ</a></li>
                             </ul>
                         </div>
-                        <a href="/" className="language">EN</a>
+                        <div className="header_btn d-flex">
+                            <AppStoreButton
+                            textButton={'App Store'}/>
+                            <GooglePlayButton
+                            textButton={'Google Play'}/>
+                            <a href="/" className="language">EN</a>
+                        </div>
                     </div>
                     <HeaderFrame
                     isHide={this.state.hide}/>

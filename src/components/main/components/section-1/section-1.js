@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppStoreButton from '../../../buttons/appStore';
+import Modal from '../../../modal';
 
 import './section-1.css';
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Col, Row} from 'reactstrap';
 import SectionForItem from './components/section-4-item';
+import SectionForMobItem from './components/section-4-mob-item';
 import AppStoreButton from '../../../buttons/appStore';
 
 import device from './Device.png';
@@ -52,6 +53,9 @@ function SectionFor() {
                         </Col>
                     </Row>
                 </Col>
+            </Row>
+            <Row className="section-4-mob_item">
+                <SectionForMobItem/>
             </Row>
             <Row className="section-4_bottom_item">
                 <Col className="d-flex justify-content-around">

@@ -1,7 +1,9 @@
 import React from 'react';
 import SectionNineAccordion from './components/section-9-item';
 import SocialLink from '../../../buttons/social-link';
+import Modal from '../../../modal';
 
+import adress from './adress.png';
 import telegram from './components/images/telegram.svg';
 import whatsap from './components/images/whatsap.svg';
 import mail from './components/images/mail.svg';
@@ -10,7 +12,9 @@ import './section-9.css';
 
 export default function SectionNine({}) {
     return (
-        <>
+        <div className="section-9_item">
+            <Modal
+            image={adress}/>
             <h1 className="section-9_title">Часто задаваемые <span className="textupdate">вопросы</span></h1>
             <SectionNineAccordion
             title={'Как я могу делиться созданными турами?'}
@@ -49,6 +53,6 @@ export default function SectionNine({}) {
                 <SocialLink
                 image={mail}/>
             </div>
-        </>
+        </div>
     )
 }

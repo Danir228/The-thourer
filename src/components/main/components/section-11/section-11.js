@@ -31,7 +31,6 @@ export default function SectionEleven() {
                     className="sumsung"/>
                 ]}/>
             </div>
-
         </>
     )
 }
