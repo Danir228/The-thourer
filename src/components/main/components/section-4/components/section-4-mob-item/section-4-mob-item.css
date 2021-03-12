@@ -19,7 +19,6 @@
     width: 100%;
     max-width: 428px;
     padding: 20px 9px 20px 20px;
-    align-items: center;
 
     background: rgba(255, 255, 255, 0.4);
     border-radius: 16px;
@@ -41,6 +40,7 @@
 }
 
 .mob_item_body {
+    flex: 0 0 100%;
     justify-content: center;
 }
 
@@ -76,6 +76,9 @@
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
+    .mob_item_top .section-4_content {
+        max-width: 440px;
+    }
     .mob_item_top {
         margin-right: 5px;
         margin-left: 5px;
@@ -90,33 +93,15 @@
     }
 }
 
-/* @media (max-width: 430px) {
-    .mob_item_top_item .left_item_body {
-        max-width: 250px;
-    }
-    .mob_item_btn {
-        margin-left: 10px;
-    }
-}
-
-@media (max-width: 380px) {
-    .mob_item_top_item .left_item_body {
-        max-width: 200px;
-    }
-}
-
-@media (max-width: 340px) {
-    .mob_item_top .section-4_content {
-        padding: 10px 10px 10px 10px;
-    }
-    .mob_item_btn {
-        margin-left: 0;
-    }
-} */
-
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .mob_item_top {
         margin-top: 100px;
+    }
+    .mob_item_top .section-4_content {
+        max-width: 100%;
+    }
+    .mob_item_top .left_item_btn {
+        display: none;
     }
     .mob_item_btn {
         position: absolute;
@@ -124,6 +109,7 @@
         top: 32px;
         max-width: 279px;
         justify-content: space-between;
+        margin-left: 0;
     }
 
     .mob_item_btn div {

@@ -58,8 +58,8 @@
     }
 
     .section-first_right {
-        max-width: 303px;
-        max-height: 440px;
+        max-width: 400px;
+        max-height: 550px;
     }
 
     .section-first_left h1 {
@@ -98,6 +98,7 @@
         margin-right: 0;
     }
     .section-first_right {
+        right: -14px;
         max-width: 320px;
         max-height: 440px;
         margin-top: 31px;
@@ -148,7 +149,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .section-first_left {
         margin-right: 0;
     }

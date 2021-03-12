@@ -21,37 +21,37 @@ function SectionThird() {
                 </Col>
             </Row>
             <Row className="section-3_item-1">
-                <Col xs={12} sm={6} md={4} lg={4} xl={4} className="mb-3">
+                <Col className="mb-3">
                 <SectionBlock
                     image={block1}
                     title={'Доступно каждому'}
                     text={`Не требуется никакого особого оборудования или программного обеспечения. Все, что вам нужно – <span class="textupdate">мобильный телефон</span>`}/>
                 </Col>
-                <Col xs={12} sm={6} md={4} lg={4} xl={4} className="mb-3">
+                <Col className="mb-3">
                     <SectionBlock
                     image={block2}
                     title={'Эффект присутствия'}
                     text={`Предоставляет потенциальным клиентам возможность <span class="textupdate">побывать в помещении через экран</span> гаджета`}/>
                 </Col>
-                <Col xs={12} sm={6} md={4} lg={4} xl={4} className="mb-3">
+                <Col className="mb-3">
                     <SectionBlock
                     image={block3}
                     title={'Экономия времени'}
                     text={`Не тратьте свои <span class="textupdate">силы</span> и <span class="textupdate">время</span> на дорогу и показ объекта, чтобы помочь клиенту получить <span class="textupdate">полное представление</span> о помещении`}/>
                 </Col>
-                <Col xs={12} sm={6} md={4} lg={4} xl={4} className="mb-3">
+                <Col className="mb-3">
                     <SectionBlock
                     image={block4}
                     title={'Скорость создания'}
                     text={`Получите готовый виртуальный тур <span class="textupdate">в течение часа</span> после старта съемки`}/>
                 </Col>
-                <Col xs={12} sm={6} md={4} lg={4} xl={4} className="mb-3">
+                <Col className="mb-3">
                     <SectionBlock
                     image={block5}
                     title={'Уникальное предложение'}
                     text={`Привлекает внимание клиента, <span class="textupdate">выделяя объявление</span> из общей массы`}/>
                 </Col>
-                <Col xs={12} sm={6} md={4} lg={4} xl={4} className="mb-3">
+                <Col className="mb-3">
                     <SectionBlock
                     image={block6}
                     title={'Простое использование'}
