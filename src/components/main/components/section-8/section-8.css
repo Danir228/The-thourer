@@ -11,7 +11,7 @@
     margin-top: 64px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     .section-8_item h1 {
         font-size: 40px;
         line-height: 46px;
@@ -21,14 +21,14 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .section-8_item h1 {
         font-size: 32px;
         line-height: 37px;
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .section-8_item h1 {
         font-size: 28px;
         line-height: 32px;
@@ -38,7 +38,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .section-8_item h1 {
         font-size: 21px;
         line-height: 24px;

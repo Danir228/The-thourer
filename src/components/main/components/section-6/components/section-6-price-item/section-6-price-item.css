@@ -54,10 +54,7 @@
     margin-right: 16px;
 }
 
-@media (max-width: 1440px) {
-}
-
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     .price {
         font-size: 26px;
         line-height: 31px;
@@ -67,7 +64,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .price {
         font-size: 26px;
         line-height: 31px;
@@ -75,12 +72,4 @@
     .price_text {
         margin-left: 10px;
     }
-}
-
-@media (max-width: 480px) {
-
-}
-
-@media (max-width: 320px) {
-
 }

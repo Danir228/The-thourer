@@ -75,7 +75,7 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .mob_item_top {
         margin-right: 5px;
         margin-left: 5px;
@@ -90,7 +90,7 @@
     }
 }
 
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
     .mob_item_top_item .left_item_body {
         max-width: 250px;
     }
@@ -112,9 +112,9 @@
     .mob_item_btn {
         margin-left: 0;
     }
-}
+} */
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .mob_item_top {
         margin-top: 100px;
     }

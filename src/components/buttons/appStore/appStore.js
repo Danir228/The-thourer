@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import apple from './apple.svg';
 
 import './appStore.css';
 
-const AppStoreButton = ({textButton, customIcon}) => {
-    const src = customIcon === undefined ? apple : customIcon;
-    return (
-        <>
-            <button className="app-store_btn"><img src={src} alt={apple} /><span>{textButton}</span></button>
-        </>
-    )
+export default class AppStoreButton extends Component {
+    render() {
+        const icon = this.props.customIcon;
+        const src = icon === undefined ? apple : icon;
+        return (
+            <>
+                <button className="app-store_btn" >
+                    <img src={src} alt={apple} /><span>{this.props.textButton}</span>
+                </button>
+            </>
+        )
+    }
 }
-
-export default AppStoreButton;

@@ -61,7 +61,7 @@
     line-height: 29px;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .accordion_title span {
         margin-left: 16px;
         font-size: 16px;
@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .accordion_title span {
         margin-left: 22px;
         font-size: 14px;

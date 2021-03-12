@@ -42,11 +42,7 @@
     border-radius: 20px;
 }
 
-@media (max-width: 1440px) {
-
-}
-
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     .section-6_price_item {
         max-width: 231px;
     }
@@ -59,7 +55,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .section-6_price_item {
         max-width: 354px;
     }
@@ -75,7 +71,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .section-6_price_item {
         max-width: 280px;
     }
@@ -98,7 +94,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .section-6_price_item {
         max-width: 231px;
     }

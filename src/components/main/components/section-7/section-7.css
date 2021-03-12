@@ -59,7 +59,7 @@
     line-height: 28px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     .section-7_bottom_number {
         font-size: 48px;
         line-height: 58px;
@@ -75,7 +75,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .section-7_top {
         padding-top: 47px;
         height: 200px;
@@ -106,7 +106,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .section-7_top {
         padding-top: 26px;
         height: 148px;
@@ -137,7 +137,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .section-7_top {
         padding-top: 13px;
         height: 58px;
