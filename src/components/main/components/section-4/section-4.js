@@ -58,7 +58,7 @@ function SectionFor() {
                 <SectionForMobItem/>
             </Row>
             <Row className="section-4_bottom_item">
-                <Col className="d-flex justify-content-around">
+                <Col className="section-4_bottom_item_body d-flex justify-content-around">
                     <p className="bottom_text">Создайте свой виртуальный тур прямо <span className="bottom_text_item">сейчас</span></p>
                     <AppStoreButton
                     textButton={'Скачать приложение'}/>

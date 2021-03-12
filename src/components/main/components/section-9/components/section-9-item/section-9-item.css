@@ -28,7 +28,6 @@
     max-width: 48px;
     height: 100%;
     max-height: 48px;
-    margin-left: 20px;
     padding: 12px 12px;
     cursor: pointer;
 
@@ -74,7 +73,13 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
+    .accordion_title {
+        display: flex;
+        align-items: center;
+        padding-top: 26px;
+        padding-bottom: 20px;
+    }
     .accordion_title span {
         margin-left: 22px;
         font-size: 14px;

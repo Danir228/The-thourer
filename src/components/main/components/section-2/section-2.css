@@ -24,8 +24,8 @@
 }
 
 .section-second_right .app-store_btn {
-    width: 100%;
-    max-width: 260px;
+    width: 260px;
+    height: 64px;
 }
 
 .section-second_right h1 {

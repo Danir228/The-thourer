@@ -10,26 +10,12 @@
     border-radius: 50px;
 }
 
-/* @media (max-width: 580px) {
-    .footer-social_link {
-        width: 34px;
-        height: 34px;
-    }
-} */
-
 @media (min-width: 480px) and (max-width: 768px) {
     .footer-social_link {
         width: 44px;
         height: 44px;
     }
 }
-
-/* @media (max-width: 380px) {
-    .footer-social_link {
-        width: 34px;
-        height: 34px;
-    }
-} */
 
 .footer-social_link:hover {
     opacity: 0.6;

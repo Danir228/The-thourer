@@ -160,10 +160,9 @@
 @media (max-width: 480px) {
     .section-1 {
         margin-top: 112px;
-        max-height: 289px;
     }
     .section-2 {
-        height: 294px;
+        max-height: 322px;
         margin-top: 80px;
     }
     .section-4 {
@@ -182,6 +181,9 @@
     .section-8 {
         margin-top: 80px;
         margin-bottom: 80px;
+    }
+    .section-10 {
+        margin-top: 80px;
     }
     .section-11 {
         margin-top: 64px;

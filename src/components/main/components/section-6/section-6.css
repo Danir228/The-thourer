@@ -86,7 +86,7 @@
         font-size: 28px;
     }
     .section-6_calendar {
-        justify-content: space-between;
+        justify-content: center;
         margin-bottom: 32px;
     }
     .section-6_price_items .slider_item {
@@ -94,7 +94,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
     .section-6_price_item {
         max-width: 231px;
     }

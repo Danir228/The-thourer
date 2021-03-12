@@ -1,7 +1,5 @@
 .rewiew_item {
     position: relative;
-    width: 100%;
-    max-width: 386px;
     height: 340px;
 
     background: rgba(255, 255, 255, 0.3);
@@ -59,20 +57,20 @@
     margin-right: 0;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .rewiew_item {
         max-width: 482px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .rewiew_item {
         max-width: 354px;
         height: 374px;
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (max-width: 480px) {
     .rewiew_item {
         max-width: 256px;
         height: 340px;
@@ -87,8 +85,3 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-    .rewiew_item {
-        max-width: 240px;
-    }
-}
