@@ -20,8 +20,8 @@ function SectionThird() {
                     <h1 className="section-3_title">Преимущества <span className="textupdate">The Tourer</span></h1>
                 </Col>
             </Row>
-            <Row className="section-3_item-1">
-                <Col className="mb-3">
+            <Row className="section-3_item-1 mx-0">
+                <Col className="mb-3 marginblock">
                 <SectionBlock
                     image={block1}
                     title={'Доступно каждому'}
@@ -33,7 +33,7 @@ function SectionThird() {
                     title={'Эффект присутствия'}
                     text={`Предоставляет потенциальным клиентам возможность <span class="textupdate">побывать в помещении через экран</span> гаджета`}/>
                 </Col>
-                <Col className="mb-3">
+                <Col className="mb-3 marginblock">
                     <SectionBlock
                     image={block3}
                     title={'Экономия времени'}
@@ -45,13 +45,13 @@ function SectionThird() {
                     title={'Скорость создания'}
                     text={`Получите готовый виртуальный тур <span class="textupdate">в течение часа</span> после старта съемки`}/>
                 </Col>
-                <Col className="mb-3">
+                <Col className="marginblock">
                     <SectionBlock
                     image={block5}
                     title={'Уникальное предложение'}
                     text={`Привлекает внимание клиента, <span class="textupdate">выделяя объявление</span> из общей массы`}/>
                 </Col>
-                <Col className="mb-3">
+                <Col>
                     <SectionBlock
                     image={block6}
                     title={'Простое использование'}

@@ -7,10 +7,10 @@ function SectionForItem({number, title, text}) {
     return (
         <>
             <div className="section-4_content">
-                <button className="left_item_btn" dangerouslySetInnerHTML={{ __html: number }}></button>
-                <div className="left_item_body flex-column">
-                    <h1 className="left_item_title">{title}</h1>
-                    <p className="left_item_text">{text}</p>
+                <button className="section-4_btn" dangerouslySetInnerHTML={{ __html: number }}></button>
+                <div className="section-4_body flex-column">
+                    <h1 className="section-4_title">{title}</h1>
+                    <p className="section-4_text">{text}</p>
                 </div>
             </div>
         </>

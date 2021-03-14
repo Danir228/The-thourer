@@ -52,51 +52,42 @@
     }
 }
 
-/* @media (max-width: 554px) {
-    .sectionblock_item {
-        padding: 15px 15px;
-    }
-} */
-
 @media (min-width: 480px) and (max-width: 768px) {
     .sectionblock_item {
-        /* max-width: 100%; */
         padding: 20px 20px;
     }
-
     .sectionblock_item img {
         margin-bottom: 16px;
         max-width: 44px;
         max-height: 44px;
     }
-
     .sectionblock_item h1 {
         font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 16px;
     }
-
     .sectionblock_item p {
         font-size: 16px;
+        line-height: 25px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .sectionblock_item {
-        /* max-width: 100%; */
         padding: 16px 16px;
     }
-
     .sectionblock_item img {
         margin-bottom: 12px;
         max-width: 34px;
         max-height: 34px;
     }
-
     .sectionblock_item h1 {
         font-size: 16px;
+        line-height: 18px;
         margin-bottom: 8px;
     }
-
     .sectionblock_item p {
         font-size: 14px;
+        line-height: 22px;
     }
 }

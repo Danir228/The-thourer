@@ -71,10 +71,6 @@
 }
 
 @media (max-width: 480px) {
-    .rewiew_item {
-        max-width: 256px;
-        height: 340px;
-    }
     .rewiew_mark {
         margin-left: 30px;
     }

@@ -96,7 +96,7 @@
 }
 
 @media (max-width: 1440px) {
-    .header_btn .app-store_btn, .header .google-play_btn {
+    .header_btn .app-store_btn, .header_btn .google-play_btn {
         display: none;
     }
     .navbar_links {

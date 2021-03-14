@@ -19,7 +19,7 @@ export default class Footer extends Component {
         return (
             <footer className="footer">
                 <div className="footer_item">
-                    <div className="footer_back-1"></div>
+                    <div className="footer_back-1">
                     <div className="footer_back-2">
                         <Container className="d-flex justify-content-between">
                             <div className="item-1">
@@ -66,6 +66,7 @@ export default class Footer extends Component {
                                 </div>
                             </div>
                         </Container>
+                    </div>
                     </div>
                 </div>
             </footer>

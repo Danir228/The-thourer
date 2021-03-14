@@ -1,2 +1,2 @@
-import Slider from './carousel';
-export default Slider;
+import SimpleSlider from './carousel';
+export default SimpleSlider;

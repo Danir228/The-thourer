@@ -9,7 +9,6 @@
 }
 
 .section-first_left h1 {
-    margin-top: 80px;
     margin-bottom: 32px;
 
     font-family: Raleway;
@@ -79,18 +78,6 @@
     }
 }
 
-/* @media (max-width: 960px) {
-    .section-first_left {
-        max-width: 600px;
-    }
-}
-
-@media (max-width: 860px) {
-    .section-first_left {
-        max-width: 530px;
-    }
-} */
-
 @media (min-width: 768px) and (max-width: 1024px) {
     .section-first_left {
         max-width: 531px;
@@ -114,16 +101,17 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-    .section-first_left {
-        max-height: 270px;
-        margin-right: 0;
-    }
+@media (max-width: 768px) {
     .section-first_right {
         display: none;
     }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .section-first_left {
+        margin-right: 0;
+    }
     .section-first_left h1 {
-        margin-top: 44px;
         font-size: 26px;
         margin-bottom: 16px;
         line-height: 33px;
@@ -131,8 +119,12 @@
 
     .section-first_left p {
         font-size: 16px;
-        margin-bottom: 32px;
         line-height: 24px;
+        margin-bottom: 32px;
+    }
+    .section-first .app-store_btn {
+        width: 150px;
+        height: 48px;
     }
 }
 
@@ -140,11 +132,7 @@
     .section-first_left {
         margin-right: 0;
     }
-    .section-first_right {
-        display: none;
-    }
     .section-first_left h1 {
-        margin-top: 32px;
         font-size: 20px;
         margin-bottom: 16px;
         line-height: 26px;
@@ -153,8 +141,10 @@
     .section-first_left p {
         font-size: 15px;
         line-height: 22px;
+        margin-bottom: 32px;
     }
     .section-first .app-store_btn {
         width: 130px;
+        height: 48px;
     }
 }

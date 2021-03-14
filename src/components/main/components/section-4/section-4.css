@@ -139,14 +139,28 @@
         display: flex;
         justify-content: center;
     }
+
     .section-4_title h1 {
         margin-bottom: 16px;
         font-size: 28px;
         line-height: 32px;
     }
+    .section-4_bottom_item {
+        margin-top: 32px;
+    }
     .bottom_text {
+        margin-bottom: 0;
         font-size: 24px;
-        line-height: 28px
+        line-height: 28px;
+    }
+    .section-4_bottom_item_body  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .section-4_bottom_item_body .app-store_btn {
+        margin-top: 22px;
     }
     .num_update {
         font-size: 24px;
