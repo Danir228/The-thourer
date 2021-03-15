@@ -1,10 +1,9 @@
 .section-11_item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1000px;
-    height: 120px;
-    margin: 0 auto;
+    height: 150px;
+}
+
+.section-11_image {
+    margin-right: 100px;
 }
 
 .intel {

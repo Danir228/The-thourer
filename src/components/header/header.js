@@ -11,12 +11,11 @@ import logo from './logo.svg';
 import './header.css';
 
 export default class Header extends Component {
-
     state = {
         open: false,
-        hide: false
+        hide: false,
+        color: 'black'
     }
-
     handleClick() {
         this.setState({
             open: !this.state.open
@@ -27,9 +26,20 @@ export default class Header extends Component {
             hide: !this.state.hide
         });
     }
+    listenScrollEvent = e => {
+        if (window.scrollY > 100) {
+          this.setState({color: 'white'})
+        } else {
+          this.setState({color: ''})
+        }
+      }
+    componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+    }
     render() {
+        const { colorBlock } = this.state.color;
         return (
-            <header className="header">
+            <header className="header" style={{background: this.state.color}}>
                 <Container>
                     <div className="navbar_menu">
                     <div className="hamburger" onClick={this.hideClick.bind(this)}>

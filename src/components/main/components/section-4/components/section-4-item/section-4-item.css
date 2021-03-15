@@ -37,23 +37,20 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .section-4_title {
-        margin-bottom: 8px;
-        font-size: 18px;
-        line-height: 21px;
-    }
-    .section-4_text {
-        font-size: 16px;
-        line-height: 24px;
-    }
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
     .section-4_btn {
         width: 129px;
         height: 65px;
         margin-bottom: 0;
+    }
+    .section-4_title {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .section-4_text {
+        font-size: 14px;
+        line-height: 21px;
     }
 }
 

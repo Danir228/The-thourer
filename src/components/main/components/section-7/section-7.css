@@ -24,7 +24,7 @@
     width: 100%;
     max-width: 1218px;
     height: 171px;
-    margin: 55px auto;
+    margin: 55px auto 0 auto;
     padding: 30px 166px;
     display: flex;
     justify-content: space-around;
@@ -79,6 +79,8 @@
     .section-7_top {
         padding-top: 47px;
         height: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .section-7_top_item {
         font-size: 28px;
@@ -86,11 +88,11 @@
     }
     .section-7_bottom {
         height: 152px;
-        margin: 55px auto;
-        padding: 20px 74px;
+        padding: 23px 74px;
     }
     .section-7_bottom div {
-        margin-right: 65px;
+        justify-content: center;
+        margin-right: 130px;
     }
     .section-7_bottom div:last-child {
         margin-right: 0px;
@@ -109,6 +111,8 @@
 @media (min-width: 480px) and (max-width: 768px) {
     .section-7_top {
         padding-top: 26px;
+        padding-left: 20px;
+        padding-right: 20px;
         height: 148px;
     }
     .section-7_top_item {
@@ -116,6 +120,7 @@
         line-height: 26px;
     }
     .section-7_bottom div {
+        justify-content: center;
         margin-right: 25px;
     }
     .section-7_bottom div:last-child {
@@ -123,7 +128,7 @@
     }
     .section-7_bottom {
         height: 110px;
-        margin: 26px auto;
+        margin: 26px auto 0 auto;
         padding: 13px 45px;
     }
     .section-7_bottom_number {
@@ -140,6 +145,8 @@
 @media (max-width: 480px) {
     .section-7_top {
         padding-top: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
         height: 58px;
     }
     .section-7_top_item {
@@ -147,7 +154,6 @@
         line-height: 19px;
     }
     .section-7_bottom {
-        max-width: 280px;
         height: 75px;
         margin: 9px auto;
         padding: 0;

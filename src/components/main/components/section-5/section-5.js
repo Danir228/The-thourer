@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from "../../../carousel";
+import SimpleSlider from "../../../carousel";
 import SectionFiveItem from './components/section-5-item';
 
 import img1 from './components/images/1.png';
@@ -12,8 +12,14 @@ export default function SectionFive() {
     <>
       <div className="section-5_item">
         <h1 className="section-5_title">Виртуальные туры, созданные при помощи <span className="textupdate">The Tourer</span></h1>
-        <Slider
+        <SimpleSlider
+        row={1}
+        sliderow={1}
+        variable={false}
+        center={false}
         items={[
+          <SectionFiveItem image={img1}/>,
+          <SectionFiveItem image={img2}/>,
           <SectionFiveItem image={img1}/>,
           <SectionFiveItem image={img2}/>
         ]}/>

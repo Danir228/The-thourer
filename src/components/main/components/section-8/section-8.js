@@ -1,7 +1,7 @@
 import React from 'react';
 import Rewiew from './components/section-8-item';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Slider from '../../../carousel';
+import SimpleSlider from '../../../carousel';
 
 import man from './components/images/man.svg';
 import mark from './components/images/mark.svg';
@@ -13,8 +13,12 @@ export default function SectionEight() {
         <>
             <div className="section-8_item">
                 <h1><span className="textupdate">Отзывы</span> наших клиентов</h1>
-                <div className="section-8_item_body d-flex justify-content-between">
-                    <Slider
+                <div className="section-8_item_body">
+                    <SimpleSlider
+                    row={1}
+                    sliderow={1}
+                    center={false}
+                    variable={false}
                     items={[
                         <Rewiew
                         image1={mark}

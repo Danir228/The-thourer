@@ -1,3 +1,8 @@
+.section-6_price_items {
+    display: inherit!important;
+    height: 500px;
+}
+
 .section-6_title {
     margin-bottom: 32px;
 }
@@ -56,8 +61,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .section-6_price_items {
+        width: 100%;
+        max-width: 728px;
+        display: flex;
+        height: 920px;
+        text-align: -webkit-center;
+    }
     .section-6_price_item {
         max-width: 354px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     .section-6_title_item-1 {
         font-size: 32px;
@@ -66,14 +80,12 @@
     .section-6_title_item-2 {
         font-size: 32px;
     }
-    .section-6_price_items .slider_item {
-        width: 354px;
-    }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
     .section-6_price_item {
-        max-width: 280px;
+        width: 280px;
+        margin-right: 16px;
     }
     .section-6_title {
         margin-bottom: 20px;
@@ -89,14 +101,12 @@
         justify-content: center;
         margin-bottom: 32px;
     }
-    .section-6_price_items .slider_item {
-        width: 280px;
-    }
 }
 
 @media (max-width: 480px) {
     .section-6_price_item {
         max-width: 231px;
+        margin-right: 12px;
     }
     .section-6_title {
         height: 54px;
@@ -112,8 +122,5 @@
     .section-6_calendar {
         height: 205px;
         justify-content: center;
-    }
-    .section-6_price_items .slider_item {
-        width: 231px;
     }
 }

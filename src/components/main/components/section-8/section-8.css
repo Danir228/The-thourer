@@ -26,6 +26,9 @@
         font-size: 32px;
         line-height: 37px;
     }
+    .section-8_item_body {
+        margin-top: 32px;
+    }
 }
 
 @media (max-width: 480px) {

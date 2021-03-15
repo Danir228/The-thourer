@@ -40,6 +40,11 @@
     display: none;
 }
 
+.accordion_title span {
+    display: flex;
+    align-items: center;
+}
+
 .accordion_block .arrow {
     width: 24px;
     height: 24px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Row} from 'reactstrap';
 import PriceItem from './components/section-6-price-item';
-import Carousel from '../../../carousel';
+import SimpleSlider from '../../../carousel';
 import WhenItem from './components/section-6-when-item';
 import block1 from './components/images/block1.svg';
 import block2 from './components/images/block2.svg';
@@ -30,9 +30,13 @@ function SectionSix() {
                 </Col>
             </Row>
             <Row className="section-6_price_items">
-                <Carousel
+                <SimpleSlider
+                row={2}
+                sliderow={2}
+                variable={true}
+                center={true}
                 items={[
-                    <Col md={4} lg={2} xl={2} className="section-6_price_item">
+                    <Col className="section-6_price_item">
                         <PriceItem
                         image={block1}
                         price={'0.00 ₽'}
@@ -48,7 +52,7 @@ function SectionSix() {
                         selector4={'fas fa-times'}
                         selector5={'fas fa-times'}/>
                     </Col>,
-                    <Col md={4} lg={2} xl={2} className="section-6_price_item">
+                    <Col className="section-6_price_item">
                         <PriceItem
                         image={block2}
                         price={'566 ₽ /мес.'}
@@ -64,7 +68,7 @@ function SectionSix() {
                         selector4={'fas fa-check'}
                         selector5={'fas fa-times'}/>
                     </Col>,
-                    <Col md={4} lg={2} xl={2} className="section-6_price_item">
+                    <Col className="section-6_price_item">
                         <PriceItem
                         image={block3}
                         price={'1 900 ₽ /мес.'}
@@ -80,7 +84,7 @@ function SectionSix() {
                         selector4={'fas fa-check'}
                         selector5={'fas fa-times'}/>
                     </Col>,
-                    <Col md={4} lg={2} xl={2} className="section-6_price_item">
+                    <Col className="section-6_price_item">
                         <PriceItem
                         image={block4}
                         price={'7 100 ₽ /мес.'}

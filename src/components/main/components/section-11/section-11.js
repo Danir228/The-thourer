@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../../../carousel';
+import SimpleSlider from '../../../carousel';
 
 import intel from './images/intel.svg';
 import canonback from './images/canonback.svg';
@@ -12,23 +12,37 @@ export default function SectionEleven() {
     return (
         <>
             <div className="section-11_item">
-                <Carousel
+                <SimpleSlider
+                row={1}
+                sliderow={1}
+                center={true}
+                variable={true}
                 items={[
-                    <img
-                    src={intel} alt={intel}
-                    className="intel"/>,
-                    <img
-                    src={canonback} alt={canonback}
-                    className="canon"/>,
-                    <img
-                    src={intel} alt={intel}
-                    className="intel"/>,
-                    <img
-                    src={canon} alt={canon}
-                    className="canon"/>,
-                    <img
-                    src={sumsung} alt={sumsung}
-                    className="sumsung"/>
+                    <div className="section-11_image">
+                        <img
+                        src={intel} alt={intel}
+                        className="intel"/>
+                    </div>,
+                    <div className="section-11_image">
+                        <img
+                        src={canonback} alt={canonback}
+                        className="canon"/>
+                    </div>,
+                    <div className="section-11_image">
+                        <img
+                        src={intel} alt={intel}
+                        className="intel"/>
+                    </div>,
+                    <div className="section-11_image">
+                        <img
+                        src={canon} alt={canon}
+                        className="canon"/>
+                    </div>,
+                    <div className="section-11_image">
+                        <img
+                        src={sumsung} alt={sumsung}
+                        className="sumsung"/>
+                    </div>
                 ]}/>
             </div>
         </>

@@ -1,5 +1,8 @@
 .rewiew_item {
     position: relative;
+    margin: 32px 20px 0 20px;
+    padding-top: 30px;
+    padding-right: 30px;
     height: 340px;
 
     background: rgba(255, 255, 255, 0.3);
@@ -7,11 +10,12 @@
 }
 
 .rewiew_mark {
-    margin: 30px 0 32px 40px;
+    margin-bottom: 36px;
+    margin-left: 30px;
 }
 
 .rewiew_item p {
-    margin: 0 40px 50px 40px;
+    margin-left: 30px;
 
     font-family: Raleway;
     font-style: normal;
@@ -48,6 +52,10 @@
     line-height: 19px;
 }
 
+.rewiew_star {
+    display: flex;
+}
+
 .rewiew_star img {
     margin-right: 4px;
     cursor: pointer;
@@ -57,25 +65,28 @@
     margin-right: 0;
 }
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .rewiew_item {
+        width: 482px;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .rewiew_item {
-        max-width: 482px;
+        max-width: 354px;
     }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
     .rewiew_item {
-        max-width: 354px;
-        height: 374px;
+        max-width: 100%;
+        margin-right: 9px;
+        margin-left: 9px;
     }
 }
 
 @media (max-width: 480px) {
-    .rewiew_mark {
-        margin-left: 30px;
-    }
     .rewiew_item p {
-        margin: 0 30px 38px 30px;
         font-size: 16px;
         line-height: 24px;
     }

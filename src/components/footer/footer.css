@@ -118,21 +118,27 @@
     .footer_back-1 {
         height: 769px;
     }
+    .footer_back-2 {
+        height: 700px;
+    }
     .footer_back-2 .container {
         position: relative;
         margin-top: 191px;
         height: 331px;
         justify-content: left!important;
     }
-    .item-2{
+    .item-2 {
         position: absolute;
         top: 172px;
     }
-    .item-3{
+    .item-3 {
         position: absolute;
         right: 15px;
         top: 172px;
-        left: 276px;
+        left: 287px;
+    }
+    .item-4 h1 {
+        display: none;
     }
     .item-4_btn {
         position: absolute;
@@ -140,8 +146,8 @@
         flex-direction: column;
         right: 15px;
     }
-    .item-5{
-        margin-left: 95px;
+    .item-5 {
+        margin-left: 104px;
     }
     .item-5 h1 {
         margin-bottom: 20px;
@@ -153,20 +159,24 @@
 
 @media (min-width: 480px) and (max-width: 768px) {
     .footer_back-2 .container {
-        margin-top: 170px;
-        height: 404px;
+        position: relative;
+        padding-top: 200px;
+        height: 632px;
+        justify-content: inherit!important;
     }
     .item-2{
-        top: 153px;
+        position: absolute;
+        bottom: 133px;
     }
     .item-3{
-        top: 153px;
-        left: 205px;
+        position: absolute;
+        bottom: 133px;
+        left: 254px;
     }
     .item-4 {
         position: absolute;
         width: 100%;
-        bottom: 60px;
+        bottom: 40px;
         left: 15px;
     }
     .item-4_btn {
@@ -186,8 +196,11 @@
     .item-4 .app-store_btn img {
         margin-right: 8px;
     }
-    .item-5{
-        margin-left: 20px;
+    .item-5 {
+        margin-left: 71px;
+    }
+    .item-5 h1 {
+        margin-bottom: 20px;
     }
 }
 
@@ -212,12 +225,12 @@
         padding-left: 15px;
         justify-content: inherit!important;
     }
-    .item-2{
+    .item-2 {
         position: inherit;
         margin-top: 44px;
         top: 0;
     }
-    .item-3{
+    .item-3 {
         position: inherit;
         margin-top: 44px;
         top: 0;

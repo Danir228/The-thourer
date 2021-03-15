@@ -3,7 +3,7 @@ import React from 'react';
 export default function SectionFiveItem({image}) {
   return (
     <>
-        <div>
+        <div className="section-5_image">
           <img src={image} alt={image}/>
         </div>
     </>

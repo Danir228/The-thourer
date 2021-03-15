@@ -1,15 +1,16 @@
 .whenitem_month, .whenitem_quarter, .whenitem_year {
     position: relative;
     margin-right: 30px;
-    padding-top: 33px;
+    padding-top: 22px;
     width: 199px;
     height: 97px;
 }
 
 .whenitem_style {
+    display: flex;
+    justify-content: center;
     width: 178px;
     height: 64px;
-    padding: 14px 58px;
 
     background: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
@@ -21,7 +22,6 @@
     line-height: 36px;
 
     align-items: center;
-    text-align: center;
 }
 
 .percent {
@@ -32,7 +32,7 @@
     width: 58px;
     height: 58px;
     right: 0;
-    top: 0;
+    top: 7px;
     text-align: center;
 
     background: #F8E3B8;

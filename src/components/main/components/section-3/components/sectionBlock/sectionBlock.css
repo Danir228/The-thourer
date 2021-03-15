@@ -47,7 +47,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .sectionblock_item {
-        /* max-width: 100%; */
+        max-width: 100%;
         padding: 30px 30px;
     }
 }

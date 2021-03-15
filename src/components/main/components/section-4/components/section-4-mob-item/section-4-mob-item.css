@@ -11,7 +11,7 @@
 }
 
 .show {
-    display: block!important;
+    display: flex!important;
 }
 
 .mob_item_top .section-4_content {

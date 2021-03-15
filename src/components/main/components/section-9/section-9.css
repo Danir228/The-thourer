@@ -94,7 +94,18 @@
         font-size: 20px;
         line-height: 36px;
     }
-
+    .section-9_footer_links .social-link {
+        width: 48px;
+        height: 48px;
+        margin-right: 17px;
+    }
+    .section-9_footer_links .social-link:last-child {
+        margin-right: 0;
+    }
+    .section-9_footer_links .social-link .social_link_img {
+        max-width: 24px;
+        height: 24px;
+    }
 }
 
 @media (max-width: 480px) {

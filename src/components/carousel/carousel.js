@@ -10,37 +10,42 @@ import Slider from "react-slick";
 //   { width: 1200, itemsToShow: 5 }
 // ];
 
-export default function SimpleSlider({items}) {
+export default function SimpleSlider({items, center, variable, adaptive, row, sliderow}) {
   let settings = {
+    className: "slider variable-width",
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
     arrows: false,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: row,
+          slidesPerRow: sliderow
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: variable,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          centerMode: center,
+          variableWidth: variable
         }
       }
     ]
@@ -48,7 +53,7 @@ export default function SimpleSlider({items}) {
   return (
     <>
       <Slider {...settings}>
-        {items.map(item => <div key={item.index}>{item}</div>)}
+        {items.map((item, index) => <div key={index}>{item}</div>)}
       </Slider>
     </>
   )

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .section-second {
+    height: 515px;
     padding: 0;
     justify-content: flex-end;
 }
@@ -85,23 +86,26 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .section-second_left {
-        max-width: 600px;
-        max-height: 403px;
-        left: -132px;
+        max-width: 722px;
+        max-height: 507px;
+        left: -192px;
+        top: -9px;
     }
     .section-second_right {
-        max-width: 354px;
-        max-height: 302px;
-        margin-top: 86px;
+        max-width: 381px;
+        max-height: 364px;
+        margin-top: 115px;
     }
     .section-second_right h1 {
-        font-size: 28px;
-        line-height: 36px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 46px;
     }
 
     .section-second_right p {
-        font-size: 15px;
-        line-height: 22px;
+        margin-bottom: 44px;
+        font-size: 18px;
+        line-height: 27px;
     }
 }
 
