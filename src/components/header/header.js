@@ -11,33 +11,38 @@ import logo from './logo.svg';
 import './header.css';
 
 export default class Header extends Component {
+
     state = {
         open: false,
         hide: false,
-        color: 'black'
+        color: ''
     }
+
     handleClick() {
         this.setState({
             open: !this.state.open
         });
     }
+
     hideClick() {
         this.setState({
             hide: !this.state.hide
         });
     }
+
     listenScrollEvent = e => {
         if (window.scrollY > 100) {
           this.setState({color: 'white'})
         } else {
-          this.setState({color: ''})
+          this.setState({color: undefined })
         }
-      }
-    componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
     }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.listenScrollEvent);
+    }
+
     render() {
-        const { colorBlock } = this.state.color;
         return (
             <header className="header" style={{background: this.state.color}}>
                 <Container>

@@ -67,12 +67,17 @@
     justify-content: space-between;
 }
 
+.section-4_bottom_item_body {
+    align-items: center;
+}
+
 .section-4_bottom_item .app-store_btn {
     width: 260px;
     height: 64px;
 }
 
 .bottom_text {
+    margin-bottom: 0;
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
@@ -84,7 +89,7 @@
     font-weight: bold;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .section-4_title h1 {
         margin-bottom: 20px;
         font-size: 40px;
@@ -109,12 +114,13 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .section-4-mob_item {
         display: flex;
         justify-content: center;
     }
     .bottom_text {
+        margin-bottom: 20px!important;
         font-size: 28px;
         line-height: 32px;
         text-align: center;
@@ -137,7 +143,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .section-4-mob_item {
         display: flex;
         justify-content: center;
@@ -179,6 +185,10 @@
         display: flex;
         justify-content: center;
     }
+    .section-4_title_item-1 {
+        display: flex;
+        flex-direction: column;
+    }
     .section-4_title h1 {
         font-size: 21px;
         line-height: 24px;
@@ -194,11 +204,12 @@
     .section-4_bottom_item_body {
         flex-direction: column;
         align-items: center;
-        /* text-align: center; */
+        text-align: center;
     }
     .bottom_text {
-        font-size: 14px;
-        line-height: 21px
+        margin-bottom: 20px!important;
+        font-size: 18px;
+        line-height: 21px;
     }
     .num_update {
         font-size: 16px;

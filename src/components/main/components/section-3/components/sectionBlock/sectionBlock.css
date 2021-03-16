@@ -38,21 +38,32 @@
     font-weight: bold;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1920px) {
+    .sectionblock_item {
+        width: 386px;
+        height: 360px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
     .sectionblock_item {
         /* max-width: 100%; */
         padding: 36px 30px 30px 30px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .sectionblock_item {
         max-width: 100%;
         padding: 30px 30px;
+        margin-bottom: 20px!important;
+    }
+    .marginblock {
+        margin-right: 0!important;
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .sectionblock_item {
         padding: 20px 20px;
     }

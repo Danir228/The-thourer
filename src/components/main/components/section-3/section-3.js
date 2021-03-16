@@ -21,7 +21,7 @@ function SectionThird() {
                 </Col>
             </Row>
             <Row className="section-3_item-1 mx-0">
-                <Col className="mb-3 marginblock">
+                <Col className="mb-3">
                 <SectionBlock
                     image={block1}
                     title={'Доступно каждому'}
@@ -45,13 +45,13 @@ function SectionThird() {
                     title={'Скорость создания'}
                     text={`Получите готовый виртуальный тур <span class="textupdate">в течение часа</span> после старта съемки`}/>
                 </Col>
-                <Col className="marginblock">
+                <Col>
                     <SectionBlock
                     image={block5}
                     title={'Уникальное предложение'}
                     text={`Привлекает внимание клиента, <span class="textupdate">выделяя объявление</span> из общей массы`}/>
                 </Col>
-                <Col>
+                <Col className="marginblock">
                     <SectionBlock
                     image={block6}
                     title={'Простое использование'}

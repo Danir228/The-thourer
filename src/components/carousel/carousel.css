@@ -1,0 +1,7 @@
+.slider_item .slick-dots li {
+    margin: 0!important;
+}
+
+.slider_item .slick-dots li button:before {
+    font-size: 8px!important;
+}

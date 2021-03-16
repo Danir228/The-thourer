@@ -80,7 +80,6 @@
 .language {
     display: flex;
     align-items: center;
-    margin-right: 44px;
 
     font-family: Raleway;
     font-style: normal;
@@ -96,10 +95,13 @@
     text-decoration: none;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1920px) {
     .header_btn .app-store_btn, .header_btn .google-play_btn {
         display: none;
     }
+}
+
+@media (max-width: 1440px) {
     .navbar_links {
         display: none;
     }

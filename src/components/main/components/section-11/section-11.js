@@ -13,6 +13,8 @@ export default function SectionEleven() {
         <>
             <div className="section-11_item">
                 <SimpleSlider
+                dot={false}
+                slidenum={5}
                 row={1}
                 sliderow={1}
                 center={true}

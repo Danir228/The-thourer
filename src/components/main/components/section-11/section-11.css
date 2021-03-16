@@ -3,21 +3,21 @@
 }
 
 .section-11_image {
+    height: 94px;
     margin-right: 100px;
 }
 
-.intel {
-    width: 100%;
-    max-width: 94px;
-    height: 100%;
-    max-height: 62px;
-    margin-top: 11px;
+.section-11_item .slider_item {
+    text-align: center;
 }
 
-.canon {
-    width: 100%;
-    max-width: 136px;
-    height: 100%;
-    max-height: 28px;
-    margin-top: 25px;
+.section-11_item .slick-slide img {
+    display: initial;
+}
+
+@media (max-width: 1024px) {
+    .section-11_image {
+        display: flex;
+        align-items: center;
+    }
 }

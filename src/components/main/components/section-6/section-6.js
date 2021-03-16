@@ -29,14 +29,16 @@ function SectionSix() {
                     percent2={'-15%'}/>
                 </Col>
             </Row>
-            <Row className="section-6_price_items">
+            <div className="section-6_price_items">
                 <SimpleSlider
+                slidenum={4}
                 row={2}
                 sliderow={2}
                 variable={true}
+                variable2={true}
                 center={true}
                 items={[
-                    <Col className="section-6_price_item">
+                    <div className="section-6_price_item">
                         <PriceItem
                         image={block1}
                         price={'0.00 ₽'}
@@ -51,8 +53,8 @@ function SectionSix() {
                         selector3={'fas fa-check'}
                         selector4={'fas fa-times'}
                         selector5={'fas fa-times'}/>
-                    </Col>,
-                    <Col className="section-6_price_item">
+                    </div>,
+                    <div className="section-6_price_item">
                         <PriceItem
                         image={block2}
                         price={'566 ₽ /мес.'}
@@ -67,8 +69,8 @@ function SectionSix() {
                         selector3={'fas fa-check'}
                         selector4={'fas fa-check'}
                         selector5={'fas fa-times'}/>
-                    </Col>,
-                    <Col className="section-6_price_item">
+                    </div>,
+                    <div className="section-6_price_item">
                         <PriceItem
                         image={block3}
                         price={'1 900 ₽ /мес.'}
@@ -83,8 +85,8 @@ function SectionSix() {
                         selector3={'fas fa-check'}
                         selector4={'fas fa-check'}
                         selector5={'fas fa-times'}/>
-                    </Col>,
-                    <Col className="section-6_price_item">
+                    </div>,
+                    <div className="section-6_price_item">
                         <PriceItem
                         image={block4}
                         price={'7 100 ₽ /мес.'}
@@ -99,9 +101,9 @@ function SectionSix() {
                         selector3={'fas fa-check'}
                         selector4={'fas fa-check'}
                         selector5={'fas fa-check'}/>
-                    </Col>
+                    </div>
                 ]}/>
-            </Row>
+            </div>
         </>
     )
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .section-second {
-    height: 515px;
+    height: 760px;
     padding: 0;
     justify-content: flex-end;
 }
@@ -10,7 +10,7 @@
     position: absolute;
     width: 100%;
     max-width: 1116px;
-    min-height: 760px;
+    height: 760px;
     left: 0;
     background: url('section-2.svg') no-repeat;
     background-size: contain;
@@ -26,7 +26,7 @@
     margin-top: 266px;
 }
 
-.section-second_right .app-store_btn {
+.section-second_btn .app-store_btn {
     width: 260px;
     height: 64px;
 }
@@ -52,13 +52,13 @@
 }
 
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
     .section-second_left {
         left: -70px;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .section-second_left {
         max-width: 722px;
         max-height: 507px;
@@ -84,17 +84,16 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .section-second_left {
-        max-width: 722px;
-        max-height: 507px;
-        left: -192px;
-        top: -9px;
+        max-width: 600px;
+        max-height: 403px;
+        left: -163px;
     }
     .section-second_right {
         max-width: 381px;
         max-height: 364px;
-        margin-top: 115px;
+        margin-top: 86px;
     }
     .section-second_right h1 {
         margin-bottom: 20px;
@@ -115,7 +114,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .section-second {
         justify-content: end;
     }
@@ -135,7 +134,7 @@
         font-size: 14px;
         line-height: 21px;
     }
-    .section-second_right .app-store_btn {
+    .section-second_btn .app-store_btn {
         width: 260px;
     }
 }
@@ -160,7 +159,11 @@
         font-size: 15px;
         line-height: 22px;
     }
-    .section-second_right .app-store_btn {
+    .section-second_btn {
+        display: flex;
+        justify-content: center;
+    }
+    .section-second_btn .app-store_btn {
         width: 280px;
     }
 }

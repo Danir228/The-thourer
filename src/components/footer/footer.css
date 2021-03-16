@@ -1,43 +1,46 @@
 .footer_item {
     position: relative;
+    color: #F1F1F1;
+}
+
+.container_item {
+    height: 100%;
+}
+
+.footer_back-1 img, .footer_back-2 img {
+    display: none;
+    width: 100%;
+    height: 100%;
 }
 
 .footer_back-1 {
     position: relative;
     width: 100%;
-    height: 100%;
-    padding-top: 71px;
-    background: url('./components/images/vector1.svg') no-repeat center;
+    height: 503px;
     background-size: cover;
 }
 
 .footer_back-2 {
+    position: absolute;
     display: flex;
     align-items: center;
     top: 72px;
     width: 100%;
-    height: 580px;
-    background: url('./components/images/vector2.svg') no-repeat center;
+    height: 836px;
     background-size: cover;
-
-    color: #F1F1F1;
 }
 
-.footer_back-2 .container {
-    max-width: 1218px;
-}
-
-.footer_back-2 h1 {
+.footer_item h1 {
     margin-bottom: 32px;
 
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
 }
 
-.footer_back-2 h2 {
+.footer_item h2 {
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
@@ -45,7 +48,7 @@
     line-height: 24px;
 }
 
-.footer_back-2 a {
+.footer_item a {
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
@@ -96,7 +99,71 @@
     border-radius: 8px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1441px) {
+    .img1, .img2 {
+        display: block!important;
+    }
+    .footer_item {
+        height: 592px;
+    }
+    .footer_back-1 {
+        height: 592px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        position: absolute;
+        top: 61px;
+        height: 531px;
+    }
+    .footer_item .container {
+        justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        max-width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        max-height: 178px;
+        bottom: 128px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .img1024_1, .img1024_2 {
+        display: block!important;
+    }
+    .footer_item {
+        height: 470px;
+    }
+    .footer_back-1 {
+        height: 426px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        position: absolute;
+        top: 44px;
+        height: 426px;
+    }
+    .footer_back-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+    .footer_item .container {
+        position: relative;
+        height: 100%;
+        justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        max-height: 243px;
+        bottom: 0;
+    }
     .item-4 h1 {
         display: none;
     }
@@ -104,7 +171,7 @@
         bottom: 40px;
         position: absolute;
         flex-direction: inherit;
-        right: 15px;
+        right: 30px;
     }
     .item-4 .google-play_btn {
         margin-top: 0;
@@ -112,20 +179,37 @@
     .item-4 .app-store_btn {
         margin-right: 20px;
     }
+    .item-5 {
+        margin-right: 30px;
+    }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .img768_1, .img768_2 {
+        display: block!important;
+    }
+    .footer_item {
+        height: 542px;
+    }
     .footer_back-1 {
-        height: 769px;
+        height: 403px;
+        width: 100%;
     }
     .footer_back-2 {
-        height: 700px;
+        position: absolute;
+        top: 42px;
+        height: 500px;
     }
-    .footer_back-2 .container {
-        position: relative;
-        margin-top: 191px;
-        height: 331px;
-        justify-content: left!important;
+    .footer_item .container {
+        max-width: 100%;
+        justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        max-height: 331px;
+        bottom: 0;
     }
     .item-2 {
         position: absolute;
@@ -135,7 +219,7 @@
         position: absolute;
         right: 15px;
         top: 172px;
-        left: 287px;
+        left: 276px;
     }
     .item-4 h1 {
         display: none;
@@ -144,7 +228,7 @@
         position: absolute;
         top: 0;
         flex-direction: column;
-        right: 15px;
+        right: 30px;
     }
     .item-5 {
         margin-left: 104px;
@@ -157,21 +241,41 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
-    .footer_back-2 .container {
-        position: relative;
-        padding-top: 200px;
+@media (min-width: 481px) and (max-width: 768px) {
+    .img480_1, .img480_2 {
+        display: block!important;
+    }
+    .footer_item {
+        height: 697px;
+    }
+    .footer_back-1 {
         height: 632px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        position: absolute;
+        top: 99px;
+        height: 632px;
+    }
+    .footer_item .container {
+        max-width: 100%;
         justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        max-height: 404px;
+        bottom: 0;
     }
     .item-2{
         position: absolute;
-        bottom: 133px;
+        top: 153px;
     }
     .item-3{
         position: absolute;
-        bottom: 133px;
-        left: 254px;
+        top: 153px;
+        left: 239px;
     }
     .item-4 {
         position: absolute;
@@ -205,21 +309,28 @@
 }
 
 @media (max-width: 480px) {
-    .footer {
-        height: 1100px;
+    .footer_item {
+        height: 915px;
+    }
+    .img320_1 {
+        display: block!important;
+    }
+    .img320_2 {
+        display: block!important;
     }
     .footer_back-1 {
-        height: 1300px;
+        height: 503px;
         width: 100%;
     }
     .footer_back-2 {
-        height: 100%;
+        top: 120px;
+        height: 836px;
     }
-    .footer_back-2 .container {
+    .footer_item .container {
+        position: absolute;
+        top: 230px;
         height: 100%;
-        max-height: 711px;
-        margin-top: 129px;
-        position: relative;
+        max-height: 689px;
         flex-direction: column;
         padding-right: 15px;
         padding-left: 15px;

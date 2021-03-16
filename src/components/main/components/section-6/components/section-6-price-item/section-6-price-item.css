@@ -29,6 +29,7 @@
 }
 
 .price_text {
+    max-width: 193px;
     margin-left: 20px;
 }
 
@@ -40,6 +41,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+    text-align: left;
 }
 
 .fa-check {
@@ -54,20 +56,21 @@
     margin-right: 16px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .price {
         font-size: 26px;
         line-height: 31px;
     }
     .price_text {
+        max-width: 193px;
         margin-left: 10px;
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .price {
-        font-size: 26px;
-        line-height: 31px;
+        font-size: 28px;
+        line-height: 34px;
     }
     .price_text {
         margin-left: 10px;

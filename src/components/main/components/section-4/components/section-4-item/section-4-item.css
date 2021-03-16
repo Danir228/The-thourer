@@ -29,7 +29,7 @@
     line-height: 27px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
     .section-4_btn {
         width: 64px;
         height: 64px;
@@ -37,7 +37,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .section-4_btn {
         width: 129px;
         height: 65px;
@@ -54,7 +54,16 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
+    .section-4_title {
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .section-4_text {
+        font-size: 14px;
+        line-height: 21px;
+    }
     .section-4_btn {
         width: 100px;
         height: 65px;
@@ -69,6 +78,12 @@
     }
     .section-4_title {
         margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .section-4_text {
+        font-size: 14px;
+        line-height: 21px;
     }
 }
 

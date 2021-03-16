@@ -15,10 +15,12 @@ export default function SectionEight() {
                 <h1><span className="textupdate">Отзывы</span> наших клиентов</h1>
                 <div className="section-8_item_body">
                     <SimpleSlider
+                    slidenum={3}
                     row={1}
                     sliderow={1}
                     center={false}
-                    variable={false}
+                    variable={true}
+                    variable2={false}
                     items={[
                         <Rewiew
                         image1={mark}

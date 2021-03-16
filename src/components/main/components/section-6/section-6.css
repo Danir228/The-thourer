@@ -36,21 +36,26 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    width: 100%;
     max-width: 282px;
     height: 450px;
-
+    width: 100%;
     background: rgba(255, 255, 255, 0.3);
-
     border: 1px solid;
     border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     border-radius: 20px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .section-6_price_item {
-        max-width: 231px;
+@media (min-width: 1441px) and (max-width: 1920px) {
+    .section-6_price_items .slick-slide div {
+        display: flex;
+        margin-right: 30px;
     }
+    .section-6_price_items .slick-slide div:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
     .section-6_title_item-1 {
         font-size: 40px;
         line-height: 52px;
@@ -60,18 +65,24 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-6_price_items .slick-track, .section-6_price_items .slick-slide {
+        width: 100%!important;
+    }
     .section-6_price_items {
         width: 100%;
-        max-width: 728px;
+        max-width: 100%;
         display: flex;
-        height: 920px;
+        height: 100%;
         text-align: -webkit-center;
     }
     .section-6_price_item {
-        max-width: 354px;
-        margin-right: 20px;
+        max-width: 100%;
+        width: calc(100% - 20px);
         margin-bottom: 20px;
+    }
+    .section-6_price_item:nth-child(3n) {
+        margin-right: 20px;
     }
     .section-6_title_item-1 {
         font-size: 32px;
@@ -82,7 +93,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .section-6_price_item {
         width: 280px;
         margin-right: 16px;
@@ -105,7 +116,7 @@
 
 @media (max-width: 480px) {
     .section-6_price_item {
-        max-width: 231px;
+        width: 231px;
         margin-right: 12px;
     }
     .section-6_title {
@@ -118,6 +129,7 @@
     }
     .section-6_title_item-2 {
         font-size: 21px;
+        line-height: 27px;
     }
     .section-6_calendar {
         height: 205px;

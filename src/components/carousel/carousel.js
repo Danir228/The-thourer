@@ -10,10 +10,10 @@ import Slider from "react-slick";
 //   { width: 1200, itemsToShow: 5 }
 // ];
 
-export default function SimpleSlider({items, center, variable, adaptive, row, sliderow}) {
+export default function SimpleSlider({items, center, variable, row, sliderow, variable2, slidenum, dot}) {
   let settings = {
     className: "slider variable-width",
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -23,10 +23,38 @@ export default function SimpleSlider({items, center, variable, adaptive, row, sl
     variableWidth: true,
     responsive: [
       {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 1,
+          slidesPerRow: slidenum,
+          variableWidth: false,
+          centerMode: false,
+          dots: false,
+          swipeToSlide: false,
+          swipe: false,
+          infinite: false,
+        }
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: dot === undefined ? true : dot,
+          rows: 1,
+          slidesPerRow: slidenum,
+          variableWidth: false,
+          centerMode: false
+        }
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: dot === undefined ? true : dot,
           rows: row,
           slidesPerRow: sliderow
         }
@@ -35,17 +63,22 @@ export default function SimpleSlider({items, center, variable, adaptive, row, sl
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          dots: true,
           slidesToScroll: 1,
-          variableWidth: variable,
+          rows: 1,
+          variableWidth: variable
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
+          dots: dot === undefined ? true : dot,
           slidesToScroll: 1,
           centerMode: center,
-          variableWidth: variable
+          variableWidth: variable2,
+          rows: 1,
+          slidesPerRow: 1
         }
       }
     ]
@@ -53,7 +86,7 @@ export default function SimpleSlider({items, center, variable, adaptive, row, sl
   return (
     <>
       <Slider {...settings}>
-        {items.map((item, index) => <div key={index}>{item}</div>)}
+        {items.map((item, index) => <div className="slider_item" key={index}>{item}</div>)}
       </Slider>
     </>
   )
