@@ -12,21 +12,15 @@
     text-align: center;
 }
 
-@media (min-width: 1441px) and (max-width: 1920px) {
-    .section-5_image img {
-        width: 100%;
-        height: 100%;
-    }
+.section-5_image img {
+    width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
     .section-5_image {
         max-width: 600px;
         margin-right: 20px;
-    }
-    .section-5_image img {
-        width: 100%;
-        height: 100%;
     }
     .section-5_title {
         margin-bottom: 44px;
@@ -51,8 +45,6 @@
         margin-right: 20px;
     }
     .section-5_image img {
-        width: 100%;
-        height: 100%;
         border-radius: 20px;
     }
     .section-5_title {
@@ -70,8 +62,6 @@
     }
     .section-5_image img {
         border-radius: 14px;
-        width: 100%;
-        height: 100%;
     }
     .section-5_item .slick-list {
         overflow: inherit!important;
@@ -89,7 +79,5 @@
     }
     .section-5_image img {
         border-radius: 14px;
-        width: 100%;
-        height: 100%;
     }
 }

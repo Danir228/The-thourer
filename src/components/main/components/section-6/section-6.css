@@ -1,6 +1,7 @@
 .section-6_price_items {
     display: inherit!important;
     height: 500px;
+    text-align: center;
 }
 
 .section-6_title {
@@ -63,6 +64,16 @@
     .section-6_title_item-2 {
         font-size: 40px;
     }
+    .section-6_price_item {
+        max-width: 231px;
+    }
+    .section-6_price_items .slick_slide {
+        text-align: center;
+    }
+    .section-6_price_items .slider_item {
+        max-width: 20%;
+        margin-right: 20px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -115,6 +126,9 @@
 }
 
 @media (max-width: 480px) {
+    .section-6_price_items .slick-list {
+        max-height: 450px;
+    }
     .section-6_price_item {
         width: 231px;
         margin-right: 12px;

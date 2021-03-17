@@ -13,14 +13,17 @@ import Slider from "react-slick";
 export default function SimpleSlider({items, center, variable, row, sliderow, variable2, slidenum, dot}) {
   let settings = {
     className: "slider variable-width",
-    dots: false,
-    infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: true,
+    rows: 1,
+    slidesPerRow: slidenum,
+    variableWidth: false,
+    centerMode: false,
+    dots: false,
+    swipeToSlide: false,
+    swipe: false,
+    infinite: false,
     arrows: false,
-    variableWidth: true,
     responsive: [
       {
         breakpoint: 1920,
@@ -55,18 +58,28 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: dot === undefined ? true : dot,
+          centerMode: true,
           rows: row,
-          slidesPerRow: sliderow
+          slidesPerRow: sliderow,
+          variableWidth: true,
+          infinite: true,
+          swipeToSlide: true,
+          swipe: true,
         }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          dots: true,
+          dots: dot === undefined ? true : dot,
           slidesToScroll: 1,
           rows: 1,
-          variableWidth: variable
+          slidesPerRow: 1,
+          variableWidth: variable,
+          centerMode: true,
+          infinite: true,
+          swipeToSlide: true,
+          swipe: true,
         }
       },
       {
@@ -78,7 +91,10 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
           centerMode: center,
           variableWidth: variable2,
           rows: 1,
-          slidesPerRow: 1
+          slidesPerRow: 1,
+          infinite: true,
+          swipeToSlide: true,
+          swipe: true,
         }
       }
     ]

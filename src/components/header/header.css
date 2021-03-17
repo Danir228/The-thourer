@@ -16,8 +16,8 @@
 
 .navbar_menu {
     display: flex;
+    height: 120px;
     justify-content: space-between;
-    padding: 30px 0;
 }
 
 .hamburger {
@@ -63,6 +63,10 @@
 
 .navbar_link:last-child {
     margin-right: 0;
+}
+.header_btn {
+    height: 100%;
+    align-items: center;
 }
 
 .header_btn .app-store_btn, .header .google-play_btn {
@@ -112,6 +116,19 @@
     }
     .hamburger {
         display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar_menu {
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar_menu {
+        height: 80px;
     }
 }
 

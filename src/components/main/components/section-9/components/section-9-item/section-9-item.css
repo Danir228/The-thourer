@@ -12,6 +12,7 @@
 .accordion_title {
     display: flex;
     padding: 20px 20px;
+    cursor: pointer;
 }
 
 .accordion_title span {

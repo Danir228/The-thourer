@@ -5,17 +5,18 @@ import {Container} from 'reactstrap';
 import HeaderFrame from './components/header-frame';
 import AppStoreButton from '../buttons/appStore';
 import GooglePlayButton from '../buttons/googlePlay';
+import Modal from '../modal';
 
 import logo from './logo.svg';
 
 import './header.css';
 
 export default class Header extends Component {
-
     state = {
         open: false,
         hide: false,
-        color: ''
+        color: '',
+        isVisible: false
     }
 
     handleClick() {
@@ -38,11 +39,21 @@ export default class Header extends Component {
         }
     }
 
+    handleMouseEnter = () => {
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
+    handleMouseLeave = ()=> {
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
     componentDidMount() {
         window.addEventListener('scroll', this.listenScrollEvent);
     }
 
     render() {
+        const enter = this.handleMouseEnter;
+        const leave = this.handleMouseLeave;
         return (
             <header className="header" style={{background: this.state.color}}>
                 <Container>
@@ -70,6 +81,8 @@ export default class Header extends Component {
                         </div>
                         <div className="header_btn d-flex">
                             <AppStoreButton
+                            onEnter={enter}
+                            onLeave={leave}
                             textButton={'App Store'}/>
                             <GooglePlayButton
                             textButton={'Google Play'}/>
@@ -78,6 +91,9 @@ export default class Header extends Component {
                     </div>
                     <HeaderFrame
                     isHide={this.state.hide}/>
+                    <Modal
+                    visible={this.state.isVisible}
+                    text={'Наведите камеру вашего телефона для перехода в App Store'}/>
                 </Container>
             </header>
         )

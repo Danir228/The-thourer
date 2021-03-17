@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 1116px;
     height: 760px;
-    left: 0;
+    left: -70px;
     background: url('section-2.svg') no-repeat;
     background-size: contain;
 }
@@ -54,7 +54,7 @@
 
 @media (min-width: 1441px) and (max-width: 1920px) {
     .section-second_left {
-        left: -70px;
+        left: -310px;
     }
 }
 

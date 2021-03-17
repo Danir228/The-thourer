@@ -1,14 +1,18 @@
 .section-11_item {
-    height: 150px;
+    height: 100%;
 }
 
 .section-11_image {
     height: 94px;
-    margin-right: 100px;
 }
 
 .section-11_item .slider_item {
     text-align: center;
+    margin-right: 100px;
+}
+
+.section-11_item .slider_item {
+    margin-right: 0;
 }
 
 .section-11_item .slick-slide img {
@@ -19,5 +23,18 @@
     .section-11_image {
         display: flex;
         align-items: center;
+    }
+    .section-11_item .slider_item {
+        margin-right: 74px!important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-11_item .slick-slide {
+        text-align: center;
+    }
+    .section-11_item .slick-slide {
+        /* max-width: 130px!important;   */
+        margin-right: 0!important;
     }
 }

@@ -10,13 +10,15 @@ import mail from './components/images/mail.svg';
 
 import './section-9.css';
 
-export default function SectionNine({}) {
+
+export default function SectionNine() {
     return (
         <div className="section-9_item">
             <Modal
             image={adress}/>
             <h1 className="section-9_title">Часто задаваемые <span className="textupdate">вопросы</span></h1>
             <SectionNineAccordion
+            visible={true}
             title={'Как я могу делиться созданными турами?'}
             text1={'Возможность делиться созданными турами предоставляется только для платных уровней подписки.'}
             text2={'Вы можете предоставить доступ к виртуальным турам 3-мя способами:'}
@@ -24,12 +26,14 @@ export default function SectionNine({}) {
             text4={'• Получить онлайн-визитку с <span class="text">QR-кодом</span> для использования в агрегаторах объявлений'}
             text5={'• Вставить преднастроенный код плеера на ваш сайт'}/>
             <SectionNineAccordion
+            visible={false}
             title={'У меня уже есть отснятые панорамы. Могу ли я использовать их в приложении?'}
             text1={`
                 Да, наше приложение поддерживает импорт панорам из памяти телефона.
                 Подключение внешних камер к iPhone в текущей версии приложения не предусмотрено.
             `}/>
             <SectionNineAccordion
+            visible={false}
             title={'Для каких помещений можно использовать виртуальные туры?'}
             text1={`
                 Нет ограничений в сферах, которым виртуальные туры могут быть полезны.
@@ -37,6 +41,7 @@ export default function SectionNine({}) {
                 коворкингах, ресторанах, отелях, фитнес-клубах и др.
             `}/>
             <SectionNineAccordion
+            visible={false}
             title={'Какие устройства поддерживает приложение?'}
             text1={`
                 На данный момент поддерживаются только устройства на операционной системе iOS.
