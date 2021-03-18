@@ -13,15 +13,12 @@ export default class SectionSecond extends Component {
     }
 
     handleMouseEnter = () => {
-        this.setState({isVisible: !this.state.isVisible});
+        this.setState( prevState => (
+            {isVisible: !prevState.isVisible}));
     }
 
-    handleMouseLeave = () => {
-        this.setState({isVisible: !this.state.isVisible});
-    }
     render() {
         const enter = this.handleMouseEnter;
-        const leave = this.handleMouseLeave;
         return (
             <>
                 <div className="section-second_left"></div>
@@ -29,21 +26,21 @@ export default class SectionSecond extends Component {
                     <div className="section-second d-flex">
                         <div className="section-second_right">
                             <h1>The Tourer</h1>
-                            <p>The Tourer открывает возможность создавать 3D-туры любому желающему.
+                            <p>The Tourer открывает возможность создавать <span className="section-2_number">3</span>D-туры любому желающему.
                             Фотографии и видео рождают в голове больше вопросов, чем ответов.
                             Экономьте время и силы, позволив клиентам виртуально оказаться в помещении, находясь абсолютно в другом месте.</p>
                             <div className="section-second_btn">
                                 <AppStoreButton
                                 onEnter={enter}
-                                onLeave={leave}
                                 textButton={'Скачать приложение'}/>
                             </div>
+                            <Modal
+                            visible={this.state.isVisible}
+                            closeModalWindow={enter}
+                            text={'Наведите камеру вашего телефона для перехода в App Store'}/>
                         </div>
                     </div>
                 </Container>
-                <Modal
-                visible={this.state.isVisible}
-                text={'Наведите камеру вашего телефона для перехода в App Store'}/>
             </>
 
         )

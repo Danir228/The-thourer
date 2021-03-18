@@ -4,6 +4,12 @@
     height: 760px;
     padding: 0;
     justify-content: flex-end;
+    /* flex-direction: column;
+    align-items: flex-end; */
+}
+
+.section-2_number {
+    font-family: Montserrat;
 }
 
 .section-second_left {
@@ -25,6 +31,11 @@
     max-height: 392px;
     margin-top: 266px;
 }
+/*
+.section-second_btn {
+    width: 100%;
+    max-width: 490px;
+} */
 
 .section-second_btn .app-store_btn {
     width: 260px;
@@ -52,13 +63,13 @@
 }
 
 
-@media (min-width: 1441px) and (max-width: 1920px) {
+@media (min-width: 1440px) and (max-width: 1920px) {
     .section-second_left {
         left: -310px;
     }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
     .section-second_left {
         max-width: 722px;
         max-height: 507px;
@@ -84,7 +95,7 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .section-second_left {
         max-width: 600px;
         max-height: 403px;
@@ -114,7 +125,7 @@
     }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .section-second {
         justify-content: end;
     }

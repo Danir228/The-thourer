@@ -1,5 +1,4 @@
 .header-frame {
-    display: none;
     position: absolute;
     width: 252px;
     height: 384px;
@@ -19,7 +18,7 @@
 }
 
 .header-frame a {
-    font-family: Raleway Regular;
+    font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;

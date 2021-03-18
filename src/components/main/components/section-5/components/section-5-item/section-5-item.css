@@ -1,4 +1,4 @@
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .section-5_image {
         width: 428px;
     }
@@ -9,3 +9,5 @@
         width: 287px;
     }
 }
+
+

@@ -18,6 +18,7 @@ export default function SectionTen() {
                         className="section-10_app"
                         textButton={'App Store'}/>
                         <GooglePlayButton
+                        disabledbtn={'disabled'}
                         className="section-10_google"
                         textButton={'Google Play'}/>
                     </div>

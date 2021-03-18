@@ -8,6 +8,7 @@
 
 .header .container {
     max-width: 1218px;
+    position: relative;
 }
 
 .activeClass {
@@ -20,13 +21,26 @@
     justify-content: space-between;
 }
 
+#modal {
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    position: fixed;
+}
+
+#modal .container {
+    position: relative;
+}
+
 .hamburger {
     display: none;
     position: absolute;
+    height: 100%;
     right: 25px;
-    top: 34px;
     width: 36px;
-    height: 36px;
     cursor: pointer;
 }
 
@@ -74,6 +88,7 @@
 }
 
 .header_btn .app-store_btn {
+    opacity: 0;
     margin-right: 20px;
 }
 
@@ -112,10 +127,10 @@
     .language {
         position: absolute;
         right: 80px;
-        top: 38px;
     }
     .hamburger {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -125,10 +140,16 @@
     }
 }
 
+@media (max-width: 768px) {
+    .navbar_menu {
+        height: 80px;
+    }
+}
+
 
 @media (max-width: 480px) {
     .navbar_menu {
-        height: 80px;
+        height: 60px;
     }
 }
 

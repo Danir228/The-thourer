@@ -4,7 +4,6 @@ import HamburgerMenu from 'react-hamburger-menu';
 import {Container} from 'reactstrap';
 import HeaderFrame from './components/header-frame';
 import AppStoreButton from '../buttons/appStore';
-import GooglePlayButton from '../buttons/googlePlay';
 import Modal from '../modal';
 
 import logo from './logo.svg';
@@ -14,9 +13,21 @@ import './header.css';
 export default class Header extends Component {
     state = {
         open: false,
-        hide: false,
+        opacity: '',
+        show: false,
         color: '',
         isVisible: false
+    }
+
+    openModal() {
+        this.setState( prevState => (
+        {show: !prevState.show}));
+    }
+
+    closeModal(e) {
+        if(e.target.id === "modal") {
+          this.setState({show: false});
+        }
     }
 
     handleClick() {
@@ -25,26 +36,17 @@ export default class Header extends Component {
         });
     }
 
-    hideClick() {
-        this.setState({
-            hide: !this.state.hide
-        });
-    }
-
-    listenScrollEvent = e => {
-        if (window.scrollY > 100) {
-          this.setState({color: 'white'})
+    listenScrollEvent = () => {
+        if (window.scrollY > 30) {
+          this.setState({color: 'rgba(255, 255, 255, 0.5)', opacity: 1});
         } else {
-          this.setState({color: undefined })
+          this.setState({color: undefined, opacity: undefined});
         }
     }
 
     handleMouseEnter = () => {
-        this.setState({isVisible: !this.state.isVisible});
-    }
-
-    handleMouseLeave = ()=> {
-        this.setState({isVisible: !this.state.isVisible});
+        this.setState( prevState => (
+            {isVisible: !prevState.isVisible}));
     }
 
     componentDidMount() {
@@ -53,14 +55,13 @@ export default class Header extends Component {
 
     render() {
         const enter = this.handleMouseEnter;
-        const leave = this.handleMouseLeave;
         return (
             <header className="header" style={{background: this.state.color}}>
                 <Container>
                     <div className="navbar_menu">
-                    <div className="hamburger" onClick={this.hideClick.bind(this)}>
+                    <div className="hamburger" onClick={() => this.openModal()}>
                         <HamburgerMenu
-                            isOpen={this.state.open}
+                            isOpen={this.state.show}
                             menuClicked={this.handleClick.bind(this)}
                             width={36}
                             height={0}
@@ -80,19 +81,21 @@ export default class Header extends Component {
                             </ul>
                         </div>
                         <div className="header_btn d-flex">
-                            <AppStoreButton
+                        <AppStoreButton
                             onEnter={enter}
-                            onLeave={leave}
+                            stylebtn={this.state.opacity}
                             textButton={'App Store'}/>
-                            <GooglePlayButton
-                            textButton={'Google Play'}/>
                             <a href="/" className="language">EN</a>
                         </div>
                     </div>
-                    <HeaderFrame
-                    isHide={this.state.hide}/>
+                    {this.state.show && <div id='modal' onClick={(e) => this.closeModal(e)}>
+                        <Container>
+                            <HeaderFrame/>
+                        </Container>
+                    </div>}
                     <Modal
                     visible={this.state.isVisible}
+                    closeModalWindow={enter}
                     text={'Наведите камеру вашего телефона для перехода в App Store'}/>
                 </Container>
             </header>

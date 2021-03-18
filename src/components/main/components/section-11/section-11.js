@@ -19,6 +19,7 @@ export default function SectionEleven() {
                 sliderow={1}
                 center={true}
                 variable={true}
+                variable2={true}
                 items={[
                     <div className="section-11_image">
                         <img
