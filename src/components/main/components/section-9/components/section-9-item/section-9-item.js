@@ -7,14 +7,35 @@ import './section-9-item.css';
 import { Component } from 'react';
 
 export default class SectionNineAccordion extends Component {
+
     state = {
-        isVisible: this.props.visible
+        isVisible: this.props.visible,
+        isModal: false
     }
+
     toggle = () => {
         this.setState({
             isVisible: !this.state.isVisible
         })
     }
+
+    toggleModal = () => {
+        this.setState({
+            isModal: !this.state.isModal
+        })
+    }
+
+    componentDidUpdate(prevProps, prevSate) {
+        if (this.state.isModal !== prevSate.isModal) {
+            this.props.text4.function(this.state.isModal);
+        }
+        if (this.props.text4 && prevProps.text4 && this.props.text4.visibleModal !== prevProps.text4.visibleModal) {
+            this.setState({
+                isModal: this.props.text4.visibleModal
+            })
+        }
+    }
+
     render() {
         return (
             <>
@@ -31,7 +52,15 @@ export default class SectionNineAccordion extends Component {
                         <ul>
                             <li>{this.props.text2}</li>
                             <li>{this.props.text3}</li>
-                            <li dangerouslySetInnerHTML={{ __html: this.props.text4 }}></li>
+                            {this.props.text4 && <li>
+                                {this.props.text4.start}
+                                <span
+                                    className="text"
+                                    onClick={this.toggleModal}>
+                                    {this.props.text4.functionName}
+                                </span>
+                                {this.props.text4.end}
+                            </li>}
                             <li>{this.props.text5}</li>
                         </ul>
                     </div>

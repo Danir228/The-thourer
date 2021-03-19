@@ -94,9 +94,10 @@ export default class Header extends Component {
                         </Container>
                     </div>}
                     <Modal
-                    visible={this.state.isVisible}
-                    closeModalWindow={enter}
-                    text={'Наведите камеру вашего телефона для перехода в App Store'}/>
+                        visible={this.state.isVisible}
+                        closeModalWindow={enter}
+                        text={'Наведите камеру вашего телефона для перехода в App Store'}
+                    />
                 </Container>
             </header>
         )

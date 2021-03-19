@@ -4,40 +4,41 @@ import SectionNineAccordion from './components/section-9-item';
 import SocialLink from '../../../buttons/social-link';
 import Modal from '../../../modal';
 
-import adress from './adress.png';
 import telegram from './components/images/telegram.svg';
 import whatsap from './components/images/whatsap.svg';
 import mail from './components/images/mail.svg';
+import address from './adress.png';
 
 import './section-9.css';
 
 
 export default class SectionNine extends Component {
-
     state = {
-        isVisible: false
+        visible: false
     }
 
-    handleMouseEnter = () => {
-        this.setState( prevState => (
-            {isVisible: !prevState.isVisible}));
+    toggle = (value) => {
+        this.setState({visible: value});
     }
 
     render() {
         return (
             <div className="section-9_item">
-                {this.state.isVisible && <Modal
-                visible={this.state.isVisible}
-                image={adress}/>}
+                <Modal
+                    closeModalWindow={ () => this.toggle(false)}
+                    visible={this.state.visible}
+                    imgModal={address}
+                />
                 <h1 className="section-9_title">Часто задаваемые <span className="textupdate">вопросы</span></h1>
                 <SectionNineAccordion
-                visible={false}
-                title={'Как я могу делиться созданными турами?'}
-                text1={'Возможность делиться созданными турами предоставляется только для платных уровней подписки.'}
-                text2={'Вы можете предоставить доступ к виртуальным турам 3-мя способами:'}
-                text3={'• Отправить прямую ссылку на виртуальный тур'}
-                text4={`• Получить онлайн-визитку с <span class="text">QR-кодом</span> для использования в агрегаторах объявлений`}
-                text5={'• Вставить преднастроенный код плеера на ваш сайт'}/>
+                    visible={false}
+                    title={'Как я могу делиться созданными турами?'}
+                    text1={'Возможность делиться созданными турами предоставляется только для платных уровней подписки.'}
+                    text2={'Вы можете предоставить доступ к виртуальным турам 3-мя способами:'}
+                    text3={'• Отправить прямую ссылку на виртуальный тур'}
+                    text4={{start:'• Получить онлайн-визитку с ', visibleModal: this.state.visible, function: this.toggle, functionName: 'QR-кодом', end: ' для использования в агрегаторах объявлений'}}
+                    text5={'• Вставить преднастроенный код плеера на ваш сайт'}
+                />
                 <SectionNineAccordion
                 visible={false}
                 title={'У меня уже есть отснятые панорамы. Могу ли я использовать их в приложении?'}
