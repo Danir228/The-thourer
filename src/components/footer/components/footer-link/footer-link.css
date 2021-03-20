@@ -10,13 +10,13 @@
     border-radius: 50px;
 }
 
+.footer-social_link:hover {
+    background: #CACACA;
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
     .footer-social_link {
         width: 44px;
         height: 44px;
     }
-}
-
-.footer-social_link:hover {
-    opacity: 0.6;
 }

@@ -10,10 +10,6 @@
     border-radius: 40px;
 }
 
-.google-play_btn:hover {
-    opacity: 0.6;
-}
-
 .google-play_btn img {
     margin-right: 12px;
 }

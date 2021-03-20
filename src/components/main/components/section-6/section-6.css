@@ -46,9 +46,14 @@
     border-radius: 20px;
 }
 
+.section-6_price_item:hover {
+    background: #FFFFFF;
+}
+
 @media (min-width: 1440px) and (max-width: 1920px) {
     .section-6_price_items .slick-slide div {
         display: flex;
+        justify-content: center;
         margin-right: 30px;
     }
     .section-6_price_items .slick-slide div:last-child {
@@ -76,10 +81,14 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .section-6_price_items .slick-track, .section-6_price_items .slick-slide {
-        width: 100%!important;
+@media (width: 1024px) {
+    .section-6_price_items .slider_item {
+        max-width: 50%!important;
+        margin-right: 0!important;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .section-6_price_items {
         width: 100%;
         max-width: 100%;

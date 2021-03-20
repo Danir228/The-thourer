@@ -86,6 +86,10 @@
     color: #000000;
 }
 
+.item-4 .app-store_btn:hover, .item-4 .google-play_btn:hover {
+    background: #CACACA;
+}
+
 .item-4_btn {
     display: flex;
     flex-direction: column;
@@ -132,12 +136,18 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .footer {
-        margin-top: 120px;
+@media (width: 1440px) {
+    .img1, .img2 {
+        display: none!important;
     }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
     .img1024_1, .img1024_2 {
         display: block!important;
+    }
+    .footer {
+        margin-top: 120px;
     }
     .footer_item {
         height: 470px;
@@ -190,12 +200,21 @@
     }
 }
 
+@media (width: 1024px) {
+    .container_item {
+        justify-content: end!important;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
-    .footer {
-        margin-top: 100px;
+    .img1024_1, .img1024_2 {
+        display: none!important;
     }
     .img768_1, .img768_2 {
         display: block!important;
+    }
+    .footer {
+        margin-top: 100px;
     }
     .footer_item {
         height: 542px;
@@ -250,12 +269,21 @@
     }
 }
 
+@media (width: 768px) {
+    .item-4 {
+        bottom: 40px!important;
+    }
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
-    .footer {
-        margin-top: 80px;
+    .img768_1, .img768_2 {
+        display: none!important;
     }
     .img480_1, .img480_2 {
         display: block!important;
+    }
+    .footer {
+        margin-top: 80px;
     }
     .footer_item {
         height: 697px;
@@ -279,7 +307,7 @@
         max-width: 440px;
         display: flex;
         max-height: 404px;
-        bottom: 0;
+        bottom: 40px;
     }
     .item-2{
         position: absolute;
@@ -293,7 +321,7 @@
     .item-4 {
         position: absolute;
         width: 100%;
-        bottom: 40px;
+        bottom: 0;
         left: 15px;
     }
     .item-4_btn {
@@ -322,6 +350,9 @@
 }
 
 @media (max-width: 480px) {
+    .img480_1, .img480_2 {
+        display: none!important;
+    }
     .footer {
         margin-top: 80px;
     }
@@ -351,6 +382,11 @@
         padding-right: 15px;
         padding-left: 15px;
         justify-content: inherit!important;
+    }
+    .footer_item .container_item {
+        position: initial;
+        max-height: 100%;
+        flex-direction: column;
     }
     .item-2 {
         position: inherit;
@@ -389,6 +425,7 @@
     .item-5 {
         position: absolute;
         bottom: 121px;
+        margin-left: 0;
     }
     .item-5 h1 {
         margin-bottom: 20px;

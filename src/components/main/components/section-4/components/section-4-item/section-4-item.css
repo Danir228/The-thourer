@@ -9,6 +9,10 @@
     border-radius: 20px;
 }
 
+.section-4_btn:hover {
+    background: #FFFFFF;
+}
+
 .section-4_title {
     margin-bottom: 32px;
 

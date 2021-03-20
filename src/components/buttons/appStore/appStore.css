@@ -11,10 +11,6 @@
     border-radius: 40px;
 }
 
-.app-store_btn:hover {
-    opacity: 0.6;
-}
-
 .app-store_btn img {
     margin-right: 12px;
 }
