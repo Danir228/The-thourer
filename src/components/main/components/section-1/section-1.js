@@ -14,7 +14,8 @@ export default class SectionFirst extends Component {
 
     handleMouseEnter = () => {
         this.setState( prevState => (
-            {isVisible: !prevState.isVisible}));
+            {isVisible: !prevState.isVisible}
+        ));
     }
 
     render() {

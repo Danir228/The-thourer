@@ -9,10 +9,6 @@
     border-radius: 20px;
 }
 
-.section-4_btn:hover {
-    background: #FFFFFF;
-}
-
 .section-4_title {
     margin-bottom: 32px;
 
@@ -31,6 +27,12 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 27px;
+}
+
+@media (min-width: 1024px) {
+    .section-4_btn:hover {
+        background: #FFFFFF;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {

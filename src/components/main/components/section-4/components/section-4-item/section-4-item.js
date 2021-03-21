@@ -18,7 +18,7 @@ export default class SectionForItem extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.state.btnId !== prevState.btnId) {
+        if (this.state.btnId !== prevState.btnId && this.state.btnId !== 0) {
             this.props.func(this.state.btnId);
         }
         if (this.props.activeClass !== prevProps.activeClass) {

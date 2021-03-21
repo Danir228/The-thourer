@@ -6,14 +6,6 @@
     margin-bottom: 32px;
 }
 
-.mob_item_top_item {
-    display: none!important;
-}
-
-.show {
-    display: flex!important;
-}
-
 .mob_item_top .section-4_content {
     display: flex;
     width: 100%;

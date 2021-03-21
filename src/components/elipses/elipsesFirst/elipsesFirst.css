@@ -1,14 +1,203 @@
-
-.elipses_item_left {
+.first_elipses {
     position: absolute;
-    width: 100%;
-    max-width: 1192px;
-    height: 100%;
-    max-height: 1192px;
+    width: 2464px;
+    height: 1192px;
     left: -354px;
     top: -160px;
-    z-index: 1;
+}
+
+.first_elipses_left {
+    position: absolute;
+    width: 1192px;
+    height: 1192px;
+    left: -354px;
+    top: -160px;
 
     background: radial-gradient(50% 50% at 50% 50%, #9172EA 0%, rgba(196, 196, 196, 0) 100%);
     opacity: 0.6;
+}
+
+.first_elipses_center {
+    position: absolute;
+    width: 851px;
+    height: 858px;
+    right: 115px;
+    top: -1px;
+    background-image: radial-gradient(#FDE7B9, rgba(255, 255, 255, 0) 82.6%);
+}
+
+.first_elipses_right {
+    position: absolute;
+    width: 851px;
+    height: 858px;
+    right: 0;
+    top: 111px;
+    background: radial-gradient(50% 50% at 50% 50%, #9172EA 0%, rgba(197, 165, 249, 0.828125) 0, rgba(196, 196, 196, 0) 80%);
+}
+
+.second_elipses {
+    position: absolute;
+    width: 2289px;
+    height: 1028px;
+    left: -261px;
+    top: 1250px;
+}
+
+.second_elipses1 {
+    position: absolute;
+    width: 1028px;
+    height: 1028px;
+    top: -20px;
+    left: 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(236, 217, 138, 0.7) 0%, rgba(229, 197, 213, 0) 62%);
+}
+
+.second_elipses2 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    top: 500px;
+    right: 304px;
+    background-image: radial-gradient(#FDE7B9, rgba(255, 255, 255, 0) 83.6%);
+}
+
+.second_elipses3 {
+    position: absolute;
+    width: 652px;
+    height: 652px;
+    top: 149px;
+    right: 0;
+    background-image: radial-gradient(#5D38C4, rgba(255, 255, 255, 0) 62%);
+    opacity: 0.6;
+}
+
+.third_elipses {
+    position: absolute;
+    width: 2968px;
+    height: 1901.58px;
+    left: -975px;
+    top: 2336px;
+}
+
+.third_elipses1 {
+    position: absolute;
+    width: 1352.06px;
+    top: 300px;
+    height: 1352.06px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(93, 56, 196, 0.4) 0%, rgba(188, 173, 228, 0) 100%);
+    transform: rotate(-69.24deg);
+}
+
+.third_elipses2 {
+    position: absolute;
+    width: 1037px;
+    height: 1037px;
+    top: 190px;
+    right: 50%;
+    left: 48%;
+    background: radial-gradient(50% 63% at 50% 50%, #F1DA88 0%, rgba(255, 236, 198, 0) 56%);
+}
+
+.third_elipses3 {
+    position: absolute;
+    width: 886px;
+    height: 886px;
+    right: 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(93, 56, 196, 0.6) 0%, rgba(188, 173, 228, 0) 66%);
+    opacity: 0.4;
+}
+
+.for_elipses {
+    position: absolute;
+    width: 2781px;
+    height: 2417.76px;
+    left: -583px;
+    top: 4037px;
+}
+
+.for_elipses1 {
+    position: absolute;
+    width: 1019.31px;
+    height: 686.3px;
+    top: 15%;
+    left: 0;
+    background: radial-gradient(50% 52% at 50% 50%, #9188DB 0%, rgba(220, 141, 220, 0) 100%);
+    opacity: 0.6;
+    transform: rotate(-28.34deg);
+}
+
+.for_elipses2 {
+    position: absolute;
+    width: 1184px;
+    height: 1184px;
+    left: 84px;
+    bottom: 0;
+    background: radial-gradient(32% 48% at 50% 50%, rgba(93, 56, 196, 0.3) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.for_elipses3 {
+    position: absolute;
+    width: 797px;
+    height: 797px;
+    top: 9%;
+    right: 0;
+    background: radial-gradient(50% 40% at 50% 50%, #5D38C4 0%, rgba(93, 56, 196, 0) 91%);
+    opacity: 0.5;
+}
+
+.five_elipses {
+    position: absolute;
+    width: 3035.64px;
+    height: 2042.6px;
+    left: -561.36px;
+    top: 6405px;
+}
+
+.five_elipses1 {
+    position: absolute;
+    width: 848.55px;
+    height: 660.92px;
+    top: 20%;
+    background: radial-gradient(50% 50% at 50% 50%, #9188DB 0%, rgba(220, 141, 220, 0) 100%);
+    opacity: 0.6;
+    transform: rotate(-45deg);
+}
+
+.five_elipses2 {
+    position: absolute;
+    width: 1586px;
+    height: 772px;
+    top: 10%;
+    right: 13%;
+    background: radial-gradient(50% 38% at 50% 50%, rgba(93, 56, 196, 0.6) 0%, rgba(188, 173, 228, 0) 100%);
+    opacity: 0.5;
+}
+
+.five_elipses3 {
+    position: absolute;
+    width: 1496.52px;
+    top: -3%;
+    height: 929.74px;
+    background: radial-gradient(32% 36% at 47% 55%, #ffe899 0%, rgba(255, 236, 198, 0) 35%);
+    opacity: 0.7;
+}
+
+.five_elipses4 {
+    position: absolute;
+    width: 1496.52px;
+    height: 929.74px;
+    right: 3%;
+    bottom: 18%;
+    background: radial-gradient(50% 50% at 50% 50%, #DC8DDC 0%, rgba(220, 141, 220, 0) 100%);
+    opacity: 0.6;
+}
+
+.five_elipses5 {
+    position: absolute;
+    width: 1496.52px;
+    right: 20%;
+    height: 929.74px;
+    bottom: 12%;
+    background: radial-gradient(50% 83% at 50% 50%, #ffe899 0%, rgba(255, 236, 198, 0) 56%);
+    opacity: 0.5;
 }

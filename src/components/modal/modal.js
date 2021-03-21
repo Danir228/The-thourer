@@ -1,5 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
+import {Container} from 'reactstrap';
 
 import appstore from './applestoreqc.png';
 import './modal.css';
