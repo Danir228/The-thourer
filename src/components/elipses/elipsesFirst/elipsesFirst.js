@@ -19,6 +19,7 @@ function ElipsesFirst() {
                 <div className="third_elipses1"></div>
                 <div className="third_elipses2"></div>
                 <div className="third_elipses3"></div>
+                <div className="third_elipses4"></div>
             </div>
             <div className="for_elipses">
                 <div className="for_elipses1"></div>
