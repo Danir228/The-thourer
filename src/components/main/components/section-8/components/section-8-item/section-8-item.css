@@ -9,10 +9,6 @@
     border-radius: 20px;
 }
 
-.rewiew_item:hover {
-    background: #FFFFFF;
-}
-
 .rewiew_mark {
     margin-bottom: 36px;
     margin-left: 30px;
@@ -62,11 +58,16 @@
 
 .rewiew_star img {
     margin-right: 4px;
-    cursor: pointer;
 }
 
 .rewiew_star img:last-child {
     margin-right: 0;
+}
+
+@media (min-width: 1440px) {
+    .rewiew_item:hover {
+        background: #FFFFFF;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {

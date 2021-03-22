@@ -9,6 +9,7 @@ function ElipsesFirst() {
                 <div className="first_elipses_left"></div>
                 <div className="first_elipses_center"></div>
                 <div className="first_elipses_right"></div>
+                <div className="first_elipses_bottom"></div>
             </div>
             <div className="second_elipses">
                 <div className="second_elipses1"></div>

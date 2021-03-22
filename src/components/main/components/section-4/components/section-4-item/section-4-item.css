@@ -29,7 +29,7 @@
     line-height: 27px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .section-4_btn:hover {
         background: #FFFFFF;
     }
