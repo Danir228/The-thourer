@@ -54,7 +54,7 @@
     margin-top: 32px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1023px) and (max-width: 1439px) {
     .section-9_title {
         margin-bottom: 64px;
         font-size: 40px;
@@ -76,7 +76,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
     .section-9_title {
         margin-bottom: 44px;
         font-size: 32px;
@@ -94,7 +94,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 767px) {
     .section-9_title {
         margin-bottom: 32px;
         font-size: 28px;
@@ -119,7 +119,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .section-9_title {
         font-size: 21px;
         line-height: 27px;

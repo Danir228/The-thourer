@@ -217,7 +217,7 @@
     opacity: 0.5;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
     .first_elipses {
         position: absolute;
         width: 2464px;
@@ -380,7 +380,7 @@
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .first_elipses {
         width: 2015px;
         height: 1273px;
@@ -533,7 +533,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .first_elipses {
         width: 1712px;
         height: 1200px;
@@ -699,7 +699,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .first_elipses {
         width: 984px;
         height: 508px;
@@ -881,7 +881,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .first_elipses {
         width: 754px;
         height: 428px;

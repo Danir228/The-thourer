@@ -14,7 +14,7 @@
     background: #CACACA;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 767px) {
     .footer-social_link {
         width: 44px;
         height: 44px;

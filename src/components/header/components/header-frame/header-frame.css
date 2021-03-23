@@ -41,19 +41,19 @@
     font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .header-frame {
         top: 100px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header-frame {
         top: 80px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .header-frame {
         top: 60px;
     }

@@ -48,14 +48,14 @@
     border-radius: 22px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1023px) and (max-width: 1439px) {
     .whenitem_month, .whenitem_quarter, .whenitem_year {
         width: 218px;
         height: 86px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
     .whenitem {
         justify-content: center;
     }
@@ -69,7 +69,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 767px) {
     .whenitem {
         justify-content: center;
     }
@@ -97,7 +97,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .whenitem_month, .whenitem_quarter, .whenitem_year {
         width: 280px;
         height: 54px;

@@ -11,7 +11,7 @@
     margin-top: 64px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
     .section-8_item h1 {
         font-size: 40px;
         line-height: 46px;
@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 767px) {
     .section-8_item h1 {
         font-size: 32px;
         line-height: 37px;
@@ -31,7 +31,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .section-8_item h1 {
         font-size: 21px;
         line-height: 24px;

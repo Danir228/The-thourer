@@ -19,7 +19,7 @@
     display: initial;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .section-11_image {
         display: flex;
         align-items: center;
@@ -29,12 +29,11 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .section-11_item .slick-slide {
         text-align: center;
     }
     .section-11_item .slick-slide {
-        /* max-width: 130px!important;   */
         margin-right: 0!important;
     }
 }

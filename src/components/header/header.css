@@ -114,13 +114,13 @@
     text-decoration: none;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
     .header_btn .app-store_btn, .header_btn .google-play_btn {
         display: none;
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .navbar_links {
         display: none;
     }
@@ -134,20 +134,20 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .navbar_menu {
         height: 100px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar_menu {
         height: 80px;
     }
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .navbar_menu {
         height: 60px;
     }

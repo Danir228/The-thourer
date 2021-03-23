@@ -29,13 +29,13 @@
     line-height: 27px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1439px) {
     .section-4_btn:hover {
         background: #FFFFFF;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1023px) and (max-width: 1439px) {
     .section-4_btn {
         width: 64px;
         height: 64px;
@@ -43,7 +43,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
     .section-4_btn {
         width: 129px;
         height: 65px;
@@ -60,7 +60,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 767px) {
     .section-4_title {
         margin-bottom: 8px;
         font-size: 16px;
@@ -76,7 +76,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .section-4_btn {
         width: 48px;
         height: 48px;

@@ -50,7 +50,7 @@
     background: #FFFFFF;
 }
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1439px) and (max-width: 1919px) {
     .section-6_price_items .slick-slide div {
         display: flex;
         justify-content: center;
@@ -61,7 +61,7 @@
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1023px) and (max-width: 1439px) {
     .section-6_title_item-1 {
         font-size: 40px;
         line-height: 52px;
@@ -81,14 +81,14 @@
     }
 }
 
-@media (width: 1024px) {
+@media (width: 1023px) {
     .section-6_price_items .slider_item {
         max-width: 50%!important;
         margin-right: 0!important;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
     .section-6_price_items {
         width: 100%;
         max-width: 100%;
@@ -113,7 +113,7 @@
     }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 479px) and (max-width: 767px) {
     .section-6_price_item {
         width: 280px;
         margin-right: 16px;
@@ -134,7 +134,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .section-6_price_items .slick-list {
         max-height: 450px;
     }

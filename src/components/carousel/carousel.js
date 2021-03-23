@@ -26,7 +26,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
     arrows: false,
     responsive: [
       {
-        breakpoint: 1920,
+        breakpoint: 1919,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -41,7 +41,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
         }
       },
       {
-        breakpoint: 1440,
+        breakpoint: 1439,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -53,7 +53,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
         }
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1023,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -68,7 +68,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           dots: dot === undefined ? true : dot,
@@ -83,7 +83,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 479,
         settings: {
           slidesToShow: 1,
           dots: dot === undefined ? true : dot,
