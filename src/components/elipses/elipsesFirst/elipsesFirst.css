@@ -14,7 +14,7 @@
     top: -160px;
 
     background: radial-gradient(50% 50% at 50% 50%, #9172EA 0%, rgba(196, 196, 196, 0) 100%);
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .first_elipses_center {
@@ -72,7 +72,7 @@
     top: 149px;
     right: 0;
     background-image: radial-gradient(#5D38C4, rgba(255, 255, 255, 0) 62%);
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .third_elipses {
@@ -372,11 +372,20 @@
     .third_elipses2 {
         left: 50%;
     }
+    .first_elipses_right {
+        right: 6%;
+    }
 }
 
 @media (max-width: 1550px) {
     .third_elipses2 {
         left: 47%;
+    }
+    .first_elipses_center {
+        right: 12%;
+    }
+    .first_elipses_right {
+        right: 11%;
     }
 }
 
@@ -533,6 +542,24 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .first_elipses_center {
+        right: 5%;
+    }
+    .first_elipses_right {
+        right: -1%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .first_elipses_center {
+        right: 9%;
+    }
+    .first_elipses_right {
+        right: 4%;
+    }
+}
+
 @media (max-width: 1023px) {
     .first_elipses {
         width: 1712px;
@@ -555,8 +582,8 @@
     .first_elipses_right {
         width: 650px;
         height: 655px;
-        right: -10%;
-        opacity: 0.7;
+        right: -3%;
+        opacity: 1;
     }
     .first_elipses_bottom {
         display: block;
@@ -699,6 +726,16 @@
     }
 }
 
+@media (max-width: 866px) {
+    .first_elipses_center {
+        right: 7%;
+    }
+    .first_elipses_right {
+        right: 4%;
+        opacity: 0.7;
+    }
+}
+
 @media (max-width: 767px) {
     .first_elipses {
         width: 984px;
@@ -710,8 +747,8 @@
         width: 508px;
         height: 508px;
         left: 78px;
-        top: 12%;
-        opacity: 0.6;
+        top: 5%;
+        opacity: 0.4;
     }
     .first_elipses_center {
         width: 393px;
@@ -878,6 +915,22 @@
         bottom: 5%;
         left: 28%;
         opacity: 0.4;
+    }
+}
+
+@media (max-width: 690px) {
+    .first_elipses_right {
+        right: -14%;
+    }
+}
+
+@media (max-width: 690px) {
+    .first_elipses_center {
+        right: -5%;
+    }
+    .first_elipses_right {
+        right: -5%;
+        opacity: 0.9;
     }
 }
 

@@ -1,5 +1,6 @@
 .scroll {
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     width: 120px;
     height: 120px;
     right: 120px;
@@ -15,12 +16,48 @@
 }
 
 .scroll img {
-    width: 64px;
-    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
 }
 
 @media (max-width: 1919px) {
     .scroll {
-        display: none;
+        right: 80px;
+    }
+}
+
+@media (max-width: 1439px) {
+    .scroll {
+        right: 40px;
+        width: 80px;
+        height: 80px;
+        bottom: -60px;
+    }
+    .scroll img {
+        max-width: 44px;
+        max-height: 44px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .scroll {
+        width: 60px;
+        height: 60px;
+    }
+    .scroll img {
+        max-width: 34px;
+        max-height: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .scroll {
+        right: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    .scroll {
+        right: 10px;
     }
 }

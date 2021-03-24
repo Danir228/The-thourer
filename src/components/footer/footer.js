@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FooterSocialLink from './components/footer-link';
 import AppStoreButton from '../buttons/appStore';
 import GooglePlayButton from '../buttons/googlePlay';
+import Modal from '../modal';
 
 import telegram from './components/images/telegram.svg';
 import facebook from './components/images/facebook.svg';
@@ -25,7 +26,24 @@ import img2 from './components/images/img2.png';
 import './footer.css';
 
 export default class Footer extends Component {
+
+    state = {
+        isVisible: false
+    }
+
+    handleMouseEnter = () => {
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
+    handleMouseLeave = () => {
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
     render() {
+
+        const enter = this.handleMouseEnter;
+        const leave = this.handleMouseLeave;
+
         return (
             <footer className="footer">
                 <div className="footer_item">
@@ -50,11 +68,11 @@ export default class Footer extends Component {
                                 <h1>The Tourer</h1>
                                 <div className="item-1_links">
                                     <FooterSocialLink
-                                    image={telegram}/>
+                                        image={telegram}/>
                                     <FooterSocialLink
-                                    image={facebook}/>
+                                        image={facebook}/>
                                     <FooterSocialLink
-                                    image={twitter}/>
+                                        image={twitter}/>
                                 </div>
                                 </div>
                                 <div className="item-2">
@@ -72,27 +90,33 @@ export default class Footer extends Component {
                                     <h1>Скачать приложение</h1>
                                     <div className="item-4_btn">
                                         <AppStoreButton
-                                        textButton={'App Store'}
-                                        customIcon={apple}/>
+                                            onEnter={enter}
+                                            onLeave={leave}
+                                            textButton={'App Store'}
+                                            customIcon={apple}/>
                                         <GooglePlayButton
-                                        textButton={'Google Play'}/>
+                                            textButton={'Google Play'}/>
                                     </div>
                                 </div>
                                 <div className="item-5">
                                     <h1>Связаться с нами</h1>
                                     <div className="item-5_links">
                                         <FooterSocialLink
-                                        image={telegram}/>
+                                            image={telegram}/>
                                         <FooterSocialLink
-                                        image={whatsap}/>
+                                            image={whatsap}/>
                                         <FooterSocialLink
-                                        image={mail}/>
+                                            image={mail}/>
                                     </div>
                                 </div>
                             </div>
                         </Container>
                     </div>
                 </div>
+                <Modal
+                    visible={this.state.isVisible}
+                    text={'Наведите камеру вашего телефона для перехода в App Store'}
+                />
             </footer>
         )
     }

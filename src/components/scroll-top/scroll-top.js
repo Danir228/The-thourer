@@ -5,10 +5,12 @@ import arrowup from './arrow-up.png';
 import './scroll-top.css';
 
 export default class ScrollTop extends Component {
+
     scrollTop() {
         let scroll = Scroll.animateScroll;
         scroll.scrollToTop();
     }
+
     render() {
         return (
             <>

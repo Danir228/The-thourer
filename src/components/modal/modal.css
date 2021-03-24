@@ -1,5 +1,8 @@
 .modal-window {
     position: fixed;
+    width: 600px;
+    height: 500px;
+    z-index: 3000;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -11,6 +14,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    -webkit-animation: 0.5s ease 0s normal forwards 1 fadein;
+    animation: 0.5s ease 0s normal forwards 1 fadein;
 }
 
 #modal-cod {
@@ -24,9 +29,16 @@
     position: fixed;
 }
 
-.modal-window {
-    width: 600px;
-    height: 500px;
+@keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
 }
 
 .modal-window img {
@@ -41,7 +53,7 @@
 
     font-family: Raleway;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500!important;
     font-size: 20px;
     line-height: 160%;
 }

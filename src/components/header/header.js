@@ -45,8 +45,11 @@ export default class Header extends Component {
     }
 
     handleMouseEnter = () => {
-        this.setState( prevState => (
-            {isVisible: !prevState.isVisible}));
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
+    handleMouseLeave = () => {
+        this.setState({isVisible: !this.state.isVisible});
     }
 
     componentDidMount() {
@@ -55,6 +58,7 @@ export default class Header extends Component {
 
     render() {
         const enter = this.handleMouseEnter;
+        const leave = this.handleMouseLeave;
         return (
             <header className="header" style={{background: this.state.color}}>
                 <Container>
@@ -83,6 +87,7 @@ export default class Header extends Component {
                         <div className="header_btn d-flex">
                         <AppStoreButton
                             onEnter={enter}
+                            onLeave={leave}
                             stylebtn={this.state.opacity}
                             textButton={'App Store'}/>
                             <a href="/" className="language">EN</a>
@@ -95,7 +100,6 @@ export default class Header extends Component {
                     </div>}
                     <Modal
                         visible={this.state.isVisible}
-                        closeModalWindow={enter}
                         text={'Наведите камеру вашего телефона для перехода в App Store'}
                     />
                 </Container>

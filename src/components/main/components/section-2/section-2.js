@@ -13,12 +13,16 @@ export default class SectionSecond extends Component {
     }
 
     handleMouseEnter = () => {
-        this.setState( prevState => (
-            {isVisible: !prevState.isVisible}));
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
+    handleMouseLeave = () => {
+        this.setState({isVisible: !this.state.isVisible});
     }
 
     render() {
         const enter = this.handleMouseEnter;
+        const leave = this.handleMouseLeave;
         return (
             <>
                 <div className="section-second_left"></div>
@@ -31,16 +35,17 @@ export default class SectionSecond extends Component {
                             Экономьте время и силы, позволив клиентам виртуально оказаться в помещении, находясь абсолютно в другом месте.</p>
                             <div className="section-second_btn">
                                 <AppStoreButton
-                                onEnter={enter}
-                                textButton={'Скачать приложение'}/>
+                                    onEnter={enter}
+                                    onLeave={leave}
+                                    textButton={'Скачать приложение'}
+                                />
                             </div>
-                            <Modal
-                            visible={this.state.isVisible}
-                            closeModalWindow={enter}
-                            text={'Наведите камеру вашего телефона для перехода в App Store'}/>
                         </div>
                     </div>
                 </Container>
+                <Modal
+                visible={this.state.isVisible}
+                text={'Наведите камеру вашего телефона для перехода в App Store'}/>
             </>
 
         )

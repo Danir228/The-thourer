@@ -17,7 +17,7 @@
     width: 100%;
     max-width: 1116px;
     height: 760px;
-    left: -70px;
+    left: 0;
     background: url('section-2.svg') no-repeat;
     background-size: contain;
 }
@@ -30,6 +30,10 @@
     max-width: 490px;
     max-height: 392px;
     margin-top: 266px;
+}
+
+.section-second_btn {
+    width: 260px;
 }
 
 .section-second_btn .app-store_btn {
@@ -60,7 +64,7 @@
 
 @media (min-width: 1439px) and (max-width: 1919px) {
     .section-second_left {
-        left: -310px;
+        left: -114px;
     }
 }
 
@@ -153,6 +157,7 @@
         max-width: 100%;
         max-height: 322px;
         margin-top: 0;
+        align-items: center;
     }
     .section-second_right h1 {
         margin-bottom: 16px;

@@ -75,6 +75,11 @@
     color: #ffffff;
 }
 
+.active:hover {
+    background: #000;
+    border-color: #000;
+}
+
 @media (min-width: 1919px) {
     .section-3 .container {
         padding: 0;

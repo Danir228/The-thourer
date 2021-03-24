@@ -4,6 +4,8 @@
     max-width: 1920px;
     margin: 0 auto;
     z-index: 1000;
+    transition-property: all;
+    transition-duration: 2s;
 }
 
 .header .container {

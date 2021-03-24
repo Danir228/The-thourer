@@ -20,9 +20,8 @@ export default class SectionNine extends Component {
     toggle = (value) => {
         if(value === true) {
             this.setState({visible: value})
-        }
-        else {
-            this.setState({visible: false});
+        } else {
+            this.setState({visible: false})
         }
     }
 
@@ -30,7 +29,6 @@ export default class SectionNine extends Component {
         return (
             <div className="section-9_item">
                 <Modal
-                    closeModalWindow={ () => this.toggle(false)}
                     visible={this.state.visible}
                     image={address}
                 />

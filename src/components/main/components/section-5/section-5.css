@@ -12,6 +12,117 @@
     text-align: center;
 }
 
+.section-5_image {
+    position: relative;
+    cursor: pointer;
+}
+
+.section-5_play {
+    position: absolute;
+    z-index: 1000;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 160px;
+    transform: translate(-50%,-50%);
+    /* background: url('./components/images/play.svg') no-repeat center; */
+}
+
+.section-5_image_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(30px); */
+}
+
+.slider_item .section-5_image_text span:first-child {
+    margin-bottom: 8px;
+}
+
+.slider_item:first-child .section-5_image_text {
+    border-radius: 0 0 0 20px;
+}
+
+.slider_item:last-child .section-5_image_text {
+    border-radius: 0 0 20px 0;
+}
+
+@media (max-width: 1439px) {
+    .section-5_image_text {
+        border-radius: 0 0 20px 20px!important;
+    }
+}
+
+@media (max-width: 1023px) {
+    .section-5_image_text {
+        max-height: 95px;
+    }
+    .section-5_image_text span {
+        margin-left: 38px!important;
+        font-size: 15px!important;
+        line-height: 20px!important;
+    }
+    .section-5_play {
+        width: 70px;
+        height: 70px;
+        top: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* .section-5_image_text {
+        max-height: 67px;
+    } */
+    .section-5_image_text span {
+        margin-left: 20px!important;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-5_play {
+        top: 40%;
+    }
+}
+
+@media (max-width: 540px) {
+    .section-5_play {
+        top: 33%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-5_image_text {
+        max-height: 67px;
+    }
+    .section-5_image_text span {
+        /* margin-left: 10px; */
+        font-size: 13px!important;
+        line-height: 16px!important;
+    }
+    .section-5_play {
+        max-width: 48px;
+        max-height: 48px;
+        top: 40%;
+    }
+}
+
+.section-5_image_text span {
+    margin-left: 44px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+
+    color: #FFFFFF;
+}
+
 .section-5_image img {
     width: 100%;
     height: 100%;

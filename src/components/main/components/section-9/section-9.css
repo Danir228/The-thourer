@@ -6,9 +6,13 @@
     position: absolute;
     display: inherit;
     padding: 33px 35px;
-    right: 175px;
+    top: 0;
+    right: 0;
+    transform: inherit;
     max-width: 430px;
     max-height: 600px;
+    box-shadow: 0px 2px 60px 20px rgba(163, 146, 236, 0.2);
+    border-radius: 20px;
 }
 
 .section-9_item .modal-window img {
@@ -52,6 +56,10 @@
     display: flex;
     justify-content: center;
     margin-top: 32px;
+}
+
+.section-9_footer_links .social-link {
+    border: 1px solid #FFFFFF;
 }
 
 @media (min-width: 1023px) and (max-width: 1439px) {

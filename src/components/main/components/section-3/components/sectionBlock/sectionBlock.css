@@ -5,8 +5,7 @@
     padding: 40px 34px 30px 40px;
 
     background: rgba(255, 255, 255, 0.4);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid #FFFFFF;
     border-radius: 20px;
 }
 

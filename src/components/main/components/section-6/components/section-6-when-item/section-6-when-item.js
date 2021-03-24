@@ -7,8 +7,8 @@ export default class WhenItem extends Component {
 
     state = {
         month: false,
-        quarter: true,
-        year: false,
+        quarter: false,
+        year: true,
     }
 
     handleClickMonth = (e) => {

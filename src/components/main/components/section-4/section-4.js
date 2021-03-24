@@ -3,6 +3,7 @@ import {Col, Row} from 'reactstrap';
 import SectionForItem from './components/section-4-item';
 import SectionForMobItem from './components/section-4-mob-item';
 import AppStoreButton from '../../../buttons/appStore';
+import Modal from '../../../modal';
 
 import device from './Device.png';
 
@@ -13,7 +14,8 @@ export default class SectionFor extends Component {
         first: true,
         second: false,
         third: false,
-        for: false
+        for: false,
+        isVisible: false
     }
 
     switchBtn = (btnType) => {
@@ -39,7 +41,17 @@ export default class SectionFor extends Component {
         this.setState({first: firstNew, second: secondNew , third: thirdNew, for: forNew});
     }
 
+    handleMouseEnter = () => {
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
+    handleMouseLeave = () => {
+        this.setState({isVisible: !this.state.isVisible});
+    }
+
     render() {
+        const enter = this.handleMouseEnter;
+        const leave = this.handleMouseLeave;
         return (
             <>
                 <Row>
@@ -104,9 +116,14 @@ export default class SectionFor extends Component {
                     <Col className="section-4_bottom_item_body d-flex justify-content-around px-0 py-0">
                         <p className="bottom_text">Создайте свой виртуальный тур <span className="bottom_text_item">прямо сейчас</span></p>
                         <AppStoreButton
+                        onEnter={enter}
+                        onLeave={leave}
                         textButton={'Скачать приложение'}/>
                     </Col>
                 </Row>
+                <Modal
+                    visible={this.state.isVisible}
+                    text={'Наведите камеру вашего телефона для перехода в App Store'}/>
             </>
         )
     }

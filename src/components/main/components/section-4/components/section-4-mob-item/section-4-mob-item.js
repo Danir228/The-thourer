@@ -41,7 +41,6 @@ export default class SectionForMobItem extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <>
                 <Row className="w-100">

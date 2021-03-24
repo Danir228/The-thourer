@@ -10,7 +10,8 @@ export default class SectionNineAccordion extends Component {
 
     state = {
         isVisible: this.props.visible,
-        isModal: false
+        isModal: false,
+        close: true
     }
 
     toggle = () => {
@@ -22,11 +23,17 @@ export default class SectionNineAccordion extends Component {
     toggleModal = () => {
         this.setState({
             isModal: !this.state.isModal
-        })
+        });
     }
 
-    componentDidUpdate(prevProps, prevSate) {
-        if (this.state.isModal !== prevSate.isModal) {
+    closeModal = () => {
+        this.setState({
+            close: !this.state.close
+        });
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.isModal !== prevState.isModal) {
             this.props.text4.function(this.state.isModal);
         }
         if (this.props.text4 && prevProps.text4 && this.props.text4.visibleModal !== prevProps.text4.visibleModal) {
@@ -39,7 +46,7 @@ export default class SectionNineAccordion extends Component {
     render() {
         return (
             <>
-                <div className="accordion_block">
+                <div className={this.state.isVisible ? "accordion_block activeBody" : "accordion_block"}>
                     <div className="accordion_title" onClick={this.toggle}>
                         <div className="arrow_up">
                             <img className="arrow" src={this.state.isVisible ? up : down} alt={this.state.isVisible ? up : down}/>
@@ -56,7 +63,8 @@ export default class SectionNineAccordion extends Component {
                                 {this.props.text4.start}
                                 <span
                                     className="text"
-                                    onClick={this.toggleModal}>
+                                    onMouseEnter={this.toggleModal}
+                                    onMouseLeave={this.toggleModal}>
                                     {this.props.text4.functionName}
                                 </span>
                                 {this.props.text4.end}
