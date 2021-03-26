@@ -5,6 +5,10 @@
     height: 140px;
 }
 
+.price_number {
+    font-family: Montserrat;
+}
+
 .price {
     font-family: Montserrat;
     font-style: normal;

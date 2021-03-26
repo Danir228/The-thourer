@@ -20,6 +20,7 @@ export default class HeaderFrame extends Component {
                         <AppStoreButton
                         textButton={'App Store'}/>
                         <GooglePlayButton
+                        disabledbtn={'disabled'}
                         textButton={'Google Play'}/>
                     </div>
                 </div>

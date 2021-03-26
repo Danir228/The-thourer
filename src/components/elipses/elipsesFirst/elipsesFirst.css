@@ -33,6 +33,7 @@
     right: 0;
     top: 111px;
     background: radial-gradient(50% 50% at 50% 50%, #9172EA 0%, rgba(197, 165, 249, 0.828125) 0, rgba(196, 196, 196, 0) 80%);
+    opacity: 0.8;
 }
 
 .first_elipses_bottom {
@@ -72,7 +73,7 @@
     top: 149px;
     right: 0;
     background-image: radial-gradient(#5D38C4, rgba(255, 255, 255, 0) 62%);
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 .third_elipses {

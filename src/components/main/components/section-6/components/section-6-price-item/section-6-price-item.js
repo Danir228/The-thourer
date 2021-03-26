@@ -11,7 +11,16 @@ export default function PriceItem({
             <span className="price">{price}</span>
             <span className="rate">{rate}</span>
             <ul className="price_text">
-                <li><i className={selector1}></i><span>{text1}</span></li>
+                <li>
+                    <i className={selector1}></i>
+                    <span>
+                        {text1.start}
+                        <span className="price_number">
+                            {text1.center}
+                        </span>
+                        {text1.end}
+                    </span>
+                </li>
                 <li><i className={selector2}></i><span>{text2}</span></li>
                 <li><i className={selector3}></i><span>{text3}</span></li>
                 <li><i className={selector4}></i><span>{text4}</span></li>

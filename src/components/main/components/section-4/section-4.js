@@ -123,7 +123,7 @@ export default class SectionFor extends Component {
                 </Row>
                 <Modal
                     visible={this.state.isVisible}
-                    text={'Наведите камеру вашего телефона для перехода в App Store'}/>
+                    text={'Наведите камеру вашего телефона или нажмите на кнопку для перехода в App Store'}/>
             </>
         )
     }

@@ -9,6 +9,7 @@
 
     border: 1px solid #FFFFFF;
     background: rgba(255, 255, 255);
+    backdrop-filter: blur(100px);
     border-radius: 10px;
 }
 
@@ -34,6 +35,12 @@
 
 .header-frame .google-play_btn {
     width: 150px;
+    opacity: 0.1;
+}
+
+.header-frame .google-play_btn span {
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .active-frame_link {

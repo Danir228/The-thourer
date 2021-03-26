@@ -33,7 +33,9 @@
 }
 
 .section-second_btn {
-    width: 260px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .section-second_btn .app-store_btn {
@@ -64,7 +66,7 @@
 
 @media (min-width: 1439px) and (max-width: 1919px) {
     .section-second_left {
-        left: -114px;
+        left: -200px;
     }
 }
 
@@ -157,7 +159,7 @@
         max-width: 100%;
         max-height: 322px;
         margin-top: 0;
-        align-items: center;
+        /* align-items: center; */
     }
     .section-second_right h1 {
         margin-bottom: 16px;

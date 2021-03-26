@@ -15,7 +15,7 @@ export default class Header extends Component {
         open: false,
         opacity: '',
         show: false,
-        color: '',
+        color: false,
         isVisible: false
     }
 
@@ -38,9 +38,9 @@ export default class Header extends Component {
 
     listenScrollEvent = () => {
         if (window.scrollY > 30) {
-          this.setState({color: 'rgba(255, 255, 255, 0.5)', opacity: 1});
-        } else {
-          this.setState({color: undefined, opacity: undefined});
+          this.setState({color: true, opacity: 1});
+        } else if (window.scrollY < 30) {
+          this.setState({color: false, opacity: undefined});
         }
     }
 
@@ -60,7 +60,7 @@ export default class Header extends Component {
         const enter = this.handleMouseEnter;
         const leave = this.handleMouseLeave;
         return (
-            <header className="header" style={{background: this.state.color}}>
+            <header className={this.state.color ? "header background_header" : "header"}>
                 <Container>
                     <div className="navbar_menu">
                     <div className="hamburger" onClick={() => this.openModal()}>

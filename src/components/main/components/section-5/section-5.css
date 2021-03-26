@@ -50,7 +50,7 @@
     justify-content: center;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    /* backdrop-filter: blur(30px); */
+    backdrop-filter: blur(30px);
 }
 
 .slider_item .section-5_image_text span:first-child {
@@ -66,44 +66,55 @@
 }
 
 .modal-player-window {
-    position: absolute;
+    position: fixed;
+    z-index: 1700;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     height: 100%;
-    max-height: 370px;
-    z-index: 3100;
+    max-height: 500px;
     left: 50%;
-    top: 66%;
+    top: 50%;
     transform: translate(-50%,-50%);
     border-radius: 10px;
     background-color: #ffffff;
+    opacity: 1;
 
     -webkit-animation: 0.5s ease 0s normal forwards 1 fadein;
     animation: 0.5s ease 0s normal forwards 1 fadein;
 }
 
 #modal-player .container {
-    max-width: 650px;
+    position: fixed;
+    z-index: 1700;
+    width: 100%;
+    max-width: 708px;
+    height: 100%;
+    max-height: 503px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1!important;
 }
 
 #modal-player {
     width: 100%;
-    z-index: 3000;
+    z-index: 1500;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     height: 100%;
-    position: absolute;
+    position: fixed;
+    background: #000000;
+    opacity: 0.24;
 }
 
 .modal-close {
     position: absolute;
-    right: 5%;
-    top: 5%;
-    max-width: 30px;
-    max-height: 30px;
-    background-color: #f30909;
+    right: -5%;
+    top: -7%;
+    max-width: 64px;
+    max-height: 64px;
     border-radius: 10px;
     cursor: pointer;
     -webkit-animation: 0.5s ease 0s normal forwards 1 fadein;
@@ -125,10 +136,6 @@
 @media (max-width: 1439px) {
     .section-5_image_text {
         border-radius: 0 0 20px 20px!important;
-    }
-    .modal-player-window {
-        left: 50%;
-        top: 62%;
     }
 }
 
@@ -158,8 +165,6 @@
     .modal-player-window {
         max-width: 450px;
         max-height: 350px;
-        left: 50%;
-        top: 60%;
     }
 }
 
@@ -167,8 +172,6 @@
     .modal-player-window {
         max-width: 450px;
         max-height: 350px;
-        left: 50%;
-        top: 59%;
     }
 }
 

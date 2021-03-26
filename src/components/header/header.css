@@ -8,6 +8,12 @@
     transition-duration: 2s;
 }
 
+.background_header {
+    backdrop-filter: blur(60px);
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
 .header .container {
     max-width: 1218px;
     position: relative;
@@ -29,7 +35,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     position: fixed;
 }
 
@@ -87,9 +93,11 @@
 
 .header_btn .app-store_btn, .header .google-play_btn {
     width: 150px;
+    transition: all 2s ease 0s;
 }
 
 .header_btn .app-store_btn {
+    display: none;
     opacity: 0;
     margin-right: 20px;
 }
@@ -116,9 +124,11 @@
     text-decoration: none;
 }
 
-@media (max-width: 1919px) {
-    .header_btn .app-store_btn, .header_btn .google-play_btn {
-        display: none;
+
+
+@media (min-width: 1920px) {
+    .header_btn .app-store_btn {
+        display: block;
     }
 }
 
@@ -133,6 +143,9 @@
     .hamburger {
         display: flex;
         align-items: center;
+    }
+    .navbar_menu {
+        height: 60px;
     }
 }
 

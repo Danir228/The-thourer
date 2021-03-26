@@ -3,8 +3,11 @@
     height: 74px;
     margin-bottom: 26px;
 
-    border: 1px solid #FFFFFF;
     background: rgba(255, 255, 255, 0.3);
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
+    backdrop-filter: blur(60px);
     border-radius: 20px;
 }
 
@@ -43,6 +46,10 @@
     .section-4_text {
         font-size: 16px;
         line-height: 24px;
+    }
+    .section-4_title {
+        font-size: 18px;
+        line-height: 21px;
     }
 }
 

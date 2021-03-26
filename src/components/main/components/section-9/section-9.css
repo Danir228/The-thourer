@@ -59,7 +59,11 @@
 }
 
 .section-9_footer_links .social-link {
-    border: 1px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
+    backdrop-filter: blur(60px);
 }
 
 @media (max-width: 1439px) {

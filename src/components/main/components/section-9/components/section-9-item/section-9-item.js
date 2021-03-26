@@ -46,34 +46,34 @@ export default class SectionNineAccordion extends Component {
     render() {
         return (
             <>
-                <div className={this.state.isVisible ? "accordion_block activeBody" : "accordion_block"}>
+
+                <div className={this.state.isVisible ? "accordion_block active_block" : "accordion_block"}>
                     <div className="accordion_title" onClick={this.toggle}>
                         <div className="arrow_up">
                             <img className="arrow" src={this.state.isVisible ? up : down} alt={this.state.isVisible ? up : down}/>
                         </div>
                         <span>{this.props.title}</span>
                     </div>
-                    {this.state.isVisible &&
-                    <div className="accordion_body">
-                        <span>{this.props.text1}</span>
-                        <ul>
-                            <li>{this.props.text2}</li>
-                            <li>{this.props.text3}</li>
-                            {this.props.text4 && <li>
-                                {this.props.text4.start}
-                                <span
-                                    className="text"
-                                    onMouseEnter={this.toggleModal}
-                                    onMouseLeave={this.toggleModal}>
-                                    {this.props.text4.functionName}
-                                </span>
-                                {this.props.text4.end}
-                            </li>}
-                            <li>{this.props.text5}</li>
-                        </ul>
-                    </div>
-                    }
+                        <div className={this.state.isVisible ? "accordion_body activeBody" : "accordion_body inactiveBody"}>
+                            <span>{this.props.text1}</span>
+                            <ul>
+                                <li>{this.props.text2}</li>
+                                <li>{this.props.text3}</li>
+                                {this.props.text4 && <li>
+                                    {this.props.text4.start}
+                                    <span
+                                        className="text"
+                                        onMouseEnter={this.toggleModal}
+                                        onMouseLeave={this.toggleModal}>
+                                        {this.props.text4.functionName}
+                                    </span>
+                                    {this.props.text4.end}
+                                </li>}
+                                <li>{this.props.text5}</li>
+                            </ul>
+                        </div>
                 </div>
+
             </>
         )
     }

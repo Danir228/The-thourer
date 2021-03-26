@@ -16,11 +16,10 @@ export default class Player extends Component {
         return (
             <>
                 {this.props.openModal && <div id="modal-player" onClick={ (e) => this.closeModal(e)}>
-                    <div className="modal-player-window">
-                        <Container>
-                            <div className="modal-close" onClick={this.props.func}><img src={close} alt={close}></img></div>
-                        </Container>
-                    </div>
+                    <Container>
+                        <div className="modal-player-window"></div>
+                        <div className="modal-close" onClick={this.props.func}><img src={close} alt={close}></img></div>
+                    </Container>
                 </div>}
             </>
         )
