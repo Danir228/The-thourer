@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppStoreButton from '../../../buttons/appStore';
 import GooglePlayButton from '../../../buttons/googlePlay';
 
+import apple from './apple.svg';
+import google from './google.svg';
+
 import './header-frame.css';
 
 export default class HeaderFrame extends Component {
@@ -18,8 +21,10 @@ export default class HeaderFrame extends Component {
                             <li className="header-frame_link"><a href="/">Контакты</a></li>
                         </ul>
                         <AppStoreButton
+                        customIcon={apple}
                         textButton={'App Store'}/>
                         <GooglePlayButton
+                        customIcon={google}
                         disabledbtn={'disabled'}
                         textButton={'Google Play'}/>
                     </div>

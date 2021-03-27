@@ -86,6 +86,17 @@ export default class Footer extends Component {
                                     <h2><a href="/">Политика конфиденциальности</a></h2>
                                     <h2><a href="/">Условия использования</a></h2>
                                 </div>
+                                <div className="item-5">
+                                    <h1>Связаться с нами</h1>
+                                    <div className="item-5_links">
+                                        <FooterSocialLink
+                                            image={telegram}/>
+                                        <FooterSocialLink
+                                            image={whatsap}/>
+                                        <FooterSocialLink
+                                            image={mail}/>
+                                    </div>
+                                </div>
                                 <div className="item-4">
                                     <h1>Скачать приложение</h1>
                                     <div className="item-4_btn">
@@ -96,17 +107,6 @@ export default class Footer extends Component {
                                             customIcon={apple}/>
                                         <GooglePlayButton
                                             textButton={'Google Play'}/>
-                                    </div>
-                                </div>
-                                <div className="item-5">
-                                    <h1>Связаться с нами</h1>
-                                    <div className="item-5_links">
-                                        <FooterSocialLink
-                                            image={telegram}/>
-                                        <FooterSocialLink
-                                            image={whatsap}/>
-                                        <FooterSocialLink
-                                            image={mail}/>
                                     </div>
                                 </div>
                             </div>

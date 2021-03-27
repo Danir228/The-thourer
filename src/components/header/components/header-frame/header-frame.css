@@ -3,7 +3,7 @@
     width: 252px;
     height: 384px;
     right: 1px;
-    top: 120px;
+    top: 60px;
     padding: 40px 40px;
     z-index: 100;
 
@@ -11,6 +11,20 @@
     background: rgba(255, 255, 255);
     backdrop-filter: blur(100px);
     border-radius: 10px;
+    -webkit-animation: 0.8s ease 0s normal forwards 1 fadein;
+    animation: 0.8s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
 }
 
 .header-frame_link {

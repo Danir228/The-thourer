@@ -22,7 +22,7 @@ export default class AppStoreButton extends Component {
                     onMouseOut={this.props.onLeave}
                     onClick={this.onClickAdress}
                 >
-                    <img src={src} alt={apple} />
+                    <img src={src} alt={src} />
                     <span>{this.props.textButton}</span>
                 </button>
             </>

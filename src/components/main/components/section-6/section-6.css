@@ -40,13 +40,12 @@
     max-width: 282px;
     height: 450px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border-image-slice: 1;
+    border: 1px solid #FFFFFF;
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(60px);
     border-radius: 20px;
 }
+
 
 .section-6_price_item:hover {
     background: #FFFFFF;

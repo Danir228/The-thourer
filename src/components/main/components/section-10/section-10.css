@@ -2,13 +2,12 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border-image-slice: 1;
-    backdrop-filter: blur(60px);
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #FFFFFF;
     box-sizing: border-box;
-    border-radius: 40px;
+    backdrop-filter: blur(30px);
+    box-sizing: border-box;
+    border-radius: 30px;
 }
 
 .section-10_item-1 {

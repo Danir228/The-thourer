@@ -59,11 +59,15 @@
 }
 
 .section-9_footer_links .social-link {
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border-image-slice: 1;
-    backdrop-filter: blur(60px);
+    border: 1px solid #FFFFFF;
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+    backdrop-filter: blur(40px);
+}
+
+@media (min-width: 1439px) {
+    .section-9_footer_links .social-link:hover {
+        background: #ffffff;
+    }
 }
 
 @media (max-width: 1439px) {

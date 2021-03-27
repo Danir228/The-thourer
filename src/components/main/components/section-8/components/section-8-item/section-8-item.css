@@ -4,12 +4,10 @@
     padding-top: 30px;
     padding-right: 30px;
     height: 340px;
-
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
-    border-image-slice: 1;
-    backdrop-filter: blur(60px);
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.3) 100%);
+    backdrop-filter: blur(30px);
     border-radius: 20px;
 }
 
@@ -31,7 +29,9 @@
 .rewiew_body {
     position: absolute;
     display: flex;
-    width: 100%;
+    left: -1px;
+    width: 101%;
+    border-bottom: none;
     bottom: 0;
     background: #000;
     color: #ffffff;

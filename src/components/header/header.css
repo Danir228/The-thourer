@@ -93,7 +93,7 @@
 
 .header_btn .app-store_btn, .header .google-play_btn {
     width: 150px;
-    transition: all 2s ease 0s;
+    transition: all 1s ease 0.5s;
 }
 
 .header_btn .app-store_btn {
