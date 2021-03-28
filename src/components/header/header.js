@@ -73,7 +73,7 @@ export default class Header extends Component {
                             rotate={0}
                             color='black'
                             borderRadius={4}
-                            animationDuration={1}
+                            animationDuration={0.5}
                         />
                     </div>
                         <div className="navbar_menu_item">

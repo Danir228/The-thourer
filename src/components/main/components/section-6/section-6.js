@@ -44,8 +44,8 @@ function SectionSix() {
                         price={'0.00 ₽'}
                         rate={'Бесплатный тариф'}
                         text1={{start: '', center: ' 1 ', end: 'проект' }}
-                        text2={'2 комнаты'}
-                        text3={'4 панорамы'}
+                        text2={{start: '2', end: ' комнаты' }}
+                        text3={{start: '4', end: ' панорамы' }}
                         text4={'Нельзя делиться туром'}
                         text5={'Аналитика поведения внутри модели'}
                         selector1={'fas fa-check'}
@@ -60,8 +60,8 @@ function SectionSix() {
                         price={'566 ₽ /мес.'}
                         rate={'Базовый тариф'}
                         text1={{start: 'До', center: ' 3 ', end: 'проектов' }}
-                        text2={'∞ комнат'}
-                        text3={'∞ панорам'}
+                        text2={{start: '∞', end: ' комнат' }}
+                        text3={{start: '∞', end: ' панорам' }}
                         text4={'Можно делиться туром'}
                         text5={'Аналитика поведения внутри модели'}
                         selector1={'fas fa-check'}
@@ -76,8 +76,8 @@ function SectionSix() {
                         price={'1 900 ₽ /мес.'}
                         rate={'Продвинуый тариф'}
                         text1={{start: 'До', center: ' 15 ', end: 'проектов' }}
-                        text2={'∞ комнат'}
-                        text3={'∞ панорам'}
+                        text2={{start: '∞', end: ' комнат' }}
+                        text3={{start: '∞', end: ' панорам' }}
                         text4={'Можно делиться туром'}
                         text5={'Аналитика поведения внутри модели'}
                         selector1={'fas fa-check'}
@@ -92,8 +92,8 @@ function SectionSix() {
                         price={'7 100 ₽ /мес.'}
                         rate={'Бизнес тариф'}
                         text1={{start: 'До', center: ' 50 ', end: 'проектов' }}
-                        text2={'∞ комнат'}
-                        text3={'∞ панорам'}
+                        text2={{start: '∞', end: ' комнат' }}
+                        text3={{start: '∞', end: ' панорам' }}
                         text4={'Можно делиться туром'}
                         text5={'Аналитика поведения внутри модели'}
                         selector1={'fas fa-check'}

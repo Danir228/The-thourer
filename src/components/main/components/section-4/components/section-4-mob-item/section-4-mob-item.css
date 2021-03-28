@@ -46,8 +46,19 @@
 }
 
 .mob_item_image {
+    position: relative;
     max-width: 240px;
     max-height: 483px;
+}
+
+.mob_item_image .section-4_image-gifs {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    top: 52%;
+    max-width: 205px;
+    height: 100%;
+    max-height: 433px;
 }
 
 .mob_item_btn {
@@ -104,6 +115,7 @@
         display: none;
     }
     .mob_item_image {
+        position: relative;
         max-width: 200px;
     }
     .mob_item_btn {
@@ -119,5 +131,10 @@
     }
     .mob_item_btn div {
         margin-bottom: 0;
+    }
+    .mob_item_image .section-4_image-gifs {
+        max-width: 174px;
+        height: 100%;
+        max-height: 361px;
     }
 }

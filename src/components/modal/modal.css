@@ -48,7 +48,7 @@
     line-height: 160%;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1439px) {
     .modal-window {
         display: none;
     }

@@ -6,6 +6,10 @@ import AppStoreButton from '../../../buttons/appStore';
 import Modal from '../../../modal';
 
 import device from './Device.png';
+import gif_1 from './1.gif';
+import gif_2 from './2.gif';
+import gif_3 from './3.gif';
+import gif_4 from './4.gif';
 
 import './section-4.css';
 
@@ -84,7 +88,11 @@ export default class SectionFor extends Component {
                         </Row>
                     </Col>
                     <Col className="section-4_image">
-                        <img src={device} alt={device}/>
+                        <img className="section-4_image_phone" src={device} alt={device}/>
+                        {this.state.first && <img className="section-4_image-gifs" src={gif_1} alt={'...loading'}></img>}
+                        {this.state.second && <img className="section-4_image-gifs" src={gif_2} alt={'...loading'}></img>}
+                        {this.state.third && <img className="section-4_image-gifs" src={gif_3} alt={'...loading'}></img>}
+                        {this.state.for && <img className="section-4_image-gifs" src={gif_4} alt={'...loading'}></img>}
                     </Col>
                     <Col>
                         <Row className="flex-column text-left">

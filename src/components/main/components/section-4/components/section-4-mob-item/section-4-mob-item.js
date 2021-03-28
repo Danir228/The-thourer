@@ -5,6 +5,10 @@ import SectionForItem from '../section-4-item';
 import MobItemBlock from '../section-4-mob-item/components/mob_item_block';
 
 import device from '../../Device.png';
+import gif_1 from './../../1.gif';
+import gif_2 from './../../2.gif';
+import gif_3 from './../../3.gif';
+import gif_4 from './../../4.gif';
 
 import './section-4-mob-item.css';
 
@@ -78,6 +82,10 @@ export default class SectionForMobItem extends Component {
                         <Row className="mob_item_body">
                             <Col className="mob_item_image">
                                 <img src={device} alt={device}/>
+                                {this.state.first && <img className="section-4_image-gifs" src={gif_1} alt={'...loading'}></img>}
+                                {this.state.second && <img className="section-4_image-gifs" src={gif_2} alt={'...loading'}></img>}
+                                {this.state.third && <img className="section-4_image-gifs" src={gif_3} alt={'...loading'}></img>}
+                                {this.state.for && <img className="section-4_image-gifs" src={gif_4} alt={'...loading'}></img>}
                             </Col>
                             <Col className="mob_item_btn">
                                 <div>

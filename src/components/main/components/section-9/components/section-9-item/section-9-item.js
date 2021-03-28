@@ -47,14 +47,14 @@ export default class SectionNineAccordion extends Component {
         return (
             <>
 
-                <div className="accordion_block">
+                <div className={this.state.isVisible ? "accordion_block activeBody" : "accordion_block"}>
                     <div className="accordion_title" onClick={this.toggle}>
                         <div className="arrow_up">
                             <img className="arrow" src={this.state.isVisible ? up : down} alt={this.state.isVisible ? up : down}/>
                         </div>
                         <span>{this.props.title}</span>
                     </div>
-                        <div className={this.state.isVisible ? "accordion_body activeBody" : "accordion_body inactiveBody"}>
+                        <div className="accordion_body">
                             <span>{this.props.text1}</span>
                             <ul>
                                 <li>{this.props.text2}</li>

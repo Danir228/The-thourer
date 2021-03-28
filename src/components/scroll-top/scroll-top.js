@@ -8,7 +8,7 @@ import './scroll-top.css';
 export default class ScrollTop extends Component {
 
     state = {
-        opacity: 0
+        display:  'none'
     }
 
     scrollTop() {
@@ -18,11 +18,10 @@ export default class ScrollTop extends Component {
 
     listenScrollEvent = () => {
         const height = window.screen.height;
-        console.log(height);
         if (window.scrollY > height) {
-          this.setState({ opacity: 1 });
+          this.setState({ display: 'flex' });
         } else {
-          this.setState({ opacity: 0 });
+          this.setState({ display:  'none' });
         }
     }
 
@@ -35,7 +34,7 @@ export default class ScrollTop extends Component {
             <>
                 <div
                     className="scroll"
-                    style={{ opacity: this.state.opacity }}
+                    style={{ display: this.state.display }}
                     onClick={this.scrollTop.bind(this)}>
                     <img src={arrowup} alt={arrowup}/>
                 </div>

@@ -14,15 +14,29 @@ export default function PriceItem({
                 <li>
                     <i className={selector1}></i>
                     <span>
-                        {text1.start}
+                    {text1.start}
                         <span className="price_number">
                             {text1.center}
                         </span>
                         {text1.end}
                     </span>
                 </li>
-                <li><i className={selector2}></i><span>{text2}</span></li>
-                <li><i className={selector3}></i><span>{text3}</span></li>
+                <li>
+                    <i className={selector2}></i>
+                    <span>
+                        <span className="price_number">
+                            {text2.start}
+                        </span>
+                        {text2.end}
+                    </span></li>
+                <li>
+                    <i className={selector3}></i>
+                    <span>
+                        <span className="price_number">
+                            {text3.start}
+                        </span>
+                        {text3.end}
+                    </span></li>
                 <li><i className={selector4}></i><span>{text4}</span></li>
                 <li><i className={selector5}></i><span>{text5}</span></li>
             </ul>

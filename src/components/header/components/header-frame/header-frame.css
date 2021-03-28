@@ -8,11 +8,11 @@
     z-index: 100;
 
     border: 1px solid #FFFFFF;
-    background: rgba(255, 255, 255);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(100px);
     border-radius: 10px;
-    -webkit-animation: 0.8s ease 0s normal forwards 1 fadein;
-    animation: 0.8s ease 0s normal forwards 1 fadein;
+    -webkit-animation: 0.5s ease 0s normal forwards 1 fadein;
+    animation: 0.5s ease 0s normal forwards 1 fadein;
 }
 
 @keyframes fadein {
