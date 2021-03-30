@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import play from '../images/play.svg';
+import { withTranslation } from 'react-i18next';
 
-export default class SectionFiveItem extends Component {
+class SectionFiveItem extends Component {
   render() {
+    const { t } = this.props;
     return (
       <>
           <div
@@ -14,8 +16,8 @@ export default class SectionFiveItem extends Component {
                 <img src={play} alt={play}></img>
               </div>
               <div className="section-5_image_text">
-                <span>Виртуальный тур по гостинному залу</span>
-                <span>Снято на Iphone 11</span>
+                <span>{t("thethourer.main.section5.part1.child1")}</span>
+                <span>{t("thethourer.main.section5.part1.child2")}</span>
               </div>
             </div>
           </div>
@@ -23,3 +25,5 @@ export default class SectionFiveItem extends Component {
     )
   }
 }
+
+export default withTranslation()(SectionFiveItem);

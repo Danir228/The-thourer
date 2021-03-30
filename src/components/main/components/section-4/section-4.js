@@ -4,16 +4,17 @@ import SectionForItem from './components/section-4-item';
 import SectionForMobItem from './components/section-4-mob-item';
 import AppStoreButton from '../../../buttons/appStore';
 import Modal from '../../../modal';
+import { withTranslation } from 'react-i18next';
 
 import device from './Device.png';
-import gif_1 from './1.gif';
-import gif_2 from './2.gif';
-import gif_3 from './3.gif';
-import gif_4 from './4.gif';
+import gif1 from './1.gif';
+import gif2 from './2.gif';
+import gif3 from './3.gif';
+import gif4 from './4.gif';
 
 import './section-4.css';
 
-export default class SectionFor extends Component {
+class SectionFor extends Component {
     state = {
         first: true,
         second: false,
@@ -54,14 +55,15 @@ export default class SectionFor extends Component {
     }
 
     render() {
+        const { t } = this.props;
         const enter = this.handleMouseEnter;
         const leave = this.handleMouseLeave;
         return (
             <>
                 <Row>
                     <Col className="section-4_title">
-                        <h1 className="section-4_title_item-1">Как это работает? <span className="textupdate">Попробуйте</span></h1>
-                        <h2 className="section-4_title_item-2"><span className="textupdate">Нажимайте на шаги</span>, чтобы увидеть, как работает приложение</h2>
+                        <h1 className="section-4_title_item-1">{t("thethourer.main.section4.title1.start")} <span className="textupdate">{t("thethourer.main.section4.title1.end")}</span></h1>
+                        <h2 className="section-4_title_item-2"><span className="textupdate">{t("thethourer.main.section4.title2.start")}</span>, {t("thethourer.main.section4.title2.end")}</h2>
                     </Col>
                 </Row>
                 <Row className="section-4_item">
@@ -73,8 +75,8 @@ export default class SectionFor extends Component {
                                     func={this.switchBtn}
                                     activeClass={this.state.first}
                                     number={`<span class="num_update">1</span>`}
-                                    title={'Построение планировок'}
-                                    text={'Составляйте планировку помещения с помощью камеры вашего устройства'}/>
+                                    title={t("thethourer.main.section4.part1.title")}
+                                    text={t("thethourer.main.section4.part1.child1")}/>
                             </Col>
                             <Col className="bottom_item">
                                 <SectionForItem
@@ -82,17 +84,17 @@ export default class SectionFor extends Component {
                                     func={this.switchBtn}
                                     activeClass={this.state.second}
                                     number={`<span class="num_update">3</span>`}
-                                    title={'Создание виртуальных туров'}
-                                    text={'Собирайте созданные материалы в единый виртуальный тур'}/>
+                                    title={t("thethourer.main.section4.part2.title")}
+                                    text={t("thethourer.main.section4.part2.child1")}/>
                             </Col>
                         </Row>
                     </Col>
                     <Col className="section-4_image">
                         <img className="section-4_image_phone" src={device} alt={device}/>
-                        {this.state.first && <img className="section-4_image-gifs" src={gif_1} alt={'...loading'}></img>}
-                        {this.state.second && <img className="section-4_image-gifs" src={gif_2} alt={'...loading'}></img>}
-                        {this.state.third && <img className="section-4_image-gifs" src={gif_3} alt={'...loading'}></img>}
-                        {this.state.for && <img className="section-4_image-gifs" src={gif_4} alt={'...loading'}></img>}
+                        {this.state.first && <img src={gif1} alt={'...loading'} className="section-4_image-gifs"></img>}
+                        {this.state.second && <img src={gif2} alt={'...loading'} className="section-4_image-gifs"></img>}
+                        {this.state.third && <img src={gif3} alt={'...loading'} className="section-4_image-gifs"></img>}
+                        {this.state.for && <img src={gif4} alt={'...loading'} className="section-4_image-gifs"></img>}
                     </Col>
                     <Col>
                         <Row className="flex-column text-left">
@@ -102,8 +104,8 @@ export default class SectionFor extends Component {
                                     func={this.switchBtn}
                                     activeClass={this.state.third}
                                     number={`<span class="num_update">2</span>`}
-                                    title={'Съемка панорам'}
-                                    text={'Передавайте цельную окружающую картину благодаря панораме 360° '}/>
+                                    title={t("thethourer.main.section4.part3.title")}
+                                    text={t("thethourer.main.section4.part3.child1")}/>
                             </Col>
                             <Col className="bottom_item">
                                 <SectionForItem
@@ -111,8 +113,8 @@ export default class SectionFor extends Component {
                                     func={this.switchBtn}
                                     activeClass={this.state.for}
                                     number={`<span class="num_update">4</span>`}
-                                    title={'Делитесь созданными турами'}
-                                    text={'Отправьте ссылку на виртуальный тур или вставьте проигрыватель на свой сайт'}/>
+                                    title={t("thethourer.main.section4.part4.title")}
+                                    text={t("thethourer.main.section4.part4.child1")}/>
                             </Col>
                         </Row>
                     </Col>
@@ -122,17 +124,20 @@ export default class SectionFor extends Component {
                 </Row>
                 <Row className="section-4_bottom_item mx-0">
                     <Col className="section-4_bottom_item_body d-flex justify-content-around px-0 py-0">
-                        <p className="bottom_text">Создайте свой виртуальный тур <span className="bottom_text_item">прямо сейчас</span></p>
+                        <p className="bottom_text">{t("thethourer.main.section4.title3.start")} <span className="bottom_text_item">{t("thethourer.main.section4.title3.end")}</span></p>
                         <AppStoreButton
                         onEnter={enter}
                         onLeave={leave}
-                        textButton={'Скачать приложение'}/>
+                        textButton={t("thethourer.main.section4.buttonText")}/>
                     </Col>
                 </Row>
                 <Modal
                     visible={this.state.isVisible}
-                    text={'Наведите камеру вашего телефона или нажмите на кнопку для перехода в App Store'}/>
+                    text={t("thethourer.modal.part1")}/>
             </>
         )
     }
 }
+
+
+export default withTranslation()(SectionFor);

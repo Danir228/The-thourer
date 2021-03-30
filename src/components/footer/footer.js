@@ -24,8 +24,9 @@ import img1 from './components/images/img1.png';
 import img2 from './components/images/img2.png';
 
 import './footer.css';
+import { withTranslation } from 'react-i18next';
 
-export default class Footer extends Component {
+class Footer extends Component {
 
     state = {
         isVisible: false
@@ -40,7 +41,7 @@ export default class Footer extends Component {
     }
 
     render() {
-
+        const { t } = this.props;
         const enter = this.handleMouseEnter;
         const leave = this.handleMouseLeave;
 
@@ -76,18 +77,18 @@ export default class Footer extends Component {
                                 </div>
                                 </div>
                                 <div className="item-2">
-                                    <h1>Главная</h1>
-                                    <h2><a href="/">Как это работает</a></h2>
-                                    <h2><a href="/">Тарифы</a></h2>
+                                    <h1>{t("thethourer.footer.part1.title")}</h1>
+                                    <h2><a href="/">{t("thethourer.footer.part1.child1")}</a></h2>
+                                    <h2><a href="/">{t("thethourer.footer.part1.child2")}</a></h2>
                                     <h2><a href="/">FAQ</a></h2>
                                 </div>
                                 <div className="item-3">
-                                    <h1>Информация</h1>
-                                    <h2><a href="/">Политика конфиденциальности</a></h2>
-                                    <h2><a href="/">Условия использования</a></h2>
+                                    <h1>{t("thethourer.footer.part2.title")}</h1>
+                                    <h2><a href="/">{t("thethourer.footer.part2.child1")}</a></h2>
+                                    <h2><a href="/">{t("thethourer.footer.part2.child2")}</a></h2>
                                 </div>
                                 <div className="item-5">
-                                    <h1>Связаться с нами</h1>
+                                    <h1>{t("thethourer.footer.part3.title")}</h1>
                                     <div className="item-5_links">
                                         <FooterSocialLink
                                             image={telegram}/>
@@ -98,7 +99,7 @@ export default class Footer extends Component {
                                     </div>
                                 </div>
                                 <div className="item-4">
-                                    <h1>Скачать приложение</h1>
+                                    <h1>{t("thethourer.footer.part4.title")}</h1>
                                     <div className="item-4_btn">
                                         <AppStoreButton
                                             onEnter={enter}
@@ -115,9 +116,11 @@ export default class Footer extends Component {
                 </div>
                 <Modal
                     visible={this.state.isVisible}
-                    text={'Наведите камеру вашего телефона или нажмите на кнопку для перехода в App Store'}
+                    text={t("thethourer.modal.part1")}
                 />
             </footer>
         )
     }
 }
+
+export default withTranslation()(Footer);

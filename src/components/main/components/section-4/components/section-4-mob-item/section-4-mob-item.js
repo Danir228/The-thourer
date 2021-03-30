@@ -3,16 +3,17 @@ import {Col, Row} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SectionForItem from '../section-4-item';
 import MobItemBlock from '../section-4-mob-item/components/mob_item_block';
+import { withTranslation } from 'react-i18next';
 
 import device from '../../Device.png';
-import gif_1 from './../../1.gif';
-import gif_2 from './../../2.gif';
-import gif_3 from './../../3.gif';
-import gif_4 from './../../4.gif';
+import gif1 from './../../1.gif';
+import gif2 from './../../2.gif';
+import gif3 from './../../3.gif';
+import gif4 from './../../4.gif';
 
 import './section-4-mob-item.css';
 
-export default class SectionForMobItem extends Component {
+class SectionForMobItem extends Component {
 
     state = {
         first: true,
@@ -45,6 +46,7 @@ export default class SectionForMobItem extends Component {
     }
 
     render() {
+        const { t } = this.props;
         return (
             <>
                 <Row className="w-100">
@@ -53,39 +55,39 @@ export default class SectionForMobItem extends Component {
                             <Col className="mob_item_top_item w-100 px-0 show d-flex justify-content-center">
                                 {this.state.first && <MobItemBlock
                                     number={`<span class="num_update">1</span>`}
-                                    title={'Построение планировок'}
-                                    text={'Составляйте планировку помещения с помощью камеры вашего устройства'}
+                                    title={t("thethourer.main.section4.part1.title")}
+                                    text={t("thethourer.main.section4.part1.child1")}
                                 />}
                             </Col>
                             <Col className="mob_item_top_item w-100 px-0 d-flex justify-content-center">
                                 {this.state.second && <MobItemBlock
                                     number={`<span class="num_update">2</span>`}
-                                    title={'Съемка панорам'}
-                                    text={'Передавайте цельную окружающую картину благодаря панораме 360° '}
+                                    title={t("thethourer.main.section4.part2.title")}
+                                    text={t("thethourer.main.section4.part2.child1")}
                                 />}
                             </Col>
                             <Col className="mob_item_top_item w-100 px-0 d-flex justify-content-center">
                                 {this.state.third && <MobItemBlock
                                     number={`<span class="num_update">3</span>`}
-                                    title={'Создание виртуальных туров'}
-                                    text={'Собирайте созданные материалы в единый виртуальный тур'}
+                                    title={t("thethourer.main.section4.part3.title")}
+                                    text={t("thethourer.main.section4.part3.child1")}
                                 />}
                             </Col>
                             <Col className="mob_item_top_item w-100 px-0 d-flex justify-content-center">
                                 {this.state.for && <MobItemBlock
                                     number={`<span class="num_update">4</span>`}
-                                    title={'Делитесь созданными турами'}
-                                    text={'Отправьте ссылку на виртуальный тур или вставьте проигрыватель на свой сайт'}
+                                    title={t("thethourer.main.section4.part4.title")}
+                                    text={t("thethourer.main.section4.part4.child1")}
                                 />}
                             </Col>
                         </Row>
                         <Row className="mob_item_body">
                             <Col className="mob_item_image">
                                 <img src={device} alt={device}/>
-                                {this.state.first && <img className="section-4_image-gifs" src={gif_1} alt={'...loading'}></img>}
-                                {this.state.second && <img className="section-4_image-gifs" src={gif_2} alt={'...loading'}></img>}
-                                {this.state.third && <img className="section-4_image-gifs" src={gif_3} alt={'...loading'}></img>}
-                                {this.state.for && <img className="section-4_image-gifs" src={gif_4} alt={'...loading'}></img>}
+                                {this.state.first && <img src={gif1} alt={'...loading'} className="section-4_image-gifs"></img>}
+                                {this.state.second && <img src={gif2} alt={'...loading'} className="section-4_image-gifs"></img>}
+                                {this.state.third && <img src={gif3} alt={'...loading'} className="section-4_image-gifs"></img>}
+                                {this.state.for && <img src={gif4} alt={'...loading'} className="section-4_image-gifs"></img>}
                             </Col>
                             <Col className="mob_item_btn">
                                 <div>
@@ -124,3 +126,5 @@ export default class SectionForMobItem extends Component {
         )
     }
 }
+
+export default withTranslation()(SectionForMobItem);

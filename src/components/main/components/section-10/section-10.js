@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import AppStoreButton from '../../../buttons/appStore';
 import GooglePlayButton from '../../../buttons/googlePlay';
 import Modal from '../../../modal';
+import { withTranslation } from 'react-i18next';
 
 import telephone from './telephone.svg';
 
 import './section-10.css';
 
-export default class SectionTen extends Component {
+class SectionTen extends Component {
 
     state = {
         isVisible: false
@@ -22,7 +23,7 @@ export default class SectionTen extends Component {
     }
 
     render() {
-
+        const { t } = this.props;
         const enter = this.handleMouseEnter;
         const leave = this.handleMouseLeave;
 
@@ -30,8 +31,8 @@ export default class SectionTen extends Component {
             <>
                 <div className="section-10_item">
                     <div className="section-10_item-1">
-                        <h1 className="section-10_title">Скачайте приложение прямо <span className="section-10_title_item">сейчас!</span></h1>
-                        <h2 className="section-10_subtitle">Вы всегда можете воспользоваться бесплатной версией, чтобы ознакомиться с функционалом приложения.</h2>
+                        <h1 className="section-10_title">{t("thethourer.main.section10.title1.child1")} <span className="section-10_title_item">{t("thethourer.main.section10.title1.child2")}</span></h1>
+                        <h2 className="section-10_subtitle">{t("thethourer.main.section10.title2")}</h2>
                         <div className="section-10_buttons">
                             <AppStoreButton
                                 onEnter={enter}
@@ -50,8 +51,10 @@ export default class SectionTen extends Component {
                 </div>
                 <Modal
                     visible={this.state.isVisible}
-                    text={'Наведите камеру вашего телефона или нажмите на кнопку для перехода в App Store'}/>
+                    text={t("thethourer.modal.part1")}/>
             </>
         )
     }
 }
+
+export default withTranslation()(SectionTen);

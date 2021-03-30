@@ -33,6 +33,7 @@ function ElipsesFirst() {
                 <div className="five_elipses3"></div>
                 <div className="five_elipses4"></div>
                 <div className="five_elipses5"></div>
+                <div className="five_elipses6"></div>
             </div>
         </>
     )

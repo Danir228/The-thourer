@@ -1,2 +1,2 @@
-import Header from './header';
-export default Header;
+import TranslateHeader from './header';
+export default TranslateHeader;

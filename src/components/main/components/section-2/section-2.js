@@ -1,5 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from 'reactstrap';
 import AppStoreButton from '../../../buttons/appStore';
@@ -7,7 +8,7 @@ import Modal from '../../../modal';
 
 import './section-2.css';
 
-export default class SectionSecond extends Component {
+class SectionSecond extends Component {
     state = {
         isVisible: false
     }
@@ -21,6 +22,7 @@ export default class SectionSecond extends Component {
     }
 
     render() {
+        const { t } = this.props;
         const enter = this.handleMouseEnter;
         const leave = this.handleMouseLeave;
         return (
@@ -30,14 +32,14 @@ export default class SectionSecond extends Component {
                     <div className="section-second d-flex">
                         <div className="section-second_right">
                             <h1>The Tourer</h1>
-                            <p>The Tourer открывает возможность создавать <span className="section-2_number">3</span>D-туры любому желающему.
-                            Фотографии и видео рождают в голове больше вопросов, чем ответов.
-                            Экономьте время и силы, позволив клиентам виртуально оказаться в помещении, находясь абсолютно в другом месте.</p>
+                            <p>
+                                {t("thethourer.main.section2.part1.start")} <span className="section-2_number">3</span>{t("thethourer.main.section2.part1.end")}
+                            </p>
                             <div className="section-second_btn">
                                 <AppStoreButton
                                     onEnter={enter}
                                     onLeave={leave}
-                                    textButton={'Скачать приложение'}
+                                    textButton={t("thethourer.main.section2.buttonText")}
                                 />
                             </div>
                         </div>
@@ -45,9 +47,12 @@ export default class SectionSecond extends Component {
                 </Container>
                 <Modal
                 visible={this.state.isVisible}
-                text={'Наведите камеру вашего телефона или нажмите на кнопку для перехода в App Store'}/>
+                text={t("thethourer.modal.part1")}/>
             </>
 
         )
     }
 }
+
+
+export default withTranslation()(SectionSecond);

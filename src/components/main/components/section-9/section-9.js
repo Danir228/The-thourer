@@ -3,6 +3,7 @@ import { Component } from 'react';
 import SectionNineAccordion from './components/section-9-item';
 import SocialLink from '../../../buttons/social-link';
 import Modal from '../../../modal';
+import { withTranslation } from 'react-i18next';
 
 import telegram from './components/images/telegram.svg';
 import whatsap from './components/images/whatsap.svg';
@@ -12,7 +13,7 @@ import address from './adress.png';
 import './section-9.css';
 
 
-export default class SectionNine extends Component {
+class SectionNine extends Component {
     state = {
         visible: false
     }
@@ -26,51 +27,40 @@ export default class SectionNine extends Component {
     }
 
     render() {
+        const { t } = this.props;
         return (
             <div className="section-9_item">
                 <Modal
                     visible={this.state.visible}
                     image={address}
                 />
-                <h1 className="section-9_title">Часто задаваемые <span className="textupdate">вопросы</span></h1>
+                <h1 className="section-9_title">{t("thethourer.main.section9.title.child1")} <span className="textupdate">{t("thethourer.main.section9.title.child2")}</span></h1>
                 <SectionNineAccordion
                     visible={false}
-                    title={'Как я могу делиться созданными турами?'}
-                    text1={'Возможность делиться созданными турами предоставляется только для платных уровней подписки.'}
-                    text2={'Вы можете предоставить доступ к виртуальным турам 3-мя способами:'}
-                    text3={'• Отправить прямую ссылку на виртуальный тур'}
-                    text4={{start:'• Получить онлайн-визитку с ', visibleModal: this.state.visible, function: this.toggle, functionName: 'QR-кодом', end: ' для использования в агрегаторах объявлений'}}
-                    text5={'• Вставить преднастроенный код плеера на ваш сайт'}
+                    title={t("thethourer.main.section9.part1.child1")}
+                    text1={t("thethourer.main.section9.part1.child2")}
+                    text2={t("thethourer.main.section9.part1.child3")}
+                    text3={t("thethourer.main.section9.part1.child4")}
+                    text4={{start:`${t("thethourer.main.section9.part1.child5")}`, visibleModal: this.state.visible, function: this.toggle, functionName: ` ${t("thethourer.main.section9.part1.child6")} `, end: `${t("thethourer.main.section9.part1.child7")}`}}
+                    text5={t("thethourer.main.section9.part1.child8")}
                 />
                 <SectionNineAccordion
                     visible={false}
-                    title={'У меня уже есть отснятые панорамы. Могу ли я использовать их в приложении?'}
-                    text1={`
-                        Да, наше приложение поддерживает импорт панорам из памяти телефона.
-                        Подключение внешних камер к iPhone в текущей версии приложения не предусмотрено.
-                    `}
+                    title1={t("thethourer.main.section9.part2.child1")}
+                    title2={t("thethourer.main.section9.part2.child2")}
+                    text1={t("thethourer.main.section9.part2.child3")}
                 />
                 <SectionNineAccordion
                     visible={false}
-                    title={'Для каких помещений можно использовать виртуальные туры?'}
-                    text1={`
-                        Нет ограничений в сферах, которым виртуальные туры могут быть полезны.
-                        Но они наиболее распространены в жилых и коммерческих помещениях,
-                        коворкингах, ресторанах, отелях, фитнес-клубах и др.
-                    `}
+                    title={t("thethourer.main.section9.part3.child1")}
+                    text1={t("thethourer.main.section9.part3.child2")}
                 />
                 <SectionNineAccordion
                     visible={false}
-                    title={'Какие устройства поддерживает приложение?'}
-                    text1={`
-                        На данный момент поддерживаются только устройства на операционной системе iOS.
-                        Для создания материалов требуются модели iPhone 6S и новее.
-                        Если у вас модель более раннего года выпуска,
-                        то вы можете воспользоваться приложением в качестве конструктора виртуальных туров из уже готовых материалов.
-                        Версия для устройств на операционной системе Android находится в разработке.
-                    `}
+                    title={t("thethourer.main.section9.part4.child1")}
+                    text1={t("thethourer.main.section9.part4.child2")}
                 />
-                <div className="section-9_footer_title">Остались вопросы? <span className="text">Свяжитесь с нами!</span></div>
+                <div className="section-9_footer_title">{t("thethourer.main.section9.part5.child1")} <span className="text"> {t("thethourer.main.section9.part5.child2")}</span></div>
                 <div className="section-9_footer_links">
                     <SocialLink
                     image={telegram}/>
@@ -83,3 +73,5 @@ export default class SectionNine extends Component {
         )
     }
 }
+
+export default withTranslation()(SectionNine);

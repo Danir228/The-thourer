@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.83921eae.chunk.css",
-    "main.js": "/static/js/main.b8820233.chunk.js",
-    "main.js.map": "/static/js/main.b8820233.chunk.js.map",
+    "main.css": "/static/css/main.e41aa1ad.chunk.css",
+    "main.js": "/static/js/main.659677b5.chunk.js",
+    "main.js.map": "/static/js/main.659677b5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b423a666.js",
     "runtime-main.js.map": "/static/js/runtime-main.b423a666.js.map",
     "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
-    "static/js/2.2edf12fe.chunk.js": "/static/js/2.2edf12fe.chunk.js",
-    "static/js/2.2edf12fe.chunk.js.map": "/static/js/2.2edf12fe.chunk.js.map",
+    "static/js/2.62bef76f.chunk.js": "/static/js/2.62bef76f.chunk.js",
+    "static/js/2.62bef76f.chunk.js.map": "/static/js/2.62bef76f.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.83921eae.chunk.css.map": "/static/css/main.83921eae.chunk.css.map",
-    "static/js/2.2edf12fe.chunk.js.LICENSE.txt": "/static/js/2.2edf12fe.chunk.js.LICENSE.txt",
+    "static/css/main.e41aa1ad.chunk.css.map": "/static/css/main.e41aa1ad.chunk.css.map",
+    "static/js/2.62bef76f.chunk.js.LICENSE.txt": "/static/js/2.62bef76f.chunk.js.LICENSE.txt",
     "static/media/1.7aa75404.gif": "/static/media/1.7aa75404.gif",
     "static/media/1.a94e7965.png": "/static/media/1.a94e7965.png",
     "static/media/1024-2.43ac4869.png": "/static/media/1024-2.43ac4869.png",
@@ -41,6 +41,7 @@
     "static/media/canonback.4fc34636.svg": "/static/media/canonback.4fc34636.svg",
     "static/media/close.62d2a914.svg": "/static/media/close.62d2a914.svg",
     "static/media/facebook.654352fb.svg": "/static/media/facebook.654352fb.svg",
+    "static/media/getFetch.cjs": "/static/media/getFetch.d7d6010d.cjs",
     "static/media/google.815f2633.svg": "/static/media/google.815f2633.svg",
     "static/media/img1.3b61c389.png": "/static/media/img1.3b61c389.png",
     "static/media/intel.6f78130e.svg": "/static/media/intel.6f78130e.svg",
@@ -65,8 +66,8 @@
   "entrypoints": [
     "static/js/runtime-main.b423a666.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.2edf12fe.chunk.js",
-    "static/css/main.83921eae.chunk.css",
-    "static/js/main.b8820233.chunk.js"
+    "static/js/2.62bef76f.chunk.js",
+    "static/css/main.e41aa1ad.chunk.css",
+    "static/js/main.659677b5.chunk.js"
   ]
 }

@@ -3,11 +3,12 @@ import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppStoreButton from '../../../buttons/appStore';
 import Modal from '../../../modal';
+import '../../../../i18n';
 
 import './section-1.css';
+import { withTranslation } from 'react-i18next';
 
-
-export default class SectionFirst extends Component {
+class SectionFirst extends Component {
     state = {
         isVisible: false
     }
@@ -20,15 +21,19 @@ export default class SectionFirst extends Component {
         this.setState({isVisible: !this.state.isVisible});
     }
 
+    componentDidMount () {
+        console.log(this.props.i18n)
+    }
+
     render() {
+        const { t } = this.props;
         const enter = this.handleMouseEnter;
         const leave = this.handleMouseLeave;
         return (
             <div className="section-first d-flex">
                 <div className="section-first_left">
-                    <h1>Предоставьте клиентам возможность прогуляться по помещению <span className="section-first_left_bold">онлайн</span></h1>
-                    <p>Создавайте и распространяйте виртуальные туры по помещениям самостоятельно.
-                    Все, что вам нужно - мобильный телефон и около часа свободного времени</p>
+                    <h1>{t("thethourer.main.section1.title.title1")}<span className="section-first_left_bold">{t("thethourer.main.section1.title.title2")}</span></h1>
+                    <p>{t("thethourer.main.section1.part1")}</p>
                     <AppStoreButton
                     onEnter={enter}
                     onLeave={leave}
@@ -37,8 +42,11 @@ export default class SectionFirst extends Component {
                 <div className="section-first_right"></div>
                     <Modal
                     visible={this.state.isVisible}
-                    text={'Наведите камеру вашего телефона или нажмите на кнопку для перехода в App Store'}/>
+                    text={t("thethourer.modal.part1")}/>
             </div>
         )
     }
 }
+
+
+export default withTranslation()(SectionFirst);

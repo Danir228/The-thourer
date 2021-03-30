@@ -1,22 +1,26 @@
 import React, {Component} from 'react';
+import { withTranslation } from 'react-i18next';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HamburgerMenu from 'react-hamburger-menu';
 import {Container} from 'reactstrap';
 import HeaderFrame from './components/header-frame';
 import AppStoreButton from '../buttons/appStore';
 import Modal from '../modal';
+import {Link} from 'react-router-dom';
 
 import logo from './logo.svg';
 
 import './header.css';
+import {withRouter} from 'react-router';
 
-export default class Header extends Component {
+class Header extends Component {
     state = {
         open: false,
         opacity: '',
         show: false,
         color: false,
-        isVisible: false
+        isVisible: false,
+        language: ''
     }
 
     openModal() {
@@ -54,9 +58,22 @@ export default class Header extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.listenScrollEvent);
+        var path = this.props.match.path;
+        if (path === "/en") {
+            this.props.i18n.changeLanguage('en');
+        }
     }
 
+    changeLanguage = () => {
+        let lang = this.props.i18n.language;
+        if (lang === 'ru'){
+        this.props.i18n.changeLanguage('en');
+        } else if (lang === 'en') {
+            this.props.i18n.changeLanguage('ru');
+        }
+    }
     render() {
+        const { t, i18n } = this.props;
         const enter = this.handleMouseEnter;
         const leave = this.handleMouseLeave;
         return (
@@ -79,8 +96,8 @@ export default class Header extends Component {
                         <div className="navbar_menu_item">
                             <a className="logo" href="/"><img src={logo} alt={logo}/></a>
                             <ul className="navbar_links">
-                                <li className="navbar_link"><a href="/">Как это работает</a></li>
-                                <li className="navbar_link"><a href="/">Тарифы</a></li>
+                                <li className="navbar_link"><a href="/">{t("thethourer.header.part1")}</a></li>
+                                <li className="navbar_link"><a href="/">{t("thethourer.header.part2")}</a></li>
                                 <li className="navbar_link"><a href="/">FAQ</a></li>
                             </ul>
                         </div>
@@ -90,7 +107,8 @@ export default class Header extends Component {
                             onLeave={leave}
                             stylebtn={this.state.opacity}
                             textButton={'App Store'}/>
-                            <a href="/" className="language">EN</a>
+                            {i18n.language === "ru" && <Link to="/en" className="language" onClick={() => this.changeLanguage()}>EN</Link>}
+                            {i18n.language === "en" && <Link to="/" className="language" onClick={() => this.changeLanguage()}>RU</Link>}
                         </div>
                     </div>
                     {this.state.show && <div id='modal' onClick={(e) => this.closeModal(e)}>
@@ -100,10 +118,12 @@ export default class Header extends Component {
                     </div>}
                     <Modal
                         visible={this.state.isVisible}
-                        text={'Наведите камеру вашего телефона для перехода в App Store'}
+                        text={t("thethourer.modal.part1")}
                     />
                 </Container>
             </header>
         )
     }
 }
+
+export default withTranslation()(withRouter(Header));

@@ -52,13 +52,20 @@
 }
 
 .mob_item_image .section-4_image-gifs {
+    position: absolute;
     transform: translate(-50%, -50%);
-    left: 50%;
+    left: 49.5%;
     right: 50%;
     top: 52%;
-    max-width: 205px;
+    width: 100%;
+    max-width: 207px;
     height: 100%;
-    max-height: 433px;
+    max-height: 436px;
+}
+
+.mob_item_image.section-4_image-gifs video {
+    width: 100%;
+    height: 100%;
 }
 
 .mob_item_btn {
@@ -133,8 +140,7 @@
         margin-bottom: 0;
     }
     .mob_item_image .section-4_image-gifs {
-        max-width: 174px;
-        height: 100%;
-        max-height: 361px;
+        max-width: 173px;
+        max-height: 363px;
     }
 }

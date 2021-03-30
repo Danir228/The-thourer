@@ -52,7 +52,9 @@
 .section-4_image {
     position: relative;
     width: 100%;
-    height: 540px;
+    max-width: 268px;
+    height: 100%;
+    max-height: 540px;
     min-width: 240px;
     padding: 0;
     text-align: center;
@@ -62,17 +64,14 @@
 .section-4_image-gifs {
     position: absolute;
     transform: translate(-50%, -50%);
-    left: 50%;
+    left: 49.5%;
     right: 50%;
     top: 52%;
-    max-width: 228px;
+    width: 100%;
+    max-width: 233px;
     height: 100%;
-    max-height: 486px;
+    max-height: 485px;
     border-radius: 20px;
-}
-
-.section-4_image .section-4_image_phone {
-    height: 100%;
 }
 
 .section-4_bottom_item {
@@ -100,6 +99,23 @@
 
 .bottom_text_item {
     font-weight: bold;
+}
+
+@media (max-width: 1439px) {
+    .section-4_image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-width: 240px;
+        max-height: 483px;
+        padding: 0;
+        text-align: center;
+        margin: 0 20px;
+    }
+    .section-4_image-gifs {
+        max-width: 207px;
+        max-height: 439px;
+    }
 }
 
 @media (min-width: 1023px) and (max-width: 1439px) {

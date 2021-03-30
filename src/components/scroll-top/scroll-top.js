@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import * as Scroll from 'react-scroll';
-import {Container} from 'reactstrap';
 
 import arrowup from './arrow-up.png';
 import './scroll-top.css';

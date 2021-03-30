@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from 'reactstrap';
 import SectionBlock from './components/sectionBlock';
+import { withTranslation } from 'react-i18next';
 
 import './section-3.css';
 import block1 from './components/images/block1.svg';
@@ -11,55 +12,57 @@ import block4 from './components/images/block4.svg';
 import block5 from './components/images/block5.svg';
 import block6 from './components/images/block6.svg';
 
-function SectionThird() {
-
-    return (
-        <>
-            <Row>
-                <Col>
-                    <h1 className="section-3_title">Преимущества <span className="textupdate">The Tourer</span></h1>
-                </Col>
-            </Row>
-            <Row className="section-3_item-1 mx-0">
-                <Col className="mb-3">
-                <SectionBlock
-                    image={block1}
-                    title={'Доступно каждому'}
-                    text={`Не требуется никакого особого оборудования или программного обеспечения. Все, что вам нужно – <span class="textupdate">мобильный телефон</span>`}/>
-                </Col>
-                <Col className="mb-3">
+class SectionThird extends Component {
+    render() {
+        const { t } = this.props;
+        return (
+            <>
+                <Row>
+                    <Col>
+                        <h1 className="section-3_title">{t("thethourer.main.section3.title.start")} <span className="textupdate">{t("thethourer.main.section3.title.center")}</span> {t("thethourer.main.section3.title.end")}</h1>
+                    </Col>
+                </Row>
+                <Row className="section-3_item-1 mx-0">
+                    <Col className="mb-3">
                     <SectionBlock
-                    image={block2}
-                    title={'Эффект присутствия'}
-                    text={`Предоставляет потенциальным клиентам возможность <span class="textupdate">побывать в помещении через экран</span> гаджета`}/>
-                </Col>
-                <Col className="mb-3 marginblock">
-                    <SectionBlock
-                    image={block3}
-                    title={'Экономия времени'}
-                    text={`Не тратьте свои <span class="textupdate">силы</span> и <span class="textupdate">время</span> на дорогу и показ объекта, чтобы помочь клиенту получить <span class="textupdate">полное представление</span> о помещении`}/>
-                </Col>
-                <Col className="mb-3">
-                    <SectionBlock
-                    image={block4}
-                    title={'Скорость создания'}
-                    text={`Получите готовый виртуальный тур <span class="textupdate">в течение часа</span> после старта съемки`}/>
-                </Col>
-                <Col>
-                    <SectionBlock
-                    image={block5}
-                    title={'Уникальное предложение'}
-                    text={`Привлекает внимание клиента, <span class="textupdate">выделяя объявление</span> из общей массы`}/>
-                </Col>
-                <Col className="marginblock">
-                    <SectionBlock
-                    image={block6}
-                    title={'Простое использование'}
-                    text={`Делитесь созданными турами с помощью <span class="textupdate">прямой ссылки</span> или интеграции <span class="textupdate">кода нашего плеера</span> в сайты и приложения`}/>
-                </Col>
-            </Row>
-        </>
-    )
+                        image={block1}
+                        title={t("thethourer.main.section3.part1.title")}
+                        text={`${t("thethourer.main.section3.part1.child1")}<span class="textupdate"> ${t("thethourer.main.section3.part1.child2")}</span>`}/>
+                    </Col>
+                    <Col className="mb-3">
+                        <SectionBlock
+                        image={block2}
+                        title={t("thethourer.main.section3.part2.title")}
+                        text={`${t("thethourer.main.section3.part2.child1")}<span class="textupdate"> ${t("thethourer.main.section3.part2.child2")}</span> ${t("thethourer.main.section3.part2.child3")}`}/>
+                    </Col>
+                    <Col className="mb-3 marginblock">
+                        <SectionBlock
+                        image={block3}
+                        title={t("thethourer.main.section3.part3.title")}
+                        text={`${t("thethourer.main.section3.part3.child1")}<span class="textupdate"> ${t("thethourer.main.section3.part3.child2")}</span> ${t("thethourer.main.section3.part3.child3")} <span class='textupdate'>${t("thethourer.main.section3.part3.child4")}</span>`}/>
+                    </Col>
+                    <Col className="mb-3">
+                        <SectionBlock
+                        image={block4}
+                        title={t("thethourer.main.section3.part4.title")}
+                        text={`${t("thethourer.main.section3.part4.child1")}<span class="textupdate"> ${t("thethourer.main.section3.part4.child2")}</span> ${t("thethourer.main.section3.part2.child3")}`}/>
+                    </Col>
+                    <Col>
+                        <SectionBlock
+                        image={block5}
+                        title={t("thethourer.main.section3.part5.title")}
+                        text={`${t("thethourer.main.section3.part5.child1")}<span class='textupdate'> ${t("thethourer.main.section3.part5.child2")}</span> ${t("thethourer.main.section3.part5.child3")}`}/>
+                    </Col>
+                    <Col className="marginblock">
+                        <SectionBlock
+                        image={block6}
+                        title={t("thethourer.main.section3.part6.title")}
+                        text={`${t("thethourer.main.section3.part6.child1")}<span class='textupdate'> ${t("thethourer.main.section3.part6.child2")}</span> ${t("thethourer.main.section3.part6.child3")} <span class='textupdate'>${t("thethourer.main.section3.part6.child4")}</span> ${t("thethourer.main.section3.part6.child5")}`}/>
+                    </Col>
+                </Row>
+            </>
+        )
+    }
 }
 
-export default SectionThird;
+export default withTranslation()(SectionThird);
