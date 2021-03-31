@@ -7,6 +7,7 @@ import HeaderFrame from './components/header-frame';
 import AppStoreButton from '../buttons/appStore';
 import Modal from '../modal';
 import {Link} from 'react-router-dom';
+import { Link as LinkScroll } from "react-scroll";
 
 import logo from './logo.svg';
 
@@ -96,9 +97,36 @@ class Header extends Component {
                         <div className="navbar_menu_item">
                             <a className="logo" href="/"><img src={logo} alt={logo}/></a>
                             <ul className="navbar_links">
-                                <li className="navbar_link"><a href="/">{t("thethourer.header.part1")}</a></li>
-                                <li className="navbar_link"><a href="/">{t("thethourer.header.part2")}</a></li>
-                                <li className="navbar_link"><a href="/">FAQ</a></li>
+                                <LinkScroll
+                                    activeClass="activeLink"
+                                    spy={true}
+                                    offset={-120}
+                                    smooth={true}
+                                    duration= {500}
+                                    to="section-4"
+                                    className="navbar_link">
+                                    {t("thethourer.header.part1")}
+                                </LinkScroll>
+                                <LinkScroll
+                                    activeClass="activeLink"
+                                    spy={true}
+                                    offset={-120}
+                                    smooth={true}
+                                    duration= {500}
+                                    to="section-6"
+                                    className="navbar_link">
+                                    {t("thethourer.header.part2")}
+                                </LinkScroll>
+                                <LinkScroll
+                                    activeClass="activeLink"
+                                    spy={true}
+                                    offset={-120}
+                                    smooth={true}
+                                    duration= {500}
+                                    to="section-9"
+                                    className="navbar_link">
+                                    FAQ
+                                </LinkScroll>
                             </ul>
                         </div>
                         <div className="header_btn d-flex">

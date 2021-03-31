@@ -12,13 +12,18 @@
 .sectionblock_item img {
     width: 100%;
     max-width: 64px;
+    max-height: 74px;
+    min-height: 74px;
     margin-bottom: 40px;
+}
+
+.sectionblock_item_title2 {
+    display: none;
 }
 
 .sectionblock_item h1 {
     margin-bottom: 20px;
 
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
@@ -26,7 +31,6 @@
 }
 
 .sectionblock_item p {
-    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -61,6 +65,15 @@
     }
 }
 
+@media (max-width: 767px) {
+    .sectionblock_item_title1 {
+        display: none;
+    }
+    .sectionblock_item_title2 {
+        display: block;
+    }
+}
+
 @media (min-width: 479px) and (max-width: 767px) {
     .sectionblock_item {
         height: calc(100% - 20px);
@@ -69,6 +82,7 @@
     .sectionblock_item img {
         margin-bottom: 16px;
         max-width: 44px;
+        min-height: 44px;
         max-height: 44px;
     }
     .sectionblock_item h1 {
@@ -90,6 +104,7 @@
     .sectionblock_item img {
         margin-bottom: 12px;
         max-width: 34px;
+        min-height: 34px;
         max-height: 34px;
     }
     .sectionblock_item h1 {

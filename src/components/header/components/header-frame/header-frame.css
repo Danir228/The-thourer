@@ -32,11 +32,11 @@
 }
 
 .header-frame a {
-    font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
+    cursor: pointer;
 
     color: #000000;
     text-decoration: none;

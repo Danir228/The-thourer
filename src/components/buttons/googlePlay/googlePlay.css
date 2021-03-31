@@ -15,9 +15,15 @@
 }
 
 .google-play_btn span {
-    font-family: Raleway;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
+}
+
+@media (max-width: 1023px) {
+    .google-play_btn span {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }

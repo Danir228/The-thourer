@@ -32,17 +32,20 @@
         },
         "part1": {
           "title": "Accessible to everyone",
+          "title2": "Accessibility",
           "child1": "Does not require any special hardware or software. All you need is",
           "child2": "a smartphone"
         },
         "part2": {
           "title": "Presence effect",
+          "title2": "Demonstration",
           "child1": "Provides clients with a",
           "child2": "sense of actual presence",
           "child3": "through any gadget's screen"
         },
         "part3": {
           "title": "Increased efficiency",
+          "title2": "Efficiency",
           "child1": "Saves your",
           "child2": "time and effort",
           "child3": "by enabling your client to view the space",
@@ -50,18 +53,21 @@
         },
         "part4": {
           "title": "Creation speed",
+          "title2": "Speed",
           "child1": "Get your tour",
           "child2": "ready within an hour",
           "child3": "after the start of capturing"
         },
         "part5": {
           "title": "Unique proposition",
+          "title2": "Uniqueness",
           "child1": "Attract attention of a potential client",
           "child2": "marking the ad",
           "child3": "among others"
         },
         "part6": {
           "title": "Result usability",
+          "title2": "Usability",
           "child1": "Share created tours by sending",
           "child2": "a direct link",
           "child3": "or by",
@@ -173,6 +179,13 @@
         },
         "part3": "panoramas",
         "part4": "virtual tours"
+      },
+      "section8": {
+        "title": {
+          "child1": "Our Clients’",
+          "child2": "Reviews",
+          "child3": ""
+        }
       },
       "section9": {
         "title": {

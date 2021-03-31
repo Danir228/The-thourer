@@ -5,6 +5,7 @@ import FooterSocialLink from './components/footer-link';
 import AppStoreButton from '../buttons/appStore';
 import GooglePlayButton from '../buttons/googlePlay';
 import Modal from '../modal';
+import { Link as LinkScroll } from "react-scroll";
 
 import telegram from './components/images/telegram.svg';
 import facebook from './components/images/facebook.svg';
@@ -78,9 +79,36 @@ class Footer extends Component {
                                 </div>
                                 <div className="item-2">
                                     <h1>{t("thethourer.footer.part1.title")}</h1>
-                                    <h2><a href="/">{t("thethourer.footer.part1.child1")}</a></h2>
-                                    <h2><a href="/">{t("thethourer.footer.part1.child2")}</a></h2>
-                                    <h2><a href="/">FAQ</a></h2>
+                                    <h2>
+                                        <LinkScroll
+                                            offset={-120}
+                                            smooth={true}
+                                            duration= {500}
+                                            to="section-4"
+                                            className="navbar_link">
+                                            {t("thethourer.footer.part1.child1")}
+                                        </LinkScroll>
+                                    </h2>
+                                    <h2>
+                                        <LinkScroll
+                                            offset={-120}
+                                            smooth={true}
+                                            duration= {500}
+                                            to="section-6"
+                                            className="navbar_link">
+                                            {t("thethourer.footer.part1.child2")}
+                                        </LinkScroll>
+                                    </h2>
+                                    <h2>
+                                        <LinkScroll
+                                            offset={-120}
+                                            smooth={true}
+                                            duration= {500}
+                                            to="section-9_title"
+                                            className="navbar_link">
+                                            FAQ
+                                        </LinkScroll>
+                                    </h2>
                                 </div>
                                 <div className="item-3">
                                     <h1>{t("thethourer.footer.part2.title")}</h1>

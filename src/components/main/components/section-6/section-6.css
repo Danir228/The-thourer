@@ -9,7 +9,6 @@
 }
 
 .section-6_title_item-1 {
-    font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
@@ -18,7 +17,6 @@
 }
 
 .section-6_title_item-2 {
-    font-family: Raleway;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -111,6 +109,7 @@
     }
     .section-6_title_item-2 {
         font-size: 32px;
+        line-height: 41px;
     }
 }
 
@@ -127,6 +126,7 @@
         line-height: 36px;
     }
     .section-6_title_item-2 {
+        line-height: 36px;
         font-size: 28px;
     }
     .section-6_calendar {
@@ -158,5 +158,8 @@
     .section-6_calendar {
         height: 205px;
         justify-content: center;
+    }
+    .titleEn {
+        height: 78px;
     }
 }

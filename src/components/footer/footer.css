@@ -33,7 +33,6 @@
 .footer_item h1 {
     margin-bottom: 32px;
 
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -41,7 +40,6 @@
 }
 
 .footer_item h2 {
-    font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -49,11 +47,11 @@
 }
 
 .footer_item a {
-    font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 
     color: #F1F1F1;
     text-decoration: none;
@@ -62,7 +60,6 @@
 .item-1 h1 {
     margin-bottom: 20px;
 
-    font-family: Raleway;
     font-style: normal;
     font-weight: 800;
     font-size: 22px;
@@ -197,9 +194,6 @@
     .item-4 .app-store_btn {
         margin-right: 20px;
     }
-    /* .item-5 {
-        margin-right: 30px;
-    } */
 }
 
 @media (width: 1023px) {

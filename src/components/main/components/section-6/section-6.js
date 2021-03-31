@@ -17,7 +17,7 @@ class SectionSix extends Component {
         return (
             <>
                 <Row>
-                    <Col className="section-6_title">
+                    <Col className={this.props.i18n.language === "en" ? "section-6_title titleEn" : "section-6_title"}>
                         <h1 className="section-6_title_item-1">{t("thethourer.main.section6.title.child1")}</h1>
                         <h2 className="section-6_title_item-2">{t("thethourer.main.section6.title.child2")}</h2>
                     </Col>

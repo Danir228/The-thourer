@@ -19,7 +19,6 @@
 .rewiew_item p {
     margin-left: 30px;
 
-    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -49,7 +48,6 @@
 }
 
 .rewiew_user span {
-    font-family: Raleway;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -85,12 +83,6 @@
         max-width: 354px;
     }
 }
-
-/* @media (width: 480px) {
-    .rewiew_item {
-        max-width: 100%!important;
-    }
-} */
 
 @media (min-width: 479px) and (max-width: 767px) {
     .rewiew_item {
