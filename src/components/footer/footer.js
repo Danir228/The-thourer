@@ -116,7 +116,7 @@ class Footer extends Component {
                                     <h2><a href="/">{t("thethourer.footer.part2.child2")}</a></h2>
                                 </div>
                                 <div className="item-5">
-                                    <h1>{t("thethourer.footer.part3.title")}</h1>
+                                    <h1>{t("thethourer.footer.part4.title")}</h1>
                                     <div className="item-5_links">
                                         <FooterSocialLink
                                             image={telegram}/>
@@ -127,7 +127,7 @@ class Footer extends Component {
                                     </div>
                                 </div>
                                 <div className="item-4">
-                                    <h1>{t("thethourer.footer.part4.title")}</h1>
+                                    <h1>{t("thethourer.footer.part3.title")}</h1>
                                     <div className="item-4_btn">
                                         <AppStoreButton
                                             onEnter={enter}

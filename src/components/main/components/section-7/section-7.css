@@ -93,8 +93,11 @@
         height: 152px;
     }
     .section-7_bottom_body {
-        height: 106px;
+        max-height: 106px;
         width: 580px;
+    }
+    .section-7_bottom_body div:last-child {
+        max-width: 138px;
     }
     .section-7_bottom_number {
         margin-bottom: 16px;

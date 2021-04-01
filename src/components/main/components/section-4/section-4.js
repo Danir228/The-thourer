@@ -63,7 +63,7 @@ class SectionFor extends Component {
                 <Row>
                     <Col className="section-4_title">
                         <h1 className="section-4_title_item-1">{t("thethourer.main.section4.title1.start")} <span className="textupdate">{t("thethourer.main.section4.title1.end")}</span></h1>
-                        <h2 className="section-4_title_item-2"><span className="textupdate">{t("thethourer.main.section4.title2.start")}</span>, {t("thethourer.main.section4.title2.end")}</h2>
+                        <h2 className="section-4_title_item-2"><span className="textupdate">{t("thethourer.main.section4.title2.start")}</span> {t("thethourer.main.section4.title2.end")}</h2>
                     </Col>
                 </Row>
                 <Row className="section-4_item">
@@ -84,8 +84,8 @@ class SectionFor extends Component {
                                     func={this.switchBtn}
                                     activeClass={this.state.second}
                                     number={`<span class="num_update">3</span>`}
-                                    title={t("thethourer.main.section4.part2.title")}
-                                    text={t("thethourer.main.section4.part2.child1")}/>
+                                    title={t("thethourer.main.section4.part3.title")}
+                                    text={t("thethourer.main.section4.part3.child1")}/>
                             </Col>
                         </Row>
                     </Col>
@@ -104,8 +104,8 @@ class SectionFor extends Component {
                                     func={this.switchBtn}
                                     activeClass={this.state.third}
                                     number={`<span class="num_update">2</span>`}
-                                    title={t("thethourer.main.section4.part3.title")}
-                                    text={t("thethourer.main.section4.part3.child1")}/>
+                                    title={t("thethourer.main.section4.part2.title")}
+                                    text={t("thethourer.main.section4.part2.child1")}/>
                             </Col>
                             <Col className="bottom_item">
                                 <SectionForItem
@@ -123,7 +123,7 @@ class SectionFor extends Component {
                     <SectionForMobItem/>
                 </Row>
                 <Row className="section-4_bottom_item mx-0">
-                    <Col className="section-4_bottom_item_body d-flex justify-content-around px-0 py-0">
+                    <Col className="section-4_bottom_item_body d-flex justify-content-between px-0 py-0">
                         <p className="bottom_text">{t("thethourer.main.section4.title3.start")} <span className="bottom_text_item">{t("thethourer.main.section4.title3.end")}</span></p>
                         <AppStoreButton
                         onEnter={enter}

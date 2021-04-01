@@ -58,12 +58,12 @@
 }
 
 .item-1 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 
     font-style: normal;
     font-weight: 800;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 20px;
 }
 
 .item-1_links {
@@ -71,13 +71,13 @@
 }
 
 .item-4 .app-store_btn {
-    width: 180px;
+    width: 208px;
     background: #ffffff;
     color: #000000;
 }
 
 .item-4 .google-play_btn {
-    width: 180px;
+    width: 208px;
     margin-top: 16px;
     background: #ffffff;
     color: #000000;
@@ -253,6 +253,13 @@
         top: 0;
         flex-direction: column;
         right: 30px;
+    }
+    .item-4 .app-store_btn {
+        width: 175px;
+    }
+
+    .item-4 .google-play_btn {
+        width: 175px;
     }
     .item-5 {
         margin-left: 104px;

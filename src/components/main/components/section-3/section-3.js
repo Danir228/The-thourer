@@ -24,7 +24,7 @@ class SectionThird extends Component {
                 </Row>
                 <Row className="section-3_item-1 mx-0">
                     <Col className="mb-3">
-                    <SectionBlock
+                        <SectionBlock
                         image={block1}
                         title={t("thethourer.main.section3.part1.title")}
                         title2={t("thethourer.main.section3.part1.title2")}
@@ -49,7 +49,7 @@ class SectionThird extends Component {
                         image={block4}
                         title={t("thethourer.main.section3.part4.title")}
                         title2={t("thethourer.main.section3.part4.title2")}
-                        text={`${t("thethourer.main.section3.part4.child1")}<span class="textupdate"> ${t("thethourer.main.section3.part4.child2")}</span> ${t("thethourer.main.section3.part2.child3")}`}/>
+                        text={`${t("thethourer.main.section3.part4.child1")}<span class="textupdate"> ${t("thethourer.main.section3.part4.child2")}</span> ${t("thethourer.main.section3.part4.child3")}`}/>
                     </Col>
                     <Col>
                         <SectionBlock

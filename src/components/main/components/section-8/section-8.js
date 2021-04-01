@@ -15,7 +15,7 @@ class SectionEight extends Component {
         return (
             <>
                 <div className="section-8_item">
-                    <h1>{t("thethourer.main.section8.title.child1")}<span className="textupdate">{t("thethourer.main.section8.title.child2")}</span> {t("thethourer.main.section8.title.child3")}</h1>
+                    <h1>{t("thethourer.main.section8.title.child1")}<span className="textupdate"> {t("thethourer.main.section8.title.child2")}</span> {t("thethourer.main.section8.title.child3")}</h1>
                     <div className="section-8_item_body">
                         <SimpleSlider
                         slidenum={3}
