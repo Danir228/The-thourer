@@ -21,10 +21,6 @@ class SectionFirst extends Component {
         this.setState({isVisible: !this.state.isVisible});
     }
 
-    componentDidMount () {
-        console.log(this.props.i18n)
-    }
-
     render() {
         const { t } = this.props;
         const enter = this.handleMouseEnter;

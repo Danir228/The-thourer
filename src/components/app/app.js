@@ -15,12 +15,12 @@ class App extends Component {
     render() {
         return (
             <>
-            <div className={this.props.i18n.language === "en" ? "fontEn" : "fontRu"}>
-                <ElipsesFirst/>
-                <Header/>
-                <Main/>
-                <Footer/>
-            </div>
+                <div className={this.props.i18n.language === "en" ? "fontEn" : "fontRu"}>
+                    <ElipsesFirst/>
+                    <Header/>
+                    <Main/>
+                    <Footer/>
+                </div>
             </>
         )
     }
