@@ -47,8 +47,9 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">1%",
       "not dead",
+      "maintained node versions",
       "not op_mini all"
     ],
     "development": [
@@ -56,5 +57,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^5.2.0",
+    "postcss-nested": "^5.0.5"
   }
 }

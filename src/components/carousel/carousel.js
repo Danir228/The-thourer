@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 import Slider from "react-slick";
-
-
 
 // const breakPoints = [
 //   { width: 1, itemsToShow: 1 },
@@ -10,7 +8,16 @@ import Slider from "react-slick";
 //   { width: 1200, itemsToShow: 5 }
 // ];
 
-export default function SimpleSlider({items, center, variable, row, sliderow, variable2, slidenum, dot}) {
+export default function SimpleSlider({
+  items,
+  center,
+  variable,
+  row,
+  sliderow,
+  variable2,
+  slidenum,
+  dot,
+}) {
   let settings = {
     className: "slider variable-width",
     slidesToShow: 1,
@@ -38,7 +45,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
           swipeToSlide: false,
           swipe: false,
           infinite: false,
-        }
+        },
       },
       {
         breakpoint: 1439,
@@ -49,8 +56,8 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
           rows: 1,
           slidesPerRow: slidenum,
           variableWidth: false,
-          centerMode: false
-        }
+          centerMode: false,
+        },
       },
       {
         breakpoint: 1023,
@@ -65,7 +72,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
           infinite: true,
           swipeToSlide: true,
           swipe: true,
-        }
+        },
       },
       {
         breakpoint: 767,
@@ -80,7 +87,7 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
           infinite: true,
           swipeToSlide: true,
           swipe: true,
-        }
+        },
       },
       {
         breakpoint: 479,
@@ -95,15 +102,19 @@ export default function SimpleSlider({items, center, variable, row, sliderow, va
           infinite: true,
           swipeToSlide: true,
           swipe: true,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
   return (
     <>
       <Slider {...settings}>
-        {items.map((item, index) => <div className="slider_item" key={index}>{item}</div>)}
+        {items.map((item, index) => (
+          <div className="slider_item" key={index}>
+            {item}
+          </div>
+        ))}
       </Slider>
     </>
-  )
+  );
 }
