@@ -1,0 +1,254 @@
+{
+  "thethourer": {
+    "header": {
+      "part1": "How it works",
+      "part2": "Pricing",
+      "headerFrame": {
+        "link1": "How it works",
+        "link2": "Pricing",
+        "link3": "Contact us"
+      }
+    },
+    "main": {
+      "section1": {
+        "title": {
+          "title1": "Offer your clients a virtual space walkthrough that they",
+          "title2": " can enjoy online"
+        },
+        "part1": "Create and share virtual tours of any space on your own. All you need is a smartphone and about an hour of spare time"
+      },
+      "section2": {
+        "part1": {
+          "start": "The Tourer makes it possible for anyone to create",
+          "end": "D tours of any space. Photos and videos raise more questions than answers. Save your time and effort by allowing the clients to virtually visit recorded space while being in a completely different place."
+        },
+        "buttonText": "Download App"
+      },
+      "section3": {
+        "title": {
+          "start": "",
+          "center": "Advantages",
+          "end": "of The Tourer"
+        },
+        "part1": {
+          "title": "Accessible to everyone",
+          "title2": "Accessibility",
+          "child1": "Does not require any special hardware or software. All you need is",
+          "child2": "a smartphone"
+        },
+        "part2": {
+          "title": "Presence effect",
+          "title2": "Demonstration",
+          "child1": "Provides clients with a",
+          "child2": "sense of actual presence",
+          "child3": "through any gadget's screen"
+        },
+        "part3": {
+          "title": "Increased efficiency",
+          "title2": "Efficiency",
+          "child1": "Saves your",
+          "child2": "time and effort",
+          "child3": "by enabling your client to view the space",
+          "child4": "remotely"
+        },
+        "part4": {
+          "title": "Creation speed",
+          "title2": "Speed",
+          "child1": "Get your tour",
+          "child2": "ready within an hour",
+          "child3": "after the start of capturing"
+        },
+        "part5": {
+          "title": "Unique proposition",
+          "title2": "Uniqueness",
+          "child1": "Attract attention of a potential client",
+          "child2": "marking the ad",
+          "child3": "among others"
+        },
+        "part6": {
+          "title": "Result usability",
+          "title2": "Usability",
+          "child1": "Share created tours by sending",
+          "child2": "a direct link",
+          "child3": "or by",
+          "child4": "inserting our player",
+          "child5": "to your website"
+        }
+      },
+      "section4": {
+        "title1": {
+          "start": "How Does It Work?",
+          "end": "Try It Out"
+        },
+        "title2": {
+          "start": "Click on the steps",
+          "end": "to see how the core features of the app work"
+        },
+        "title3": {
+          "start": "Create your virtual tour",
+          "end": "right now"
+        },
+        "buttonText": "Download App",
+        "part1": {
+          "title": "Build plans",
+          "child1": "Construct the plan of your space with the internal camera of your device"
+        },
+        "part2": {
+          "title": "Capture panoramas",
+          "child1": "Demonstrate a full picture of your surroundings with 360° panoramas"
+        },
+        "part3": {
+          "title": "Create virtual tours",
+          "child1": "Compile all the created content into a complete virtual tour"
+        },
+        "part4": {
+          "title": "Share created tours",
+          "child1": "Send the link to your virtual tour or insert the player right into your website"
+        }
+      },
+      "section5": {
+        "title": {
+          "start": "",
+          "center": "Virtual Tours",
+          "end": "created with The Tourer"
+        },
+        "part1": {
+          "child1": "",
+          "child2": "Captured with iPhone 11"
+        }
+      },
+      "section6": {
+        "title": {
+          "child1": "Variety of Pricing Plans",
+          "child2": "Find the solution for your needs"
+        },
+        "calendar": {
+          "child1": "Monthly",
+          "child2": "Quarterly",
+          "child3": "Annual"
+        },
+        "part1": {
+          "child1": "$ 0.00",
+          "child2": "Free ",
+          "child3": "project",
+          "child4": "rooms",
+          "child5": "panoramas",
+          "child6": "Tour sharing disabled",
+          "child7": "Behaviour analytics inside the tour"
+        },
+        "part2": {
+          "child1": "$ 9.99 /mo.",
+          "child2": "Basic",
+          "child3": "Up to",
+          "child4": "projects",
+          "child5": "rooms",
+          "child6": "panoramas",
+          "child7": "Tour sharing enabled",
+          "child8": "Behaviour analytics inside the tour"
+        },
+        "part3": {
+          "child1": "$ 49.99 /mo.",
+          "child2": "Advanced",
+          "child3": "Up to",
+          "child4": "projects",
+          "child5": "rooms",
+          "child6": "panoramas",
+          "child7": "Tour sharing enabled",
+          "child8": "Behaviour analytics inside the tour"
+        },
+        "part4": {
+          "child1": "$ 99.99 /mo.",
+          "child2": "Business",
+          "child3": "Up to",
+          "child4": "projects",
+          "child5": "rooms",
+          "child6": "panoramas",
+          "child7": "Tour sharing enabled",
+          "child8": "Behaviour analytics inside the tour"
+        }
+      },
+      "section7": {
+        "part1": {
+          "child1": "The Tourer was used",
+          "child2": "to create"
+        },
+        "part2": {
+          "child1": "sq. meters of plan",
+          "child2": "",
+          "child3": ""
+        },
+        "part3": "panoramas",
+        "part4": "virtual tours"
+      },
+      "section8": {
+        "title": {
+          "child1": "Our Clients’",
+          "child2": "Reviews",
+          "child3": ""
+        }
+      },
+      "section9": {
+        "title": {
+          "child1": "Frequently Asked Questions",
+          "child2": ""
+        },
+        "part1": {
+          "child1": "How can I share created tours?",
+          "child2": "The option to share created virtual tours is available only for paid pricing plans. You can grant access to created virtual tours in 3 different ways:",
+          "child3": "• Send a direct link",
+          "child4": "",
+          "child5": "• Receive an online card with a",
+          "child6": "QR-code",
+          "child7": "for usage in your ads",
+          "child8": "• Insert the code of our player in your website or app"
+        },
+        "part2": {
+          "child1": "I already have captured panoramas. Can I use them in the app?",
+          "child2": "I already have captured panoramas. Can I use them in the app?",
+          "child3": "Yes, you can. The app supports importing panoramas from your phone’s library. Connection of external cameras to iPhone is not supported in the current versions of the app."
+        },
+        "part3": {
+          "child1": "Which spaces are most suitable for using virtual tours?",
+          "child2": "There are no restrictions on the business sectors that can use virtual tours to their advantage. But they are commonly used in commercial and residential real estate, coworkings, restaurants, hotels, gyms etc."
+        },
+        "part4": {
+          "child1": "Which devices does the app support?",
+          "child2": "Currently, only iOS-operating devices are supported. To create content within the app, it is required to have iPhone 6S or later models. If you have a model of an earlier year of release, then you can use the app as a no-code virtual tour creator from pre-captured content. A version for devices running the Android operating system is under development."
+        },
+        "part5": {
+          "child1": "Have More Questions?",
+          "child2": "Contact Us!"
+        }
+      },
+      "section10": {
+        "title1": {
+          "child1": "Download the app",
+          "child2": "right now!"
+        },
+        "title2": "You can always use the free version to test out the features of the app."
+      }
+    },
+    "footer": {
+      "part1": {
+        "title": "About",
+        "child1": "How it works",
+        "child2": "Pricing"
+      },
+      "part2": {
+        "title": "Support",
+        "child1": "Privacy policy",
+        "child2": "Terms & Conditions"
+      },
+      "part3": {
+        "title": "Download App"
+      },
+      "part4": {
+        "title": "Contact Us"
+      }
+    },
+    "modal": {
+      "part1": "Point the camera of your smartphone or press the button to be redirected to App Store"
+    }
+
+  }
+}

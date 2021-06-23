@@ -1,0 +1,101 @@
+.rewiew_item {
+    position: relative;
+    margin: 32px 20px 0 20px;
+    padding-top: 30px;
+    padding-right: 30px;
+    height: 340px;
+    border: 1px solid #FFFFFF;
+    border-bottom: none;
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.3) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+}
+
+.rewiew_mark {
+    margin-bottom: 36px;
+    margin-left: 30px;
+}
+
+.rewiew_item p {
+    margin-left: 30px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.rewiew_body {
+    position: absolute;
+    display: flex;
+    left: -1px;
+    width: 101%;
+    border-bottom: none;
+    bottom: 0;
+    background: #000;
+    color: #ffffff;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.rewiew_man {
+    width: 44px;
+    height: 44px;
+    margin: 20px 20px 0 40px;
+}
+
+.rewiew_user {
+    margin: 22px 0;
+}
+
+.rewiew_user span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.rewiew_star {
+    display: flex;
+}
+
+.rewiew_star img {
+    margin-right: 4px;
+}
+
+.rewiew_star img:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 1439px) {
+    .rewiew_item:hover {
+        background: #FFFFFF;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1439px) {
+    .rewiew_item {
+        max-width: 482px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .rewiew_item {
+        max-width: 354px;
+    }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+    .rewiew_item {
+        max-width: 256px;
+        margin-right: 9px;
+        margin-left: 9px;
+    }
+}
+
+@media (max-width: 479px) {
+    .rewiew_item p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+

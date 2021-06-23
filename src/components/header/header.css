@@ -1,0 +1,173 @@
+.header {
+    position: fixed;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    z-index: 1000;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.background_header {
+    /* backdrop-filter: blur(60px); */
+    background-color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+
+.header .container {
+    max-width: 1218px;
+    position: relative;
+}
+
+.activeClass {
+    display: block;
+}
+
+.navbar_menu {
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+}
+
+#modal {
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    position: fixed;
+}
+
+#modal .container {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    height: 100%;
+    right: 25px;
+    width: 36px;
+    cursor: pointer;
+}
+
+.navbar_menu_item {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 100px;
+}
+
+.navbar_links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.navbar_links {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.activeLink {
+    font-weight: bold!important;
+}
+
+.navbar_link {
+    margin-right: 64px;
+}
+
+.navbar_link:last-child {
+    margin-right: 0;
+}
+.header_btn {
+    height: 100%;
+    align-items: center;
+}
+
+.header_btn .app-store_btn, .header .google-play_btn {
+    width: 150px;
+    transition: all 1s ease 0.5s;
+}
+
+.header_btn .app-store_btn {
+    display: none;
+    opacity: 0;
+    margin-right: 62px;
+}
+
+.header .google-play_btn {
+    margin-right: 64px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.language:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 1440px) {
+    .header_btn .app-store_btn {
+        display: block;
+    }
+}
+
+@media (max-width: 1439px) {
+    .navbar_links {
+        display: none;
+    }
+    .language {
+        position: absolute;
+        right: 80px;
+    }
+    .hamburger {
+        display: flex;
+        align-items: center;
+    }
+    .navbar_menu {
+        height: 60px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .navbar_menu {
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar_menu {
+        height: 80px;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .navbar_menu {
+        height: 60px;
+    }
+}
+

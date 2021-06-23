@@ -1,0 +1,22 @@
+.footer-social_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 12px;
+
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+.footer-social_link:hover {
+    background: #CACACA;
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+    .footer-social_link {
+        width: 44px;
+        height: 44px;
+    }
+}

@@ -1,0 +1,437 @@
+.footer_item {
+    position: relative;
+    color: #F1F1F1;
+}
+
+.container_item {
+    height: 100%;
+}
+
+.footer_back-1 img, .footer_back-2 img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_back-1 {
+    position: relative;
+    width: 100%;
+    height: 503px;
+    background-size: cover;
+}
+
+.footer_back-2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 72px;
+    width: 100%;
+    height: 836px;
+    background-size: cover;
+}
+
+.footer_item h1 {
+    margin-bottom: 32px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.footer_item h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer_item a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+
+    color: #F1F1F1;
+    text-decoration: none;
+}
+
+.item-1 h1 {
+    margin-bottom: 32px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.item-1_links {
+    display: flex;
+}
+
+.item-4 .app-store_btn {
+    width: 208px;
+    background: #ffffff;
+    color: #000000;
+}
+
+.item-4 .google-play_btn {
+    width: 208px;
+    margin-top: 16px;
+    background: #ffffff;
+    color: #000000;
+}
+
+.item-4 .app-store_btn:hover, .item-4 .google-play_btn:hover {
+    background: #CACACA;
+}
+
+.item-4_btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-5_links {
+    display: flex;
+}
+
+.item-5_links .footer-social_link {
+    border-radius: 8px;
+}
+
+@media (min-width: 1439px) {
+    .footer {
+        margin-top: 140px;
+    }
+    .img1, .img2 {
+        display: block!important;
+    }
+    .footer_item {
+        height: 592px;
+    }
+    .footer_back-1 {
+        height: 592px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        position: absolute;
+        top: 61px;
+        height: 531px;
+    }
+    .footer_item .container {
+        justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        max-width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        max-height: 178px;
+        bottom: 128px;
+    }
+}
+
+@media (width: 1439px) {
+    .img1, .img2 {
+        display: none!important;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1439px) {
+    .img1024_1, .img1024_2 {
+        display: block!important;
+    }
+    .footer {
+        margin-top: 120px;
+    }
+    .footer_item {
+        height: 470px;
+    }
+    .footer_back-1 {
+        height: 426px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        position: absolute;
+        top: 44px;
+        height: 426px;
+    }
+    .footer_back-3 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+    .footer_item .container {
+        position: relative;
+        height: 100%;
+        justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        max-height: 243px;
+        bottom: 0;
+    }
+    .item-4 {
+        bottom: 40px;
+        position: absolute;
+        right: 0;
+    }
+    .item-4 h1 {
+        display: none;
+    }
+    .item-4_btn {
+        flex-direction: inherit;
+    }
+    .item-4 .google-play_btn {
+        margin-top: 0;
+    }
+    .item-4 .app-store_btn {
+        margin-right: 20px;
+    }
+}
+
+@media (width: 1023px) {
+    .container_item {
+        justify-content: end!important;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .img1024_1, .img1024_2 {
+        display: none!important;
+    }
+    .img768_1, .img768_2 {
+        display: block!important;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+    .footer_item {
+        height: 542px;
+    }
+    .footer_back-1 {
+        height: 403px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        position: absolute;
+        top: 42px;
+        height: 500px;
+    }
+    .footer_item .container {
+        max-width: 100%;
+        justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        max-height: 331px;
+        bottom: 0;
+    }
+    .item-2 {
+        position: absolute;
+        top: 172px;
+    }
+    .item-3 {
+        position: absolute;
+        right: 15px;
+        top: 172px;
+        left: 276px;
+    }
+    .item-4 h1 {
+        display: none;
+    }
+    .item-4_btn {
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        right: 30px;
+    }
+    .item-4 .app-store_btn {
+        width: 175px;
+    }
+
+    .item-4 .google-play_btn {
+        width: 175px;
+    }
+    .item-5 {
+        margin-left: 104px;
+    }
+    .item-5 h1 {
+        margin-bottom: 20px;
+    }
+    .item-4 .app-store_btn {
+        margin-bottom: 16px;
+    }
+}
+
+@media (width: 767px) {
+    .item-4 {
+        bottom: 40px!important;
+    }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+    .img768_1, .img768_2 {
+        display: none!important;
+    }
+    .img480_1, .img480_2 {
+        display: block!important;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+    .footer_item {
+        height: 697px;
+    }
+    .footer_back-1 {
+        height: 632px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        position: absolute;
+        top: 65px;
+        height: 632px;
+    }
+    .footer_item .container {
+        max-width: 100%;
+        justify-content: inherit!important;
+    }
+    .container_item {
+        position: absolute;
+        width: 100%;
+        max-width: 440px;
+        display: flex;
+        max-height: 404px;
+        bottom: 40px;
+    }
+    .item-2{
+        position: absolute;
+        top: 153px;
+    }
+    .item-3{
+        position: absolute;
+        top: 153px;
+        left: 239px;
+    }
+    .item-4 {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 15px;
+    }
+    .item-4_btn {
+        flex-direction: inherit;
+    }
+    .item-4 h1 {
+        display: none;
+    }
+    .item-4 .app-store_btn {
+        margin-right: 20px;
+    }
+    .item-4 .google-play_btn, .item-4 .app-store_btn {
+        width: 175px;
+        height: 48px;
+        margin-top: 0;
+    }
+    .item-4 .app-store_btn img {
+        margin-right: 8px;
+    }
+    .item-5 {
+        margin-left: 71px;
+    }
+    .item-5 h1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 479px) {
+    .img480_1, .img480_2 {
+        display: none!important;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+    .footer_item {
+        height: 901px;
+    }
+    .img320_1 {
+        display: block!important;
+    }
+    .img320_2 {
+        display: block!important;
+    }
+    .footer_back-1 {
+        height: 503px;
+        width: 100%;
+    }
+    .footer_back-2 {
+        top: 65px;
+        height: 836px;
+    }
+    .footer_item .container {
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        max-height: 689px;
+        flex-direction: column;
+        padding-right: 15px;
+        padding-left: 15px;
+        justify-content: inherit!important;
+    }
+    .footer_item .container_item {
+        position: initial;
+        max-height: 100%;
+        flex-direction: column;
+    }
+    .item-2 {
+        position: inherit;
+        margin-top: 44px;
+        top: 0;
+    }
+    .item-3 {
+        position: inherit;
+        margin-top: 44px;
+        top: 0;
+        left: 0;
+    }
+    .item-4 {
+        position: absolute;
+        width: 100%;
+        bottom: 30px;
+        left: 15px;
+    }
+    .item-4_btn {
+        flex-direction: inherit;
+    }
+    .item-4 h1 {
+        display: none;
+    }
+    .item-4 .app-store_btn {
+        margin-right: 20px;
+    }
+    .item-4 .google-play_btn, .item-4 .app-store_btn {
+        width: 129px;
+        height: 48px;
+        margin-top: 0;
+    }
+    .item-4 .google-play_btn img, .item-4 .app-store_btn img {
+        margin-right: 8px;
+    }
+    .item-5 {
+        position: absolute;
+        bottom: 121px;
+        margin-left: 0;
+    }
+    .item-5 h1 {
+        margin-bottom: 20px;
+    }
+}
+

@@ -1,0 +1,119 @@
+.sectionblock_item {
+    width: 100%;
+    /* max-width: 386px; */
+    height: 100%;
+    padding: 40px 34px 30px 40px;
+    border: 1px solid #FFFFFF;
+    background: linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0.4) 100%);
+    backdrop-filter: blur(60px);
+    border-radius: 20px;
+}
+
+.sectionblock_item img {
+    width: 100%;
+    max-width: 64px;
+    max-height: 74px;
+    min-height: 74px;
+    margin-bottom: 40px;
+}
+
+.sectionblock_item_title2 {
+    display: none;
+}
+
+.sectionblock_item h1 {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.sectionblock_item p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.textupdate {
+    font-weight: bold;
+}
+
+@media (min-width: 1439px) {
+    .sectionblock_item {
+        height: 360px;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1439px) {
+    .sectionblock_item {
+        height: 313px;
+        padding: 30px 30px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .sectionblock_item {
+        max-width: 100%;
+        height: 342px;
+        padding: 30px 30px;
+    }
+    .marginblock {
+        margin-right: 0!important;
+    }
+}
+
+@media (max-width: 767px) {
+    .sectionblock_item_title1 {
+        display: none;
+    }
+    .sectionblock_item_title2 {
+        display: block;
+    }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+    .sectionblock_item {
+        height: calc(100% - 20px);
+        padding: 20px 20px;
+    }
+    .sectionblock_item img {
+        margin-bottom: 16px;
+        max-width: 44px;
+        min-height: 44px;
+        max-height: 44px;
+    }
+    .sectionblock_item h1 {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 16px;
+    }
+    .sectionblock_item p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .sectionblock_item {
+        height: 193px;
+        padding: 16px 16px;
+    }
+    .sectionblock_item img {
+        margin-bottom: 12px;
+        max-width: 34px;
+        min-height: 34px;
+        max-height: 34px;
+    }
+    .sectionblock_item h1 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 8px;
+    }
+    .sectionblock_item p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

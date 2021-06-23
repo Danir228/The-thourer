@@ -1,0 +1,116 @@
+.whenitem_active {
+    background: #FFFFFF!important;
+}
+
+.whenitem_month, .whenitem_quarter, .whenitem_year {
+    position: relative;
+    margin-right: 30px;
+    padding-top: 22px;
+    width: 199px;
+    height: 97px;
+}
+
+.whenitem_style {
+    display: flex;
+    justify-content: center;
+    width: 178px;
+    height: 64px;
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    cursor: pointer;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+
+    align-items: center;
+}
+
+.whenitem_style:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.percent {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    right: 0;
+    top: 7px;
+    text-align: center;
+
+    background: #F8E3B8;
+    border-radius: 22px;
+}
+
+@media (min-width: 1023px) and (max-width: 1439px) {
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 218px;
+        height: 86px;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    .whenitem {
+        justify-content: center;
+    }
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 211px;
+        height: 86px;
+        margin-right: 20px;
+    }
+    .whenitem_month {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+    .whenitem {
+        justify-content: center;
+    }
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 133px;
+        height: 75px;
+        margin-right: 20px;
+    }
+    .whenitem_style {
+        display: flex;
+        justify-content: center;
+        width: 133px;
+        height: 47px;
+        margin-right: 12px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .percent {
+        width: 48px;
+        height: 48px;
+        right: -5px;
+        top: -7px;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    .whenitem_month, .whenitem_quarter, .whenitem_year {
+        width: 280px;
+        height: 54px;
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .whenitem_style {
+        width: 260px;
+        height: 54px;
+    }
+    .whenitem_month .whenitem_style {
+        width: 280px;
+    }
+    .whenitem {
+        flex-direction: column;
+    }
+}

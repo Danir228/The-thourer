@@ -1,0 +1,80 @@
+.header-frame {
+    position: absolute;
+    width: 252px;
+    height: 384px;
+    right: 1px;
+    top: 60px;
+    padding: 40px 40px;
+    z-index: 100;
+
+    border: 1px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    -webkit-animation: 0.5s ease 0s normal forwards 1 fadein;
+    animation: 0.5s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.header-frame_link {
+    margin-bottom: 20px;
+}
+
+.header-frame a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    cursor: pointer;
+
+    color: #000000;
+    text-decoration: none;
+}
+
+.header-frame .app-store_btn {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.header-frame .google-play_btn {
+    width: 150px;
+    opacity: 0.1;
+}
+
+.header-frame .google-play_btn span {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.active-frame_link {
+    font-weight: bold;
+}
+
+@media (max-width: 1023px) {
+    .header-frame {
+        top: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-frame {
+        top: 80px;
+    }
+}
+
+@media (max-width: 479px) {
+    .header-frame {
+        top: 60px;
+    }
+}
